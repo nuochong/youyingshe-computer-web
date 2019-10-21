@@ -8,6 +8,12 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
+  *, *::before, *::after {
+    box-sizing: content-box;
+  }
+  .init-container{
+    overflow: hidden;
+  }
   :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
@@ -295,6 +301,7 @@
   }
 </style>
 
+<div class="init-container">
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img
@@ -524,7 +531,7 @@
   </svg>
 
 </div>
-
+</div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
