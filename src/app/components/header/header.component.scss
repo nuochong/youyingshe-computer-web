@@ -1,9 +1,16 @@
 .header-container {
+  height: 56px;
   .header-logo {
-    font-size: 24px;
+    margin:0 30px;
+    height: 56px;
+    line-height: 56px;
+    i {
+      font-size: 30px;
+      color: var(--themeMain);
+    }
   }
   .header-body {
-    color: blue;
+    color: var(--themeMain);
   }
   .header-setting {
     color: green;

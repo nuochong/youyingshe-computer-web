@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+$global_color: #ec7259;
+:root {
+  --themeMain: #ec7259; // or any global you wish to share with components
+}
