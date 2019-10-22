@@ -1,0 +1,93 @@
+.article-footer {
+  width: 100%;
+  .article-footerContainer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 -1px 3px rgba(26, 26, 26, 0.1);
+    box-shadow: 0 -1px 3px rgba(26, 26, 26, 0.1);
+    z-index: 100;
+    .article-footerWrap {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      width: 1000px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      .article-footerTextarea {
+        display: flex;
+        position: relative;
+        textarea {
+          display: inline-flex;
+          width: 200px;
+          height: 37px;
+          resize: none;
+          margin-right: 16px;
+          padding: 8px 18px;
+          border-radius: 18px;
+          border: none;
+          -webkit-transition: all 0.2s cubic-bezier(0.19, 0.4, 0.17, 0.85);
+          transition: all 0.2s cubic-bezier(0.19, 0.4, 0.17, 0.85);
+          background-color: #f2f2f2;
+          overflow: auto;
+          color: inherit;
+          font-size: inherit;
+          font-family: inherit;
+          line-height: inherit;
+          touch-action: manipulation;
+          -webkit-appearance: none;
+          outline: none;
+          font-size: 14px;
+        }
+      }
+      .article-footerTools {
+        display: -webkit-box;
+
+        display: flex;
+        -webkit-box-align: center;
+
+        align-items: center;
+        color: #969696;
+        user-select: none;
+        .article-footerTools-li {
+          margin-right: 12px;
+          font-size: 14px;
+          cursor: pointer;
+          display: flex;
+          -webkit-box-align: center;
+
+          align-items: center;
+          touch-action: manipulation;
+          color: #969696;
+          user-select: none;
+          i {
+            font-size: 22px;
+          }
+          span {
+            margin-left: 8px;
+            line-height: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            color: #969696;
+            user-select: none;
+          }
+        }
+        .article-footerTools-comment {
+        }
+        .article-footerTools-like {
+        }
+        .article-footerTools-more {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.ant-back-top {
+  bottom: 96px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum', 'tnum';
+  font-feature-settings: 'tnum', 'tnum';
+  position: fixed;
+  right: 100px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  .back-top-wrap {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #8c8c8c;
+    font-size: 18px;
+    box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+    background-color: #fff;
+    touch-action: manipulation;
+  }
+}

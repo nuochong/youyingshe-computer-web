@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { ZorroComponent } from './components/zorro/zorro.component';
+import { BackTopComponent } from './components/back-top/back-top.component';
 
 registerLocaleData(zh);
 
@@ -24,7 +25,8 @@ registerLocaleData(zh);
     InitComponent,
     HeaderComponent,
     FooterComponent,
-    ZorroComponent
+    ZorroComponent,
+    BackTopComponent
   ],
   imports: [
     BrowserModule,
