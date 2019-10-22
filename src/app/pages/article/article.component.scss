@@ -2,3 +2,133 @@
   margin-right: 8px;
   margin-bottom: 12px;
 }
+.body-container {
+  background-color: #f9f9f9;
+  .body-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 16px;
+    min-height: calc(100vh - 66px);
+    align-items: flex-start;
+    box-sizing: content-box;
+    width: 1000px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    .body-left {
+      flex-shrink: 0;
+      width: 730px;
+      margin-bottom: 24px;
+      margin-right: 10px;
+      .article-content {
+        padding: 24px;
+        background-color: #fff;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+        display: block;
+        h1 {
+          font-size: 30px;
+          font-weight: 700;
+          word-break: break-word;
+        }
+        .article-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 32px;
+          color: #969696;
+          font-size: 13px;
+          .article-hot {
+            display: flex;
+            margin-right: 8px;
+            .article-hot-wrap {
+              margin-right: 8px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              color: var(--themeMain);
+              i {
+                margin-right: 0.5em;
+              }
+              span {
+                color: var(--themeMain);
+              }
+            }
+            time {
+              margin-right: 8px;
+            }
+            .article-total-number {
+              margin-right: 8px;
+            }
+          }
+          .article-read-number {
+          }
+        }
+        .article-text {
+          p {
+            margin-bottom: 20px;
+            word-break: break-word;
+            margin-top: 0;
+          }
+          h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 16px;
+            color: #404040;
+            text-rendering: optimizelegibility;
+          }
+          h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 0 16px;
+            color: #404040;
+            text-rendering: optimizelegibility;
+          }
+          table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+            border: 1px solid #eee;
+            border-left: none;
+            word-break: normal;
+
+            th,
+            td {
+              padding: 8px;
+              border: 1px solid #eee;
+              line-height: 20px;
+              vertical-align: middle;
+            }
+            thead {
+              th {
+                vertical-align: middle;
+                text-align: inherit;
+                font-weight: bold;
+              }
+            }
+            tbody{
+              tr:nth-of-type(2n) {
+                background-color: hsla(0, 0%, 70.2%, 0.15);
+              }
+            }
+          }
+        }
+      }
+    }
+    .article-comment {
+    }
+    .article-more {
+    }
+  }
+  .body-right {
+    flex-shrink: 0;
+    width: 260px;
+    .user-info {
+    }
+    .article-next {
+    }
+  }
+}
