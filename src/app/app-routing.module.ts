@@ -2,11 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ArticleComponent } from './pages/article/article.component';
 import { InitComponent } from './pages/init/init.component';
+import { ZorroComponent } from './components/zorro/zorro.component';
 
 
 const routes: Routes = [
   {
-    path: '', component: InitComponent, data: { title: '文章详情' }
+    path: '', component: InitComponent, data: { title: '初始化' }
+  },
+  {
+    path: 'zorro', component: ZorroComponent, data: { title: 'zorro' }
   },
   {
     path: 'article', component: ArticleComponent, data: { title: '文章详情' }
