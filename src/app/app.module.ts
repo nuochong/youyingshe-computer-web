@@ -17,6 +17,7 @@ import { ZorroComponent } from './components/zorro/zorro.component';
 import { BackTopComponent } from './components/back-top/back-top.component';
 import { PersonalDetailsComponent } from './components/personal-details/personal-details.component';
 import { DiscoveryComponent } from './components/discovery/discovery.component';
+import { LeftRightLayoutComponent } from './components/left-right-layout/left-right-layout.component';
 
 registerLocaleData(zh);
 
@@ -30,7 +31,8 @@ registerLocaleData(zh);
     ZorroComponent,
     BackTopComponent,
     PersonalDetailsComponent,
-    DiscoveryComponent
+    DiscoveryComponent,
+    LeftRightLayoutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,411 +1,418 @@
 <app-header></app-header>
-
-<div class="container">
-  <div nz-row class="body-wrap">
-    <div class="body-left" nz-col nzXs="16">
+<app-left-right-layout>
+  <div class="body-left-wrap">
       <div class="main-top">
-        <a class="avatar" href="/u/4c2094ebb372">
-          <img
-            src="//upload.jianshu.io/users/upload_avatars/15783563/0463a5db-e1ea-4661-9f81-29c1b3d988b7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240"
-            alt="240"
-          />
-        </a>
-        <button class="off  user-follow-button">
-          <i class="iconfont iconadd"></i><span>关注</span>
-        </button>
-        <a
-          class="btn btn-hollow"
-          href="/notifications#/chats/new?mail_to=15783563"
-          >发简信</a
-        >
-
-        <div class="title">
-          <a class="name" href="/u/4c2094ebb372">大头田</a>
-          <i class="iconfont iconman"></i>
-        </div>
-        <div class="info">
-          <ul>
-            <li>
-              <div class="meta-block">
-                <a href="/users/4c2094ebb372/following">
-                  <p>2706</p>
-                  关注 <i class="iconfont iconleft"></i>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="meta-block">
-                <a href="/users/4c2094ebb372/followers">
-                  <p>1943</p>
-                  粉丝 <i class="iconfont iconleft"></i>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="meta-block">
-                <a href="/u/4c2094ebb372">
-                  <p>253</p>
-                  文章 <i class="iconfont iconleft"></i>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="meta-block">
-                <p>438176</p>
-                <div>字数</div>
-              </div>
-            </li>
-            <li>
-              <div class="meta-block">
-                <p>31692</p>
-                <div>收获喜欢</div>
-              </div>
-            </li>
-            <li>
-              <div class="meta-block">
-                <p>41.2w</p>
-                <div>总资产</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <ul class="trigger-menu" data-pjax-container="#list-container">
-        <li class="active">
-          <a href=""><i class="iconfont iconuniE"></i> 文章</a>
-        </li>
-        <li class="">
-          <a href=""><i class="iconfont iconbell"></i> 动态</a>
-        </li>
-        <li class="">
-          <a href=""
-            ><i class="iconfont icon-bubblechatcommentmessagespeechtalk"></i>
-            最新评论</a
+          <a class="avatar" href="/u/4c2094ebb372">
+            <img
+              src="//upload.jianshu.io/users/upload_avatars/15783563/0463a5db-e1ea-4661-9f81-29c1b3d988b7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240"
+              alt="240"
+            />
+          </a>
+          <button class="off  user-follow-button">
+            <i class="iconfont iconadd"></i><span>关注</span>
+          </button>
+          <a
+            class="btn btn-hollow"
+            href="/notifications#/chats/new?mail_to=15783563"
+            >发简信</a
           >
-        </li>
-        <li class="">
-          <a href=""><i class="iconfont iconhot"></i> 热门</a>
-        </li>
-      </ul>
-
-      <div class="list-container">
-        <ul
-          class="note-list"
-          infinite-scroll-url="/u/4c2094ebb372?order_by=shared_at"
-        >
-          <li id="note-55231333" data-note-id="55231333" class="have-img">
-            <a class="wrap-img" href="/p/512b7298f446" target="_blank">
-              <img
-                class="  img-blur-done"
-                src="https://upload-images.jianshu.io/upload_images/2901910-578b596cd5bae92f?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
-                alt="120"
-              />
-            </a>
-            <div class="content ">
-              <a class="title" target="_blank" href="/p/512b7298f446"
-                >关注你的公众号之后，我天天和老公吵架</a
-              >
-              <p class="abstract">
-                文｜七梦的悠闲时光（《星光简道》专题签约推荐作者）01
-                最近公众号越来越多，关于女性权利意识的文章也大受追捧，类似《女孩子们要找一个把你的小事当...
-              </p>
-              <div class="meta">
-                <span class="jsd-meta">
-                  <i class="iconfont icondiamond"></i> 51.9
-                </span>
-                <a target="_blank" href="/p/512b7298f446">
-                  <i class="iconfont iconread"></i> 4507
-                </a>
-                <a target="_blank" href="/p/512b7298f446#comments">
-                  <i class="iconfont iconliuyan"></i> 73
-                </a>
-                <span><i class="iconfont iconhome_ico_like-"></i> 49</span>
-                <span><i class="iconfont iconmoney"></i> 107</span>
-                <span class="time" data-shared-at="2019-10-22T16:45:02+08:00"
-                  >昨天 16:45</span
-                >
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="card2">
-              <div class="author">
-                <a class="avatar" href="/u/4c2094ebb372">
-                  <img
-                    src="//upload.jianshu.io/users/upload_avatars/15783563/0463a5db-e1ea-4661-9f81-29c1b3d988b7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
-                    alt="180"
-                  />
-                </a>
-                <div class="info">
-                  <a class="nickname" href="/u/4c2094ebb372">大头田</a>
-                  <span
-                    data-type="comment_note"
-                    data-datetime="2019-10-23T14:49:09+08:00"
-                  >
-                    发表了评论 · 10.23 14:49</span
-                  >
+  
+          <div class="title">
+            <a class="name" href="/u/4c2094ebb372">大头田</a>
+            <i class="iconfont iconman"></i>
+          </div>
+          <div class="info">
+            <ul>
+              <li>
+                <div class="meta-block">
+                  <a href="/users/4c2094ebb372/following">
+                    <p>2706</p>
+                    关注 <i class="iconfont iconleft"></i>
+                  </a>
                 </div>
-              </div>
-
-              <p class="comment">
-                好的故事文章都有很强的画面感
-              </p>
-              <blockquote>
-                <a class="title" href="/p/7c7d200c9290"
-                  >好的故事文章都有很强的画面感</a
+              </li>
+              <li>
+                <div class="meta-block">
+                  <a href="/users/4c2094ebb372/followers">
+                    <p>1943</p>
+                    粉丝 <i class="iconfont iconleft"></i>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="meta-block">
+                  <a href="/u/4c2094ebb372">
+                    <p>253</p>
+                    文章 <i class="iconfont iconleft"></i>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="meta-block">
+                  <p>438176</p>
+                  <div>字数</div>
+                </div>
+              </li>
+              <li>
+                <div class="meta-block">
+                  <p>31692</p>
+                  <div>收获喜欢</div>
+                </div>
+              </li>
+              <li>
+                <div class="meta-block">
+                  <p>41.2w</p>
+                  <div>总资产</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <ul class="trigger-menu" data-pjax-container="#list-container">
+          <li class="active">
+            <a href=""><i class="iconfont iconuniE"></i> 文章</a>
+          </li>
+          <li class="">
+            <a href=""><i class="iconfont iconbell"></i> 动态</a>
+          </li>
+          <li class="">
+            <a href=""
+              ><i class="iconfont icon-bubblechatcommentmessagespeechtalk"></i>
+              最新评论</a
+            >
+          </li>
+          <li class="">
+            <a href=""><i class="iconfont iconhot"></i> 热门</a>
+          </li>
+        </ul>
+  
+        <div class="list-container">
+          <ul
+            class="note-list"
+            infinite-scroll-url="/u/4c2094ebb372?order_by=shared_at"
+          >
+            <li id="note-55231333" data-note-id="55231333" class="have-img">
+              <a class="wrap-img" href="/p/512b7298f446" target="_blank">
+                <img
+                  class="  img-blur-done"
+                  src="https://upload-images.jianshu.io/upload_images/2901910-578b596cd5bae92f?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
+                  alt="120"
+                />
+              </a>
+              <div class="content ">
+                <a class="title" target="_blank" href="/p/512b7298f446"
+                  >关注你的公众号之后，我天天和老公吵架</a
                 >
                 <p class="abstract">
-                  你写的文章并不怎么样，但是读别人的文章自己还是会有一些感触，特别是读一篇故事或者小说的时候，读一些写的好的作者的文章，就会发现在头脑当中可以想象出那种画面，而且画面感非常强。...
+                  文｜七梦的悠闲时光（《星光简道》专题签约推荐作者）01
+                  最近公众号越来越多，关于女性权利意识的文章也大受追捧，类似《女孩子们要找一个把你的小事当...
                 </p>
-
                 <div class="meta">
-                  <div class="origin-author">
-                    <a href="/users/1af5c45d87ac">珩钥</a>
-                  </div>
-                  <a href="/p/7c7d200c9290">
-                    <i class="iconfont iconread"></i> 286
+                  <span class="jsd-meta">
+                    <i class="iconfont icondiamond"></i> 51.9
+                  </span>
+                  <a target="_blank" href="/p/512b7298f446">
+                    <i class="iconfont iconread"></i> 4507
                   </a>
-                  <a href="/p/7c7d200c9290">
-                    <i class="iconfont iconliuyan"></i> 24
+                  <a target="_blank" href="/p/512b7298f446#comments">
+                    <i class="iconfont iconliuyan"></i> 73
                   </a>
-                  <span><i class="iconfont iconhome_ico_like-"></i> 28</span>
-                  <span><i class="iconfont iconmoney"></i> 25</span>
-                </div>
-              </blockquote>
-            </div>
-          </li>
-
-          <li>
-            <div class="card3">
-              <div class="author">
-                <a class="avatar" href="/users/4c2094ebb372">
-                  <img
-                    src="//upload.jianshu.io/users/upload_avatars/15783563/0463a5db-e1ea-4661-9f81-29c1b3d988b7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
-                    alt="180"
-                  />
-                </a>
-                <div class="info">
-                  <a class="nickname" href="/u/4c2094ebb372">大头田</a>
-                  <span
-                    data-type="like_user"
-                    data-datetime="2019-10-23T12:08:56+08:00"
-                    >关注了作者 · 10.23 12:08</span
+                  <span><i class="iconfont iconhome_ico_like-"></i> 49</span>
+                  <span><i class="iconfont iconmoney"></i> 107</span>
+                  <span class="time" data-shared-at="2019-10-22T16:45:02+08:00"
+                    >昨天 16:45</span
                   >
                 </div>
               </div>
-              <div class="follow-detail">
-                <div class="info">
-                  <a class="avatar" href="/u/eb07e5ba64f2">
+            </li>
+  
+            <li>
+              <div class="card2">
+                <div class="author">
+                  <a class="avatar" href="/u/4c2094ebb372">
                     <img
-                      src="//upload.jianshu.io/users/upload_avatars/14200264/876eacb8-dfbb-46fe-b072-a9ae033f1635.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
+                      src="//upload.jianshu.io/users/upload_avatars/15783563/0463a5db-e1ea-4661-9f81-29c1b3d988b7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
                       alt="180"
                     />
                   </a>
-                  <a class="btn btn-success follow"
-                    ><i class="iconfont iconadd"></i><span>关注</span></a
-                  >
-                  <a class="title" href="/u/eb07e5ba64f2">百薇Baiwei</a>
-                  <p>写了 1489 字，被 1 人关注，获得了 1 个喜欢</p>
+                  <div class="info">
+                    <a class="nickname" href="/u/4c2094ebb372">大头田</a>
+                    <span
+                      data-type="comment_note"
+                      data-datetime="2019-10-23T14:49:09+08:00"
+                    >
+                      发表了评论 · 10.23 14:49</span
+                    >
+                  </div>
                 </div>
-                <div class="signature">总之岁月漫长，然而，值得等待</div>
+  
+                <p class="comment">
+                  好的故事文章都有很强的画面感
+                </p>
+                <blockquote>
+                  <a class="title" href="/p/7c7d200c9290"
+                    >好的故事文章都有很强的画面感</a
+                  >
+                  <p class="abstract">
+                    你写的文章并不怎么样，但是读别人的文章自己还是会有一些感触，特别是读一篇故事或者小说的时候，读一些写的好的作者的文章，就会发现在头脑当中可以想象出那种画面，而且画面感非常强。...
+                  </p>
+  
+                  <div class="meta">
+                    <div class="origin-author">
+                      <a href="/users/1af5c45d87ac">珩钥</a>
+                    </div>
+                    <a href="/p/7c7d200c9290">
+                      <i class="iconfont iconread"></i> 286
+                    </a>
+                    <a href="/p/7c7d200c9290">
+                      <i class="iconfont iconliuyan"></i> 24
+                    </a>
+                    <span><i class="iconfont iconhome_ico_like-"></i> 28</span>
+                    <span><i class="iconfont iconmoney"></i> 25</span>
+                  </div>
+                </blockquote>
               </div>
-            </div>
+            </li>
+  
+            <li>
+              <div class="card3">
+                <div class="author">
+                  <a class="avatar" href="/users/4c2094ebb372">
+                    <img
+                      src="//upload.jianshu.io/users/upload_avatars/15783563/0463a5db-e1ea-4661-9f81-29c1b3d988b7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
+                      alt="180"
+                    />
+                  </a>
+                  <div class="info">
+                    <a class="nickname" href="/u/4c2094ebb372">大头田</a>
+                    <span
+                      data-type="like_user"
+                      data-datetime="2019-10-23T12:08:56+08:00"
+                      >关注了作者 · 10.23 12:08</span
+                    >
+                  </div>
+                </div>
+                <div class="follow-detail">
+                  <div class="info">
+                    <a class="avatar" href="/u/eb07e5ba64f2">
+                      <img
+                        src="//upload.jianshu.io/users/upload_avatars/14200264/876eacb8-dfbb-46fe-b072-a9ae033f1635.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
+                        alt="180"
+                      />
+                    </a>
+                    <a class="btn btn-success follow"
+                      ><i class="iconfont iconadd"></i><span>关注</span></a
+                    >
+                    <a class="title" href="/u/eb07e5ba64f2">百薇Baiwei</a>
+                    <p>写了 1489 字，被 1 人关注，获得了 1 个喜欢</p>
+                  </div>
+                  <div class="signature">总之岁月漫长，然而，值得等待</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+  </div>
+  <div class="body-right-wrap">
+      <ul class="list user-dynamic">
+          <li class="badge-icon">
+            <a target="_blank" href="https://www.jianshu.com/p/3bc50b869c89">
+              <img
+                width="20"
+                heigth="20"
+                src="//upload.jianshu.io/user_badge/fa6457df-1747-43d8-92ad-be062a234306"
+                alt="Fa6457df 1747 43d8 92ad be062a234306"
+              />
+              幸运四叶草
+            </a>
+          </li>
+          <li class="badge-icon">
+            <a target="_blank" href="https://www.jianshu.com/p/3bc50b869c89">
+              <img
+                width="20"
+                heigth="20"
+                src="//upload.jianshu.io/user_badge/5203a3bf-1c0f-41db-a6f0-31ddb4a929cb"
+                alt="5203a3bf 1c0f 41db a6f0 31ddb4a929cb"
+              />
+              锦鲤
+            </a>
+          </li>
+          <li class="badge-icon">
+            <a
+              target="_blank"
+              href="https://www.jianshu.com/mobile/campaign/day_by_day/join"
+            >
+              <img
+                width="20"
+                heigth="20"
+                src="//upload.jianshu.io/user_badge/b67c298d-f020-4f89-aac6-0710bc0709ec"
+                alt="B67c298d f020 4f89 aac6 0710bc0709ec"
+              />
+              日更达人
+            </a>
+          </li>
+          <li class="badge-icon">
+            <a target="_blank" href="/mobile/club">
+              <img
+                width="20"
+                heigth="20"
+                src="//upload.jianshu.io/user_badge/f61ba9db-af37-417c-889a-2bfa1536b728"
+                alt="F61ba9db af37 417c 889a 2bfa1536b728"
+              />
+              简书白金会员
+            </a>
           </li>
         </ul>
-      </div>
+  
+        <div class="title">个人介绍</div>
+        <div class="description">
+          <div class="js-intro">
+            民主建国会会员，慈善协会会员，县政协委员，爱好文学。长期提供收贝，售贝服务，有需求的简友私信我。
+          </div>
+        </div>
+  
+        <ul class="list user-focus">
+          <li>
+            <a href="/users/4c2094ebb372/subscriptions">
+              <i class="iconfont iconIconCollectiono"></i>
+              <span>他关注的专题/文集/连载</span>
+            </a>
+          </li>
+          <li>
+            <a href="/users/4c2094ebb372/liked_notes">
+              <i class="iconfont iconico-"></i> <span>他喜欢的文章</span>
+            </a>
+          </li>
+        </ul>
+  
+        <!-- 专题和文集 -->
+        <div class="user-project">
+          <div class="management">
+            <div class="title">
+              他管理的专题
+            </div>
+            <ul class="list">
+              <li>
+                <a
+                  href="/c/c12c4b476f1c"
+                  target="_blank"
+                  class="avatar-collection"
+                  ><img
+                    src="//upload.jianshu.io/collections/images/1826633/%E9%AB%98%E5%B1%B1%E6%B5%81%E6%B0%B4.png?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+                /></a>
+                <a href="/c/c12c4b476f1c" target="_blank" class="name"
+                  >高山流水</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/c/d65948ae01b3"
+                  target="_blank"
+                  class="avatar-collection"
+                  ><img
+                    src="//upload.jianshu.io/collections/images/1824313/%E7%A4%BE%E7%BE%A4%E6%88%90%E5%91%98.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+                /></a>
+                <a href="/c/d65948ae01b3" target="_blank" class="name"
+                  >推文上热门（收评赏1）</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/c/3d294d9af6cc"
+                  target="_blank"
+                  class="avatar-collection"
+                  ><img
+                    src="//upload.jianshu.io/collections/images/1823327/%E7%A4%BE%E7%BE%A4%E6%88%90%E5%91%98.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+                /></a>
+                <a href="/c/3d294d9af6cc" target="_blank" class="name"
+                  >推文上热门（收评赏2）</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/c/9bf02417da09"
+                  target="_blank"
+                  class="avatar-collection"
+                  ><img
+                    src="//upload.jianshu.io/collections/images/1820319/crop1569155317995.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+                /></a>
+                <a href="/c/9bf02417da09" target="_blank" class="name"
+                  >天天向上💪💪💪勇攀高峰✊✊✊</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/c/d6782bc7b91e"
+                  target="_blank"
+                  class="avatar-collection"
+                  ><img
+                    src="//upload.jianshu.io/collections/images/1813765/crop1566406726735.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+                /></a>
+                <a href="/c/d6782bc7b91e" target="_blank" class="name"
+                  >解锁时光</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/c/ebbca62d4636"
+                  target="_blank"
+                  class="avatar-collection"
+                  ><img
+                    src="//upload.jianshu.io/collections/images/1783304/crop1560084599539.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+                /></a>
+                <a href="/c/ebbca62d4636" target="_blank" class="name"
+                  >随笔散文</a
+                >
+              </li>
+              <li>
+                <!---->
+                <!---->
+              </li>
+            </ul>
+          </div>
+          <div class="notebook">
+            <div class="title">
+              他的文集
+            </div>
+            <ul class="list">
+              <li>
+                <a href="/nb/33105840" target="_blank"
+                  ><i class="iconfont iconnotebook"></i
+                ></a>
+                <a href="/nb/33105840" target="_blank" class="name">
+                  日记本
+                </a>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="user-action">
+          <a
+            class="js-block-button"
+            data-user-id="15783563"
+            href="javascript:void(null);"
+            >加入黑名单</a
+          >
+          ·
+          <a
+            class="js-report-button"
+            data-reportable-id="15783563"
+            data-reportable-type="user"
+            >举报用户</a
+          >
+        </div>
+  </div>
+</app-left-right-layout>
+<!-- <div class="container">
+  <div nz-row class="body-wrap">
+    <div class="body-left" nz-col nzXs="16">
+
     </div>
     <aside class="body-right" nz-col nzSpan="7" nzPush="1">
-      <ul class="list user-dynamic">
-        <li class="badge-icon">
-          <a target="_blank" href="https://www.jianshu.com/p/3bc50b869c89">
-            <img
-              width="20"
-              heigth="20"
-              src="//upload.jianshu.io/user_badge/fa6457df-1747-43d8-92ad-be062a234306"
-              alt="Fa6457df 1747 43d8 92ad be062a234306"
-            />
-            幸运四叶草
-          </a>
-        </li>
-        <li class="badge-icon">
-          <a target="_blank" href="https://www.jianshu.com/p/3bc50b869c89">
-            <img
-              width="20"
-              heigth="20"
-              src="//upload.jianshu.io/user_badge/5203a3bf-1c0f-41db-a6f0-31ddb4a929cb"
-              alt="5203a3bf 1c0f 41db a6f0 31ddb4a929cb"
-            />
-            锦鲤
-          </a>
-        </li>
-        <li class="badge-icon">
-          <a
-            target="_blank"
-            href="https://www.jianshu.com/mobile/campaign/day_by_day/join"
-          >
-            <img
-              width="20"
-              heigth="20"
-              src="//upload.jianshu.io/user_badge/b67c298d-f020-4f89-aac6-0710bc0709ec"
-              alt="B67c298d f020 4f89 aac6 0710bc0709ec"
-            />
-            日更达人
-          </a>
-        </li>
-        <li class="badge-icon">
-          <a target="_blank" href="/mobile/club">
-            <img
-              width="20"
-              heigth="20"
-              src="//upload.jianshu.io/user_badge/f61ba9db-af37-417c-889a-2bfa1536b728"
-              alt="F61ba9db af37 417c 889a 2bfa1536b728"
-            />
-            简书白金会员
-          </a>
-        </li>
-      </ul>
 
-      <div class="title">个人介绍</div>
-      <div class="description">
-        <div class="js-intro">
-          民主建国会会员，慈善协会会员，县政协委员，爱好文学。长期提供收贝，售贝服务，有需求的简友私信我。
-        </div>
-      </div>
-
-      <ul class="list user-focus">
-        <li>
-          <a href="/users/4c2094ebb372/subscriptions">
-            <i class="iconfont iconIconCollectiono"></i>
-            <span>他关注的专题/文集/连载</span>
-          </a>
-        </li>
-        <li>
-          <a href="/users/4c2094ebb372/liked_notes">
-            <i class="iconfont iconico-"></i> <span>他喜欢的文章</span>
-          </a>
-        </li>
-      </ul>
-
-      <!-- 专题和文集 -->
-      <div class="user-project">
-        <div class="management">
-          <div class="title">
-            他管理的专题
-          </div>
-          <ul class="list">
-            <li>
-              <a
-                href="/c/c12c4b476f1c"
-                target="_blank"
-                class="avatar-collection"
-                ><img
-                  src="//upload.jianshu.io/collections/images/1826633/%E9%AB%98%E5%B1%B1%E6%B5%81%E6%B0%B4.png?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
-              /></a>
-              <a href="/c/c12c4b476f1c" target="_blank" class="name"
-                >高山流水</a
-              >
-            </li>
-            <li>
-              <a
-                href="/c/d65948ae01b3"
-                target="_blank"
-                class="avatar-collection"
-                ><img
-                  src="//upload.jianshu.io/collections/images/1824313/%E7%A4%BE%E7%BE%A4%E6%88%90%E5%91%98.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
-              /></a>
-              <a href="/c/d65948ae01b3" target="_blank" class="name"
-                >推文上热门（收评赏1）</a
-              >
-            </li>
-            <li>
-              <a
-                href="/c/3d294d9af6cc"
-                target="_blank"
-                class="avatar-collection"
-                ><img
-                  src="//upload.jianshu.io/collections/images/1823327/%E7%A4%BE%E7%BE%A4%E6%88%90%E5%91%98.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
-              /></a>
-              <a href="/c/3d294d9af6cc" target="_blank" class="name"
-                >推文上热门（收评赏2）</a
-              >
-            </li>
-            <li>
-              <a
-                href="/c/9bf02417da09"
-                target="_blank"
-                class="avatar-collection"
-                ><img
-                  src="//upload.jianshu.io/collections/images/1820319/crop1569155317995.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
-              /></a>
-              <a href="/c/9bf02417da09" target="_blank" class="name"
-                >天天向上💪💪💪勇攀高峰✊✊✊</a
-              >
-            </li>
-            <li>
-              <a
-                href="/c/d6782bc7b91e"
-                target="_blank"
-                class="avatar-collection"
-                ><img
-                  src="//upload.jianshu.io/collections/images/1813765/crop1566406726735.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
-              /></a>
-              <a href="/c/d6782bc7b91e" target="_blank" class="name"
-                >解锁时光</a
-              >
-            </li>
-            <li>
-              <a
-                href="/c/ebbca62d4636"
-                target="_blank"
-                class="avatar-collection"
-                ><img
-                  src="//upload.jianshu.io/collections/images/1783304/crop1560084599539.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
-              /></a>
-              <a href="/c/ebbca62d4636" target="_blank" class="name"
-                >随笔散文</a
-              >
-            </li>
-            <li>
-              <!---->
-              <!---->
-            </li>
-          </ul>
-        </div>
-        <div class="notebook">
-          <div class="title">
-            他的文集
-          </div>
-          <ul class="list">
-            <li>
-              <a href="/nb/33105840" target="_blank"
-                ><i class="iconfont iconnotebook"></i
-              ></a>
-              <a href="/nb/33105840" target="_blank" class="name">
-                日记本
-              </a>
-            </li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="user-action">
-        <a
-          class="js-block-button"
-          data-user-id="15783563"
-          href="javascript:void(null);"
-          >加入黑名单</a
-        >
-        ·
-        <a
-          class="js-report-button"
-          data-reportable-id="15783563"
-          data-reportable-type="user"
-          >举报用户</a
-        >
-      </div>
     </aside>
   </div>
-</div>
+</div> -->
