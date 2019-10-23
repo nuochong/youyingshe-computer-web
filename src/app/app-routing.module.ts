@@ -21,7 +21,7 @@ const routes: Routes = [
     path: 'personal-details', component: PersonalDetailsComponent, data: { title: '个人详情' }
   },
   {
-    path: 'discovery-details', component: DiscoveryComponent, data: { title: '发现' }
+    path: 'discovery', component: DiscoveryComponent, data: { title: '发现' }
   }
 ];
 
