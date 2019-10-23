@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./discovery.component.scss']
 })
 export class DiscoveryComponent implements OnInit {
-
+  array = [1, 2, 3, 4];
   constructor() { }
 
   ngOnInit() {

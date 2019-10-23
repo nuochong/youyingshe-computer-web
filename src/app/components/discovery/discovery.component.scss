@@ -1,0 +1,133 @@
+[nz-carousel-content] {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  color: #fff;
+  overflow: hidden;
+}
+
+h3 {
+  color: #fff;
+}
+.body-left-wrap {
+  .slide {
+    margin-bottom: 35px;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  .carousel {
+    position: relative;
+    .carousel-inner {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+    .carousel-indicators {
+      margin-bottom: 8px;
+      width: 80%;
+      left: 40%;
+      bottom: 0;
+      position: absolute;
+      z-index: 15;
+      margin-left: -30%;
+      padding-left: 0;
+      list-style: none;
+      text-align: center;
+      margin-top: 0;
+    }
+    @media screen and (min-width: 768px) {
+      .carousel-indicators {
+        bottom: 20px;
+      }
+    }
+    .carousel-control {
+      opacity: 0;
+      transition: 0.1s ease-in;
+      -webkit-transition: 0.1s ease-in;
+      background-repeat: repeat-x;
+      // left: 0;
+      // bottom: 0;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+      z-index: 10;
+      position: absolute;
+      i {
+        position: absolute;
+        top: 50%;
+        margin-top: -14px;
+      }
+    }
+    .carousel-control.left,
+    .carousel-control.left2,
+    .carousel-control.right,
+    .carousel-control.right2 {
+      background-image: none;
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 50px;
+      width: 40px;
+      top: 40%;
+      // opacity: 0.9;
+      //filter: alpha(opacity=90);
+    }
+    .carousel-control.left,
+    .carousel-control.right2 {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+
+      background-repeat: repeat-x;
+      i {
+        left: 10px;
+      }
+    }
+    .carousel-control.right,
+    .carousel-control.left2 {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      left: auto;
+      right: 0;
+      background-repeat: repeat-x;
+      i {
+        right: 10px;
+      }
+    }
+    .left,
+    .left2 {
+      z-index: 10;
+    }
+    .right,
+    .right2 {
+      z-index: 1;
+    }
+    // .carousel-control:hover ~ .right,.carousel-control:hover{
+    //   outline: 0;
+    //   color: #fff;
+    //   text-decoration: none;
+    //   opacity: 0.9;
+    //   filter: alpha(opacity=90);
+    //   display: block;
+    // }
+    .left:hover + .right,
+    .left:hover {
+      outline: 0;
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.9;
+      filter: alpha(opacity=90);
+      display: block;
+    }
+    .left2:hover + .right2,
+    .left2:hover {
+      outline: 0;
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.9;
+      filter: alpha(opacity=90);
+      display: block;
+    }
+  }
+}
