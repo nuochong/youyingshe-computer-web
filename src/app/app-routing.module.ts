@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ArticleComponent } from './pages/article/article.component';
 import { InitComponent } from './pages/init/init.component';
 import { ZorroComponent } from './components/zorro/zorro.component';
+import { PersonalDetailsComponent } from './components/personal-details/personal-details.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,9 @@ const routes: Routes = [
   },
   {
     path: 'article', component: ArticleComponent, data: { title: '文章详情' }
+  },
+  {
+    path: 'personal-details', component: PersonalDetailsComponent, data: { title: '文章详情' }
   }
 ];
 
