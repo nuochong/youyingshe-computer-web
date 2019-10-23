@@ -1,0 +1,30 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  .body-wrap {
+    .body-left {
+      background: #00a0e9;
+    }
+    .body-right {
+      background: rgba(0, 160, 233, 0.7);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1081px) {
+  .container {
+    width: 960px;
+  }
+}
