@@ -16,6 +16,7 @@ import zh from '@angular/common/locales/zh';
 import { ZorroComponent } from './components/zorro/zorro.component';
 import { BackTopComponent } from './components/back-top/back-top.component';
 import { PersonalDetailsComponent } from './components/personal-details/personal-details.component';
+import { DiscoveryComponent } from './components/discovery/discovery.component';
 
 registerLocaleData(zh);
 
@@ -28,7 +29,8 @@ registerLocaleData(zh);
     FooterComponent,
     ZorroComponent,
     BackTopComponent,
-    PersonalDetailsComponent
+    PersonalDetailsComponent,
+    DiscoveryComponent
   ],
   imports: [
     BrowserModule,
