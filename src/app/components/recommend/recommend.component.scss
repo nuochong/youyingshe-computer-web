@@ -10,11 +10,19 @@
     vertical-align: middle;
     border: 0;
   }
+  @media (max-width: 1080px) {
+    .recommend-banner {
+      min-height: 78px;
+      border-radius: 4px;
+    }
+  }
+
   .help {
     position: absolute;
     right: 30px;
     top: 68px;
     color: #fff;
+    font-size: 17px;
   }
 
   .row {
@@ -109,6 +117,15 @@
             margin-left: 2px;
             display: inline;
           }
+        }
+        hr {
+          border-color: #eaeaea;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          border: 0;
+          border-top: 1px solid #eee;
+          box-sizing: content-box;
+          height: 0;
         }
         .meta {
           float: left;
