@@ -8,6 +8,7 @@ import { DiscoveryComponent } from './components/discovery/discovery.component';
 import { FollowComponent } from './components/follow/follow.component';
 import { MessageComponent } from './components/message/message.component';
 import { SearchComponent } from './components/search/search.component';
+import { RecommendComponent } from './components/recommend/recommend.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,8 @@ const routes: Routes = [
     path: 'message', component: MessageComponent, data: { title: '消息' }
   }, {
     path: 'search', component: SearchComponent, data: { title: '搜索' }
+  }, {
+    path: 'recommend', component: RecommendComponent, data: { title: '推荐' }
   }
 ];
 

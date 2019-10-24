@@ -24,6 +24,7 @@ import { LeftRightLayoutFollowComponent } from './components/left-right-layout-f
 import { MessageComponent } from './components/message/message.component';
 import { SearchComponent } from './components/search/search.component';
 import { PagingComponent } from './components/paging/paging.component';
+import { RecommendComponent } from './components/recommend/recommend.component';
 
 registerLocaleData(zh);
 
@@ -44,7 +45,8 @@ registerLocaleData(zh);
     LeftRightLayoutFollowComponent,
     MessageComponent,
     SearchComponent,
-    PagingComponent
+    PagingComponent,
+    RecommendComponent
   ],
   imports: [
     BrowserModule,
