@@ -20,6 +20,7 @@ import { DiscoveryComponent } from './components/discovery/discovery.component';
 import { LeftRightLayoutComponent } from './components/left-right-layout/left-right-layout.component';
 import { CardMessageToolsComponent } from './components/card-message-tools/card-message-tools.component';
 import { FollowComponent } from './components/follow/follow.component';
+import { LeftRightLayoutFollowComponent } from './components/left-right-layout-follow/left-right-layout-follow.component';
 
 registerLocaleData(zh);
 
@@ -36,7 +37,8 @@ registerLocaleData(zh);
     DiscoveryComponent,
     LeftRightLayoutComponent,
     CardMessageToolsComponent,
-    FollowComponent
+    FollowComponent,
+    LeftRightLayoutFollowComponent
   ],
   imports: [
     BrowserModule,
