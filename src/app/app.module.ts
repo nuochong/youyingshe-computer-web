@@ -22,6 +22,7 @@ import { CardMessageToolsComponent } from './components/card-message-tools/card-
 import { FollowComponent } from './components/follow/follow.component';
 import { LeftRightLayoutFollowComponent } from './components/left-right-layout-follow/left-right-layout-follow.component';
 import { MessageComponent } from './components/message/message.component';
+import { SearchComponent } from './components/search/search.component';
 
 registerLocaleData(zh);
 
@@ -40,7 +41,8 @@ registerLocaleData(zh);
     CardMessageToolsComponent,
     FollowComponent,
     LeftRightLayoutFollowComponent,
-    MessageComponent
+    MessageComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

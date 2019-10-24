@@ -7,6 +7,7 @@ import { PersonalDetailsComponent } from './components/personal-details/personal
 import { DiscoveryComponent } from './components/discovery/discovery.component';
 import { FollowComponent } from './components/follow/follow.component';
 import { MessageComponent } from './components/message/message.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,8 @@ const routes: Routes = [
     path: 'follow', component: FollowComponent, data: { title: '关注' }
   }, {
     path: 'message', component: MessageComponent, data: { title: '消息' }
+  }, {
+    path: 'search', component: SearchComponent, data: { title: '搜索' }
   }
 ];
 
