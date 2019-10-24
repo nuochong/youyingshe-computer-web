@@ -10,13 +10,6 @@
     vertical-align: middle;
     border: 0;
   }
-  @media (max-width: 1080px) {
-    .recommend-banner {
-      min-height: 78px;
-      border-radius: 4px;
-    }
-  }
-
   .help {
     position: absolute;
     right: 30px;
@@ -170,6 +163,18 @@
     user-select: none;
   }
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
 @media (max-width: 1080px) {
   .container {
     width: 750px;
@@ -183,12 +188,12 @@
     top: 56px;
   }
 }
-
-@media (min-width: 768px) {
+@media (min-width: 1081px) {
   .container {
-    width: 750px;
+    width: 960px;
   }
 }
+
 .container {
   margin-right: auto;
   margin-left: auto;
