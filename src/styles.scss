@@ -4,3 +4,9 @@ $global_color: #ec7259;
 :root {
   --themeMain: #ec7259; // or any global you wish to share with components
 }
+a {
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  background-color: transparent;
+}

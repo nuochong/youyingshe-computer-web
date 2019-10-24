@@ -1,6 +1,56 @@
+<app-header></app-header>
+
 <app-left-right-layout-follow>
   <div class="body-aside-wrap">
-    1111
+    <a data-toggle="dropdown" class="change-type"
+      >全部关注<i class="iconfont ic-filter"></i
+    ></a>
+
+    <ul class="dropdown-menu arrow-top">
+      <li><a>全部关注</a></li>
+      <li><a>只看作者</a></li>
+      <li><a>只看专题</a></li>
+      <li><a>只看文集</a></li>
+      <li><a>只看推送更新</a></li>
+    </ul>
+
+    <a href="#/recommendation" class="add-people"
+      ><i class="iconfont ic-addpeople"></i> <span>添加关注</span></a
+    >
+
+    <ul class="js-subscription-list">
+      <li class="router-link-exact-active active">
+        <a href="#/timeline" class="wrap"
+          ><div class="avatar">
+            <img
+              src="//cdn2.jianshu.io/assets/web/jianyouquan-2fb0cd72e35147c79d6507c3a3a2591b.png"
+              style="border: none;"
+            />
+          </div>
+          <div class="name">简友圈</div></a
+        >
+      </li>
+      <li class="">
+        <a href="#/subscriptions/20313499/notebook" class="wrap"
+          ><div class="avatar-collection">
+            <img
+              src="//cdn2.jianshu.io/assets/default_avatar/avatar-notebook-default-640f7dde88592bdf6417d8ce1902636e.png"
+            />
+          </div>
+          <div class="name">诗</div>
+        </a>
+      </li>
+      <li class="">
+        <a href="#/subscriptions/14863129/user" class="wrap"
+          ><div class="avatar">
+            <img
+              src="//upload.jianshu.io/users/upload_avatars/14131750/e1ec1fe3-4aa5-483a-ad7e-3649451a88c2.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120/format/webp"
+            />
+          </div>
+          <div class="name">吴江月</div>
+        </a>
+      </li>
+    </ul>
   </div>
   <div class="body-main-wrap">
     2222

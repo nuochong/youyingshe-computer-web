@@ -1,0 +1,112 @@
+.body-aside-wrap {
+  .change-type {
+    margin-left: 15px;
+    font-size: 15px;
+  }
+  .dropdown-menu {
+    top: 23px;
+    left: 20px;
+    min-width: 130px;
+    text-align: center;
+  }
+  ul {
+    margin-top: 7px;
+    list-style: none;
+    border-top: 1px solid #f0f0f0;
+    li {
+      line-height: 20px;
+      a {
+        padding: 10px 20px;
+        display: block;
+        clear: both;
+        font-weight: 400;
+        line-height: 1.42857;
+        color: #333;
+        white-space: nowrap;
+      }
+    }
+  }
+  .dropdown-menu {
+    margin-top: 0;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+  }
+  .add-people {
+    float: right;
+    margin: 4px 10px 0 0;
+    font-size: 13px;
+    color: #333;
+    span {
+      margin-left: 4px;
+    }
+  }
+  .js-subscription-list {
+    margin-top: 7px;
+    list-style: none;
+    border-top: 1px solid #f0f0f0;
+    padding-left: 0;
+    margin-bottom: 10px;
+    li {
+      &.active .wrap {
+        background-color: #f0f0f0;
+        border-radius: 4px 0 0 4px;
+      }
+      &:hover .wrap {
+        background-color: #f0f0f0;
+        border-radius: 4px 0 0 4px;
+      }
+      &:first-child .wrap {
+        border-radius: 0 0 0 4px !important;
+      }
+      .wrap {
+        padding: 10px 13px;
+        display: block;
+        .avatar,.avatar-collection {
+          width: 40px;
+          height: 40px;
+          margin-right: 4px;
+          display: inline-block;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 50%;
+            vertical-align: middle;
+          }
+        }
+        .name {
+          font-size: 14px;
+          vertical-align: middle;
+          display: inline-block;
+          max-width: 100px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+div.body-main-wrap {
+}
