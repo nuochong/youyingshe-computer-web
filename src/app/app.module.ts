@@ -21,6 +21,7 @@ import { LeftRightLayoutComponent } from './components/left-right-layout/left-ri
 import { CardMessageToolsComponent } from './components/card-message-tools/card-message-tools.component';
 import { FollowComponent } from './components/follow/follow.component';
 import { LeftRightLayoutFollowComponent } from './components/left-right-layout-follow/left-right-layout-follow.component';
+import { MessageComponent } from './components/message/message.component';
 
 registerLocaleData(zh);
 
@@ -38,7 +39,8 @@ registerLocaleData(zh);
     LeftRightLayoutComponent,
     CardMessageToolsComponent,
     FollowComponent,
-    LeftRightLayoutFollowComponent
+    LeftRightLayoutFollowComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
