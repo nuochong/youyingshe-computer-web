@@ -23,6 +23,7 @@ import { FollowComponent } from './components/follow/follow.component';
 import { LeftRightLayoutFollowComponent } from './components/left-right-layout-follow/left-right-layout-follow.component';
 import { MessageComponent } from './components/message/message.component';
 import { SearchComponent } from './components/search/search.component';
+import { PagingComponent } from './components/paging/paging.component';
 
 registerLocaleData(zh);
 
@@ -42,7 +43,8 @@ registerLocaleData(zh);
     FollowComponent,
     LeftRightLayoutFollowComponent,
     MessageComponent,
-    SearchComponent
+    SearchComponent,
+    PagingComponent
   ],
   imports: [
     BrowserModule,

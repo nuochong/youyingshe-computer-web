@@ -1,0 +1,60 @@
+.pagination {
+  margin: 20px 0;
+  text-align: center;
+  display: block;
+  padding-left: 0;
+  border-radius: 4px;
+  .article-comment-listPaging {
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    -webkit-user-select: none;
+    user-select: none;
+    color: #969696;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    .article-comment-listPaging-li.article-comment-listPaging-liLeft {
+      color: #ec7259;
+      border-color: #ec7259;
+      pointer-events: none;
+    }
+    .article-comment-listPaging-liRight,
+    .article-comment-listPaging-li {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+      margin: 0 4px;
+      border: 1px solid #eee;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .article-comment-listPaging-liRight,
+    .article-comment-listPaging,
+    .article-comment-listPaging-li {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    .article-comment-listPaging-liRight:hover,
+    .article-comment-listPaging-li:hover {
+      background-color: #f2f2f2;
+    }
+    .article-comment-listPaging-liRight {
+      width: auto;
+      padding-left: 12px;
+      padding-right: 12px;
+      border-radius: 20px;
+    }
+  }
+}
