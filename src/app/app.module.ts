@@ -18,6 +18,7 @@ import { BackTopComponent } from './components/back-top/back-top.component';
 import { PersonalDetailsComponent } from './components/personal-details/personal-details.component';
 import { DiscoveryComponent } from './components/discovery/discovery.component';
 import { LeftRightLayoutComponent } from './components/left-right-layout/left-right-layout.component';
+import { CardMessageToolsComponent } from './components/card-message-tools/card-message-tools.component';
 
 registerLocaleData(zh);
 
@@ -32,7 +33,8 @@ registerLocaleData(zh);
     BackTopComponent,
     PersonalDetailsComponent,
     DiscoveryComponent,
-    LeftRightLayoutComponent
+    LeftRightLayoutComponent,
+    CardMessageToolsComponent
   ],
   imports: [
     BrowserModule,
