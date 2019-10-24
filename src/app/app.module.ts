@@ -19,6 +19,7 @@ import { PersonalDetailsComponent } from './components/personal-details/personal
 import { DiscoveryComponent } from './components/discovery/discovery.component';
 import { LeftRightLayoutComponent } from './components/left-right-layout/left-right-layout.component';
 import { CardMessageToolsComponent } from './components/card-message-tools/card-message-tools.component';
+import { FollowComponent } from './components/follow/follow.component';
 
 registerLocaleData(zh);
 
@@ -34,7 +35,8 @@ registerLocaleData(zh);
     PersonalDetailsComponent,
     DiscoveryComponent,
     LeftRightLayoutComponent,
-    CardMessageToolsComponent
+    CardMessageToolsComponent,
+    FollowComponent
   ],
   imports: [
     BrowserModule,
