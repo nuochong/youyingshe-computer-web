@@ -1,2 +1,301 @@
 <app-header></app-header>
 
+<app-left-right-layout>
+  <div class="body-left-wrap">
+    <div class="main-top">
+      <a class="avatar" href="/u/#">
+        <img
+          src="//upload.jianshu.io/users/upload_avatars/19245301/25d33e39-ff2c-4859-8df9-10059f07bd22?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240"
+          alt="240"
+        />
+      </a>
+
+      <div class="title">
+        <a class="name" href="/u/#">诺冲</a>
+        <i class="iconfont ic-woman"></i>
+      </div>
+      <div class="info">
+        <ul>
+          <li>
+            <div class="meta-block">
+              <a href="following">
+                <p>1</p>
+                关注 <i class="iconfont ic-arrow"></i>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="meta-block">
+              <a href="followers">
+                <p>0</p>
+                粉丝 <i class="iconfont ic-arrow"></i>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="meta-block">
+              <a href="/u/#">
+                <p>0</p>
+                文章 <i class="iconfont ic-arrow"></i>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="meta-block">
+              <p>0</p>
+              <div>字数</div>
+            </div>
+          </li>
+          <li>
+            <div class="meta-block">
+              <p>0</p>
+              <div>收获喜欢</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 卡片列表 -->
+    <div id="outer-container">
+      <ul class="trigger-menu" data-pjax-container="#list-container">
+        <li class="">
+          <a href="/u?order_by=shared_at"
+            ><i class="iconfont ic-articles"></i> 文章</a
+          >
+        </li>
+        <li class="active">
+          <a href="timeline"><i class="iconfont ic-feed"></i> 动态</a>
+        </li>
+        <li class="">
+          <a href="/u?order_by=commented_at"
+            ><i class="iconfont ic-latestcomments"></i> 最新评论</a
+          >
+        </li>
+        <li class="">
+          <a href="/u?order_by=top"><i class="iconfont ic-hot"></i> 热门</a>
+        </li>
+      </ul>
+
+      <div id="list-container">
+        <!-- 动态列表模块 -->
+        <ul class="note-list" infinite-scroll-url="timeline">
+          <!-- 关注了文集 -->
+          <li id="feed-534235297">
+            <div class="content">
+              <div class="author">
+                <a class="avatar" href="/users/26b6edd6b0da">
+                  <img
+                    src="//upload.jianshu.io/users/upload_avatars/19245301/25d33e39-ff2c-4859-8df9-10059f07bd22?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
+                    alt="180"
+                  />
+                </a>
+                <div class="info">
+                  <a class="nickname" href="/u/#">诺冲</a>
+                  <span
+                    data-type="like_notebook"
+                    data-datetime="2019-09-16T17:13:45+08:00"
+                    >关注了文集 · 09.16 17:13</span
+                  >
+                </div>
+              </div>
+              <div class="follow-detail">
+                <div class="info">
+                  <a class="avatar-collection" href="/nb/39703878">
+                    <img
+                      src="//cdn2.jianshu.io/assets/default_avatar/avatar-notebook-default-640f7dde88592bdf6417d8ce1902636e.png"
+                      alt="Avatar notebook default"
+                    />
+                  </a>
+                  <a class="btn btn-default following"
+                    ><i class="iconfont ic-followed"></i> <span>已关注</span></a
+                  >
+                  <a class="title" href="/nb/39703878">诗</a>
+                  <p>
+                    <a class="creater" href="/u/978261246a7f">一只猫猫兔</a>
+                    编，36 篇文章，94 人关注
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 关注了作者 -->
+          <li id="feed-532568700">
+            <div class="content">
+              <div class="author">
+                <a class="avatar" href="/users/26b6edd6b0da">
+                  <img
+                    src="//upload.jianshu.io/users/upload_avatars/19245301/25d33e39-ff2c-4859-8df9-10059f07bd22?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
+                    alt="180"
+                  />
+                </a>
+                <div class="info">
+                  <a class="nickname" href="/u/#">诺冲</a>
+                  <span
+                    data-type="like_user"
+                    data-datetime="2019-09-09T14:44:28+08:00"
+                    >关注了作者 · 09.9 14:44</span
+                  >
+                </div>
+              </div>
+              <div class="follow-detail">
+                <div class="info">
+                  <a class="avatar" href="/u/521148862721">
+                    <img
+                      src="//upload.jianshu.io/users/upload_avatars/14131750/e1ec1fe3-4aa5-483a-ad7e-3649451a88c2.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
+                      alt="180"
+                    />
+                  </a>
+                  <a class="btn btn-default following"
+                    ><i class="iconfont ic-followed"></i><span>已关注</span></a
+                  >
+                  <a class="title" href="/u/521148862721">吴江月</a>
+                  <p>写了 214770 字，被 13166 人关注，获得了 1514 个喜欢</p>
+                </div>
+                <div class="signature">
+                  喜欢文章的朋友可以关注公众号《江月书房》
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 喜欢了文章 -->
+          <li class="have-img" id="feed-523777356">
+            <a class="wrap-img" href="/p/bfa5aeb3da58">
+              <img
+                src="https://upload-images.jianshu.io/upload_images/4646413-e3ebeb6b86df617a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/150/h/120"
+                alt="120"
+              />
+            </a>
+            <div class="content">
+              <div class="author">
+                <a class="avatar" href="/users/26b6edd6b0da">
+                  <img
+                    src="//upload.jianshu.io/users/upload_avatars/19245301/25d33e39-ff2c-4859-8df9-10059f07bd22?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
+                    alt="180"
+                  />
+                </a>
+                <div class="info">
+                  <a class="nickname" href="/u/#">诺冲</a>
+                  <span
+                    data-type="like_note"
+                    data-datetime="2019-08-16T19:18:14+08:00"
+                  >
+                    喜欢了文章 · 08.16 19:18</span
+                  >
+                </div>
+              </div>
+
+              <a class="title" href="/p/bfa5aeb3da58">No.119 伦勃朗自画像</a>
+
+              <p class="abstract">
+                伦勃朗这张自画像画了好几个月了，一直没有完成，卡住了。。。
+                画成个大花脸，哈哈哈
+              </p>
+
+              <div class="meta">
+                <div class="origin-author">
+                  <a href="/users/079cd14cdae6">琢磨自留地</a>
+                </div>
+                <a href="/p/bfa5aeb3da58">
+                  <i class="iconfont ic-list-read"></i> 132
+                </a>
+                <a href="/p/bfa5aeb3da58">
+                  <i class="iconfont ic-list-comments"></i> 0
+                </a>
+                <span><i class="iconfont ic-list-like"></i> 1</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- 加入了简书 -->
+          <li id="feed-523275782">
+            <div class="content">
+              <div class="author author-restyle">
+                <a class="avatar" href="/u/#">
+                  <img
+                    src="//upload.jianshu.io/users/upload_avatars/19245301/25d33e39-ff2c-4859-8df9-10059f07bd22?imageMogr2/auto-orient/strip|imageView2/1/w/180/h/180"
+                    alt="180"
+                  />
+                </a>
+                <div class="info">
+                  <a class="nickname" href="/u/#">诺冲</a>
+                  <span
+                    data-type="join_jianshu"
+                    data-datetime="2019-08-15T19:15:17+08:00"
+                  >
+                    加入了简书 · 08.15 19:15</span
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="body-right-wrap">
+    <div class="title">个人介绍</div>
+    <a
+      class="function-btn"
+      data-action="start-edit-intro"
+      href="javascript:void(0)"
+      ><i class="iconfont ic-edit-s"></i>编辑</a
+    >
+    <form
+      class="profile-edit js-intro-form"
+      data-type="json"
+      id="edit_user_19245301"
+      action="/users/26b6edd6b0da"
+      accept-charset="UTF-8"
+      data-remote="true"
+      method="post"
+    >
+      <input name="utf8" type="hidden" value="✓" /><input
+        type="hidden"
+        name="_method"
+        value="patch"
+      />
+      <textarea name="user[intro]" id="user_intro"></textarea>
+      <input
+        type="submit"
+        name="commit"
+        value="保存"
+        class="btn btn-hollow"
+        data-action="save-edit-intro"
+        data-disable-with="保存"
+      />
+      <a data-action="cancel-edit-intro" href="javascript:void(null);">取消</a>
+    </form>
+    <div class="description">
+      <div class="js-intro"></div>
+    </div>
+    <div id="user-publications"></div>
+    <div id="user-courses"></div>
+    <ul class="list user-dynamic">
+      <li>
+        <a href="subscriptions">
+          <i class="iconfont ic-collection"></i>
+          <span>我关注的专题/文集/连载</span>
+        </a>
+      </li>
+      <li>
+        <a href="liked_notes">
+          <i class="iconfont ic-like"></i> <span>我喜欢的文章</span>
+        </a>
+      </li>
+    </ul>
+    <!-- 专题和文集 -->
+    <div>
+      <div>
+        <div class="title">我创建的专题</div>
+        <div class="new-collection-block">
+          <a href="/collections/new" class="new-collection-btn"
+            ><i class="iconfont ic-follow"></i><span>创建一个新专题</span></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</app-left-right-layout>
