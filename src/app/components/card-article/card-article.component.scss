@@ -10,15 +10,16 @@
     // min-height: 140px;
     min-height: 105px; //减去父级li的padding
   }
-  .wrap-img {
-    position: absolute;
-    top: 50%;
-    margin-top: -60px;
-    right: 0;
-    width: 125px;
-    height: 100px;
-  }
   a {
+    &.wrap-img {
+      position: absolute;
+      top: 50%;
+      margin-top: -60px;
+      right: 0;
+      // width: 125px;
+      width: 150px; //发现页150px/个人页125px,综合150px
+      height: 100px;
+    }
     cursor: pointer;
     img {
       width: 100%;
@@ -29,7 +30,7 @@
     }
   }
   .content {
-    padding-right: 140px;
+    padding-right: 160px;
     .title {
       margin: -7px 0 4px;
       display: inherit;
