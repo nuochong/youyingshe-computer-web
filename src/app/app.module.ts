@@ -30,6 +30,7 @@ import { ClickOutsideDirective } from './directive/click-outside.directive';
 import { HomeComponent } from './pages/home/home.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { ListMiniAuthorComponent } from './components/list-mini-author/list-mini-author.component';
+import { CardFocusAuthorComponent } from './components/card-focus-author/card-focus-author.component';
 
 registerLocaleData(zh);
 
@@ -57,6 +58,7 @@ registerLocaleData(zh);
     HomeComponent,
     TabsComponent,
     ListMiniAuthorComponent,
+    CardFocusAuthorComponent,
   ],
   imports: [
     BrowserModule,
