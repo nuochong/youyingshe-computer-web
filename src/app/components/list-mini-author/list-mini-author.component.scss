@@ -1,0 +1,45 @@
+.author {
+  margin-bottom: 14px;
+  font-size: 13px;
+  .avatar {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+    color: #333;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    img {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+  }
+  .info {
+    display: inline-block;
+    vertical-align: middle;
+    .nickname {
+      vertical-align: middle;
+      color: #333;
+      cursor: pointer;
+      text-decoration: none;
+      background-color: transparent;
+    }
+    a {
+      color: #333;
+      cursor: pointer;
+      text-decoration: none;
+      background-color: transparent;
+    }
+    span {
+      display: inline-block;
+      padding-left: 3px;
+      color: #969696;
+      vertical-align: middle;
+    }
+  }
+}

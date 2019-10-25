@@ -29,6 +29,7 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { ClickOutsideDirective } from './directive/click-outside.directive';
 import { HomeComponent } from './pages/home/home.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { ListMiniAuthorComponent } from './components/list-mini-author/list-mini-author.component';
 
 registerLocaleData(zh);
 
@@ -55,6 +56,7 @@ registerLocaleData(zh);
     ClickOutsideDirective,
     HomeComponent,
     TabsComponent,
+    ListMiniAuthorComponent,
   ],
   imports: [
     BrowserModule,
