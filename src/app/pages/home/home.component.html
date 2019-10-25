@@ -103,7 +103,7 @@
           </li>
 
           <!-- 关注了作者 -->
-          <li id="feed-532568700">
+          <li>
             <div class="content">
               <app-list-mini-author></app-list-mini-author>
               <app-card-focus-author></app-card-focus-author>
@@ -111,8 +111,10 @@
           </li>
 
           <!-- 喜欢了文章 -->
-          <li class="have-img" id="feed-523777356">
-            <a class="wrap-img" href="/p/#">
+          <li>
+            <app-list-mini-author></app-list-mini-author>
+            <app-card-article [isHaveImg]="true"></app-card-article>
+            <!-- <a class="wrap-img" href="/p/#">
               <img
                 src="https://upload-images.jianshu.io/upload_images/4646413-e3ebeb6b86df617a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/150/h/120"
                 alt="120"
@@ -152,11 +154,11 @@
                 <a href="/p/#"> <i class="iconfont ic-list-comments"></i> 0 </a>
                 <span><i class="iconfont ic-list-like"></i> 1</span>
               </div>
-            </div>
+            </div> -->
           </li>
 
           <!-- 加入了简书 -->
-          <li id="feed-523275782">
+          <li>
             <div class="content">
               <app-list-mini-author></app-list-mini-author>
             </div>
