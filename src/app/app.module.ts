@@ -28,6 +28,7 @@ import { RecommendComponent } from './components/recommend/recommend.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { ClickOutsideDirective } from './directive/click-outside.directive';
 import { HomeComponent } from './pages/home/home.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 registerLocaleData(zh);
 
@@ -53,6 +54,7 @@ registerLocaleData(zh);
     DropdownComponent,
     ClickOutsideDirective,
     HomeComponent,
+    TabsComponent,
   ],
   imports: [
     BrowserModule,
