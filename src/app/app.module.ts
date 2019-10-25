@@ -31,6 +31,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { ListMiniAuthorComponent } from './components/list-mini-author/list-mini-author.component';
 import { CardFocusAuthorComponent } from './components/card-focus-author/card-focus-author.component';
+import { CardArticleComponent } from './components/card-article/card-article.component';
 
 registerLocaleData(zh);
 
@@ -59,6 +60,7 @@ registerLocaleData(zh);
     TabsComponent,
     ListMiniAuthorComponent,
     CardFocusAuthorComponent,
+    CardArticleComponent,
   ],
   imports: [
     BrowserModule,
