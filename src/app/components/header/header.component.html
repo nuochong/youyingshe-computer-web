@@ -28,7 +28,7 @@
       </div>
       <ul
         class="dropdown-menu"
-        (mouseleave)="dropdowns2([$event])"
+        (mouseleave)="dropdownMenuHidden2([$event])"
         #dropdownmenu2
         [hidden]="!expression2"
       >
@@ -92,10 +92,10 @@
     </div>
 
     <div class="style-mode">
-      <a class="style-mode-btn"
+      <a href="javascript:;" class="style-mode-btn" (click)="changeStyleModal()"
         ><i class="iconfont ic-navigation-mode icona"></i
       ></a>
-      <div class="popover-modal">
+      <div class="popover-modal" *ngIf="styleModal">
         <div class="meta">
           <i class="iconfont ic-navigation-night"></i><span>夜间模式</span>
         </div>
