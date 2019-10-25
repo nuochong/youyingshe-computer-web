@@ -18,7 +18,10 @@ export class HeaderComponent implements OnInit {
   styleModal: boolean = false;
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+  close($event) {
+    console.log('传递的数据', $event)
+    this.styleModal = !$event ? true : false;
   }
   changeStyleModal() {
     console.log('激活了')
