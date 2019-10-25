@@ -27,6 +27,7 @@ import { PagingComponent } from './components/paging/paging.component';
 import { RecommendComponent } from './components/recommend/recommend.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { ClickOutsideDirective } from './directive/click-outside.directive';
+import { HomeComponent } from './pages/home/home.component';
 
 registerLocaleData(zh);
 
@@ -50,7 +51,8 @@ registerLocaleData(zh);
     PagingComponent,
     RecommendComponent,
     DropdownComponent,
-    ClickOutsideDirective
+    ClickOutsideDirective,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
