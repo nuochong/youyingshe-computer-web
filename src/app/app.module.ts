@@ -25,6 +25,7 @@ import { MessageComponent } from './components/message/message.component';
 import { SearchComponent } from './components/search/search.component';
 import { PagingComponent } from './components/paging/paging.component';
 import { RecommendComponent } from './components/recommend/recommend.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 registerLocaleData(zh);
 
@@ -46,7 +47,8 @@ registerLocaleData(zh);
     MessageComponent,
     SearchComponent,
     PagingComponent,
-    RecommendComponent
+    RecommendComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,

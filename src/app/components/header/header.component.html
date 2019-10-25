@@ -129,7 +129,9 @@
             </a>
           </li>
           <li class="tab notification">
-            <a
+            <!-- <a
+              nz-dropdown
+              [nzDropdownMenu]="menu"
               data-hover="dropdown"
               href="/notifications"
               class="notification-btn"
@@ -138,40 +140,99 @@
                 class="iconfont ic-navigation-notification menu-icon iconjianxin"
               ></i>
             </a>
-            <ul class="dropdown-menu">
+            <nz-dropdown-menu #menu="nzDropdownMenu">
+              <ul class="dropdown-menu" nz-menu nzSelectable>
+                <li nz-menu-item>
+                  <a class="dropdown-menu-a" href="/notifications#/comments"
+                    ><i class="iconfont ic-comments iconpinglun1"></i>
+                    <span>评论</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a class="dropdown-menu-a" href="/notifications#/chats"
+                    ><i class="iconfont ic-chats iconjianxin"></i>
+                    <span>简信</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a class="dropdown-menu-a" href="/notifications#/requests"
+                    ><i class="iconfont ic-requests icontougaoqingqiu"></i>
+                    <span>投稿请求</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a class="dropdown-menu-a" href="/notifications#/likes"
+                    ><i class="iconfont ic-likes iconxihuan"></i>
+                    <span>喜欢和赞</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a class="dropdown-menu-a" href="/notifications#/follows"
+                    ><i class="iconfont ic-follows iconguanzhu1"></i>
+                    <span>关注</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a class="dropdown-menu-a" href="/notifications#/money"
+                    ><i class="iconfont ic-money iconzanshang"></i>
+                    <span>赞赏和付费</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a class="dropdown-menu-a" href="/notifications#/others"
+                    ><i class="iconfont ic-others iconqita"></i>
+                    <span>其它提醒</span>
+                  </a>
+                </li>
+              </ul>
+            </nz-dropdown-menu> -->
+            <a
+            (click)="dropdownMenu($event)"
+            (mouseover)="dropdownMenuOpen()"
+            (mouseleave)="dropdownMenuHidden([$event])"
+            #dropdown
+              data-hover="dropdown"
+              href="/notifications"
+              class="notification-btn"
+              ><span class="menu-text">消息</span>
+              <i
+                class="iconfont ic-navigation-notification menu-icon iconjianxin"
+              ></i>
+            </a>
+            <ul (mouseleave)="dropdowns([$event])" class="dropdown-menu" [hidden]="!expression" #dropdownmenu>
               <li>
                 <a href="/notifications#/comments"
-                  ><i class="iconfont ic-comments"></i> <span>评论</span>
+                  ><i class="iconfont ic-comments iconpinglun1"></i> <span>评论</span>
                 </a>
               </li>
               <li>
                 <a href="/notifications#/chats"
-                  ><i class="iconfont ic-chats"></i> <span>简信</span>
+                  ><i class="iconfont ic-chats iconjianxin"></i> <span>简信</span>
                 </a>
               </li>
               <li>
                 <a href="/notifications#/requests"
-                  ><i class="iconfont ic-requests"></i> <span>投稿请求</span>
+                  ><i class="iconfont ic-requests icontougaoqingqiu"></i> <span>投稿请求</span>
                 </a>
               </li>
               <li>
                 <a href="/notifications#/likes"
-                  ><i class="iconfont ic-likes"></i> <span>喜欢和赞</span>
+                  ><i class="iconfont ic-likes iconxihuan"></i> <span>喜欢和赞</span>
                 </a>
               </li>
               <li>
                 <a href="/notifications#/follows"
-                  ><i class="iconfont ic-follows"></i> <span>关注</span>
+                  ><i class="iconfont ic-follows iconguanzhu1"></i> <span>关注</span>
                 </a>
               </li>
               <li>
                 <a href="/notifications#/money"
-                  ><i class="iconfont ic-money"></i> <span>赞赏和付费</span>
+                  ><i class="iconfont ic-money iconzanshang"></i> <span>赞赏和付费</span>
                 </a>
               </li>
               <li>
                 <a href="/notifications#/others"
-                  ><i class="iconfont ic-others"></i> <span>其它提醒</span>
+                  ><i class="iconfont ic-others iconqita"></i> <span>其它提醒</span>
                 </a>
               </li>
             </ul>
@@ -219,3 +280,4 @@
     </div>
   </div>
 </nav>
+<div class="header-fill"></div>
