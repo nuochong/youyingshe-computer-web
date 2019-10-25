@@ -58,25 +58,7 @@
 
     <!-- 卡片列表 -->
     <div id="outer-container">
-      <ul class="trigger-menu" data-pjax-container="#list-container">
-        <li class="">
-          <a href="/u?order_by=shared_at"
-            ><i class="iconfont ic-articles"></i> 文章</a
-          >
-        </li>
-        <li class="active">
-          <a href="timeline"><i class="iconfont ic-feed"></i> 动态</a>
-        </li>
-        <li class="">
-          <a href="/u?order_by=commented_at"
-            ><i class="iconfont ic-latestcomments"></i> 最新评论</a
-          >
-        </li>
-        <li class="">
-          <a href="/u?order_by=top"><i class="iconfont ic-hot"></i> 热门</a>
-        </li>
-      </ul>
-
+      <app-tabs></app-tabs>
       <div id="list-container">
         <!-- 动态列表模块 -->
         <ul class="note-list" infinite-scroll-url="timeline">
@@ -198,12 +180,8 @@
                 <div class="origin-author">
                   <a href="/users/079cd14cdae6">琢磨自留地</a>
                 </div>
-                <a href="/p/#">
-                  <i class="iconfont ic-list-read"></i> 132
-                </a>
-                <a href="/p/#">
-                  <i class="iconfont ic-list-comments"></i> 0
-                </a>
+                <a href="/p/#"> <i class="iconfont ic-list-read"></i> 132 </a>
+                <a href="/p/#"> <i class="iconfont ic-list-comments"></i> 0 </a>
                 <span><i class="iconfont ic-list-like"></i> 1</span>
               </div>
             </div>
