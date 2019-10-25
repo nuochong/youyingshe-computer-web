@@ -163,7 +163,7 @@
         color: #969696;
       }
       .popover-modal {
-        left: 0px;
+        left: -210%;
         position: absolute;
         top: 56px;
         z-index: 1;
@@ -186,12 +186,12 @@
         }
         &:after {
           top: -9px;
-          border-bottom: 9px solid #fff;
           position: absolute;
           left: 78%;
           content: '';
           display: inline-block;
           border: 9px solid transparent;
+          border-bottom: 9px solid #fff; //此处要注意上下关系，否则不会显示
           border-top: none;
         }
         .meta {
