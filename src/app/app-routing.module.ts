@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ArticleComponent } from './pages/article/article.component';
 import { InitComponent } from './pages/init/init.component';
-import { ZorroComponent } from './components/zorro/zorro.component';
-import { PersonalDetailsComponent } from './components/personal-details/personal-details.component';
-import { DiscoveryComponent } from './components/discovery/discovery.component';
-import { FollowComponent } from './components/follow/follow.component';
-import { MessageComponent } from './components/message/message.component';
-import { SearchComponent } from './components/search/search.component';
-import { RecommendComponent } from './components/recommend/recommend.component';
+import { ZorroComponent } from './pages/zorro/zorro.component';
+import { PersonalDetailsComponent } from './pages/personal-details/personal-details.component';
+import { DiscoveryComponent } from './pages/discovery/discovery.component';
+import { FollowComponent } from './pages/follow/follow.component';
+import { MessageComponent } from './pages/message/message.component';
+import { SearchComponent } from './pages/search/search.component';
+import { RecommendComponent } from './pages/recommend/recommend.component';
 import { HomeComponent } from './pages/home/home.component';
 
 
