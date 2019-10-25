@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, } from '@angular/core';
 
 @Component({
   selector: 'app-card-article',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-article.component.scss']
 })
 export class CardArticleComponent implements OnInit {
+  @Input() isHaveImg: boolean;
+  // isHaveImg:boolean = false;
 
   constructor() { }
 
   ngOnInit() {
+    this.isHaveImg = this.isHaveImg ? this.isHaveImg : false;
   }
 
 }

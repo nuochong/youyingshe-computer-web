@@ -1,5 +1,10 @@
 <!-- <li id="note-55231333" data-note-id="55231333" class="li have-img"> -->
-<section id="note-55231333" data-note-id="55231333" class="li have-img">
+<section
+  id="note-55231333"
+  data-note-id="55231333"
+  class="li"
+  [ngClass]="{ 'have-img': isHaveImg }"
+>
   <a class="wrap-img" href="/p/#" target="_blank">
     <img
       class="img-blur-done"
