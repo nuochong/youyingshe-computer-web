@@ -19,8 +19,11 @@
       // width: 125px;
       width: 150px; //发现页150px/个人页125px,综合150px
       height: 100px;
+      cursor: pointer;
+      color: #333;
+      background-color: transparent;
+      text-decoration: none;
     }
-    cursor: pointer;
     img {
       width: 100%;
       height: 100%;
@@ -38,6 +41,15 @@
       font-weight: 700;
       line-height: 1.5;
       cursor: pointer;
+      // text-decoration: none;
+      // color: #333;
+      // &:visited {
+      //   color: #969696;
+      //   text-decoration: underline;
+      // }
+      // &:hover {
+      //   text-decoration: underline;
+      // }
     }
     .abstract {
       margin: 0 0 8px;
