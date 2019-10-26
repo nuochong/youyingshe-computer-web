@@ -217,4 +217,32 @@
       vertical-align: middle;
     }
   }
+  .me-create-collection {
+    .title {
+      float: left;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #969696;
+    }
+    .new-collection-block {
+      position: relative;
+      margin-bottom: 16px;
+      padding: 0 0 16px;
+      text-align: left;
+      font-size: 0;
+      border-bottom: 1px solid #f0f0f0;
+      clear: both;
+      word-break: break-word !important;
+      a {
+        margin-right: 5px;
+        &.new-collection-btn {
+          font-size: 13px;
+          color: #42c02e;
+          i {
+            padding-right: 2px;
+          }
+        }
+      }
+    }
+  }
 }

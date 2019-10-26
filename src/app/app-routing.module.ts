@@ -10,6 +10,12 @@ import { MessageComponent } from './pages/message/message.component';
 import { SearchComponent } from './pages/search/search.component';
 import { RecommendComponent } from './pages/recommend/recommend.component';
 import { HomeComponent } from './pages/home/home.component';
+import { BookmarksComponent } from './pages/bookmarks/bookmarks.component';
+import { LikedComponent } from './pages/liked/liked.component';
+import { PaidComponent } from './pages/paid/paid.component';
+import { WalletComponent } from './pages/wallet/wallet.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { FaqsComponent } from './pages/faqs/faqs.component';
 
 
 const routes: Routes = [
@@ -33,6 +39,18 @@ const routes: Routes = [
     path: 'recommend', component: RecommendComponent, data: { title: '推荐' }
   }, {
     path: 'home', component: HomeComponent, data: { title: '我的主页' }
+  }, {
+    path: 'bookmarks', component: BookmarksComponent, data: { title: '收藏的文章' }
+  }, {
+    path: 'liked', component: LikedComponent, data: { title: '喜欢的文章' }
+  }, {
+    path: 'paid', component: PaidComponent, data: { title: '已购内容' }
+  }, {
+    path: 'wallet', component: WalletComponent, data: { title: '我的钱包' }
+  }, {
+    path: 'settings', component: SettingsComponent, data: { title: '设置' }
+  }, {
+    path: 'faqs', component: FaqsComponent, data: { title: '帮助与反馈' }
   }
 ];
 

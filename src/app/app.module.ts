@@ -33,6 +33,12 @@ import { ListMiniAuthorComponent } from './components/list-mini-author/list-mini
 import { CardFocusAuthorComponent } from './components/card-focus-author/card-focus-author.component';
 import { CardArticleComponent } from './components/card-article/card-article.component';
 import { ColumnUserDynamicComponent } from './components/column-user-dynamic/column-user-dynamic.component';
+import { BookmarksComponent } from './pages/bookmarks/bookmarks.component';
+import { LikedComponent } from './pages/liked/liked.component';
+import { PaidComponent } from './pages/paid/paid.component';
+import { WalletComponent } from './pages/wallet/wallet.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { FaqsComponent } from './pages/faqs/faqs.component';
 
 registerLocaleData(zh);
 
@@ -63,6 +69,12 @@ registerLocaleData(zh);
     CardFocusAuthorComponent,
     CardArticleComponent,
     ColumnUserDynamicComponent,
+    BookmarksComponent,
+    LikedComponent,
+    PaidComponent,
+    WalletComponent,
+    SettingsComponent,
+    FaqsComponent,
   ],
   imports: [
     BrowserModule,
