@@ -59,6 +59,10 @@
             &.top-line {
               padding-top: 0;
               .avatar {
+                width: 100px;
+                height: 100px;
+                display: block;
+                cursor: pointer;
               }
               a {
                 &.btn {
@@ -72,13 +76,20 @@
               font-size: 15px;
               color: #969696;
             }
-            .setting .main input[type='email'],
-            .setting .main input[type='text'] {
+            .hide {
+              position: absolute;
+              display: block !important;
+              width: 82px;
+              opacity: 0;
+            }
+            input[type='email'],
+            input[type='text'] {
               padding: 5px 10px;
               font-size: 15px;
               border: 1px solid #c8c8c8;
               border-radius: 4px;
               background-color: hsla(0, 0%, 71%, 0.1);
+              outline: none;
             }
             .setted {
               div {
@@ -145,6 +156,12 @@
   }
 }
 
+.avatar {
+  width: 24px;
+  height: 24px;
+  display: block;
+  cursor: pointer;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
