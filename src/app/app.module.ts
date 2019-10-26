@@ -41,6 +41,7 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { LayoutOneColumnComponent } from './components/layout-one-column/layout-one-column.component';
 import { LayoutAllColumnComponent } from './components/layout-all-column/layout-all-column.component';
+import { HelpComponent } from './pages/help/help.component';
 
 registerLocaleData(zh);
 
@@ -79,6 +80,7 @@ registerLocaleData(zh);
     FaqsComponent,
     LayoutOneColumnComponent,
     LayoutAllColumnComponent,
+    HelpComponent,
   ],
   imports: [
     BrowserModule,

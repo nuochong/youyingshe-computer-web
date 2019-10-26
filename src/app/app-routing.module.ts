@@ -16,6 +16,7 @@ import { PaidComponent } from './pages/paid/paid.component';
 import { WalletComponent } from './pages/wallet/wallet.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
+import { HelpComponent } from './pages/help/help.component';
 
 
 const routes: Routes = [
@@ -51,6 +52,8 @@ const routes: Routes = [
     path: 'settings', component: SettingsComponent, data: { title: '设置' }
   }, {
     path: 'faqs', component: FaqsComponent, data: { title: '帮助与反馈' }
+  }, {
+    path: 'help', component: HelpComponent, data: { title: '帮助与反馈' }
   }
 ];
 
