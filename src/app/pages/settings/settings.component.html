@@ -1,9 +1,158 @@
 <app-header></app-header>
 <app-left-right-layout-follow>
   <div class="body-aside-wrap">
-    111
+    <ul>
+      <li class="router-link-exact-active active">
+        <a href="/settings/basic"
+          ><div class="setting-icon">
+            <i class="iconfont ic-settings-basic"></i>
+          </div>
+          <span>基础设置</span>
+          </a
+        >
+      </li>
+      <li class="">
+        <a href="/settings/profile"
+          ><div class="setting-icon">
+            <i class="iconfont ic-settings-profile"></i>
+          </div>
+          <span>个人资料</span>
+          </a
+        >
+      </li>
+      <li class="">
+        <a href="/settings/blacklist"
+          ><div class="setting-icon">
+            <i class="iconfont ic-settings-block"></i>
+          </div>
+          <span>黑名单</span>
+          </a
+        >
+      </li>
+      <li class="">
+        <a href="/settings/reward-setting"
+          ><div class="setting-icon">
+            <i class="iconfont ic-settings-money"></i>
+          </div>
+          <span>赞赏设置</span>
+          </a
+        >
+      </li>
+      <li class="">
+        <a href="/settings/misc"
+          ><div class="setting-icon">
+            <i class="iconfont ic-settings-account"></i>
+          </div>
+          <span>帐号管理</span>
+          </a
+        >
+      </li>
+    </ul>
   </div>
   <div class="body-main-wrap">
-    222
+    <table>
+      <thead>
+        <tr>
+          <th class="setting-head responsive-head"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="base">
+        <tr>
+          <td class="top-line">
+            <div class="avatar">
+              <img
+                src="//upload.jianshu.io/users/upload_avatars/19245301/25d33e39-ff2c-4859-8df9-10059f07bd22?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/300/format/webp"
+              />
+            </div>
+          </td>
+          <td class="top-line">
+            <a class="btn btn-hollow"
+              ><input unselectable="on" type="file" class="hide" />
+              更改头像
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title">
+            昵称
+          </td>
+          <td><input type="text" placeholder="请输入昵称" /></td>
+        </tr>
+        <tr>
+          <td class="setting-title">电子邮件</td>
+          <td>
+            <button class="btn btn-hollow">点击绑定</button>
+            
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title">手机</td>
+          <td class="setted">
+            <div>178****3440</div>
+            <i class="iconfont ic-collections-followed"></i>
+            <span>已验证</span> <a class="cancel-bind">更换绑定的手机号</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title setting-editor">常用编辑器</td>
+          <td>
+            <div class="col-xs-8">
+              <input type="radio" value="plain" /> <span>富文本</span>
+            </div>
+            <div class="col-xs-16">
+              <input type="radio" value="markdown" />
+              <span
+                >Markdown
+                <a href="/p/q81RER" target="_blank" class="help"
+                  ><i class="iconfont ic-navigation-help"></i></a
+              ></span>
+            </div>
+            <p>切换后对新建文章生效</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title setting-verticle">语言设置</td>
+          <td>
+            <div class="col-xs-8">
+              <input type="radio" value="zh-CN" /> <span>中文简体</span>
+            </div>
+            <div class="col-xs-16">
+              <input type="radio" value="zh-TW" /> <span>中文繁体</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title setting-verticle">接收谁的简信</td>
+          <td>
+            <div class="col-xs-8">
+              <input type="radio" value="true" />
+              <span class="responsive-span">所有人</span>
+            </div>
+            <div class="col-xs-16">
+              <input type="radio" value="false" />
+              <span class="responsive-span">我关注的人、我发过简信的人</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title setting-verticle">提醒邮件通知</td>
+          <td>
+            <div class="col-xs-8">
+              <input type="radio" value="instantly" />
+              <span class="responsive-span">所有动态</span>
+            </div>
+            <div class="col-xs-11">
+              <input type="radio" value="later" />
+              <span class="responsive-span">每天未读汇总</span>
+            </div>
+            <div class="col-xs-5">
+              <input type="radio" value="none" />
+              <span class="responsive-span">不接收</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </app-left-right-layout-follow>
