@@ -1,8 +1,8 @@
 <app-header></app-header>
-<app-layout-one-column>
-  <div class="body-one-wrap">
-    <div class="row top">
-      <div class="col-xs-7 user">
+<app-layout-all-column>
+  <div class="body-all-wrap">
+    <div nz-row class="row top">
+      <div nz-col nzXs="7" class="col-xs-7 user">
         <a href="/u/#" class="avatar"
           ><img
             src="//upload.jianshu.io/users/upload_avatars/19245301/25d33e39-ff2c-4859-8df9-10059f07bd22?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240/format/webp"
@@ -11,15 +11,29 @@
           <a href="/u/#" class="name">
             诺冲
           </a>
-          <div class="mobile-bind has-bind">
+          <!-- <div class="mobile-bind has-bind">
             已绑定手机
           </div>
           <div class="dropdown-menu arrow-top">
             <div>当前绑定手机: 178****3440</div>
+          </div> -->
+          <div
+            class="mobile-bind has-bind"
+            nz-popover
+            [nzPopoverContent]="contentTemplate"
+            nzPopoverPlacement="bottomLeft"
+          >
+            已绑定手机
           </div>
+
+          <ng-template #contentTemplate>
+            <div>
+              当前绑定手机: 178****3440
+            </div>
+          </ng-template>
         </div>
       </div>
-      <div class="col-xs-10 middle">
+      <div nz-col nzXs="10" class="col-xs-10 middle">
         <div class="account-money">账户余额</div>
         <span class="money-main">0</span><span class="money-sub">.00元</span>
         <div class="action">
@@ -29,7 +43,7 @@
           <span class="warn">*当前余额不足</span>
         </div>
       </div>
-      <div class="col-xs-7 meta">
+      <div nz-col nzXs="7" class="col-xs-7 meta">
         <div>每次提现最小额度为￥100.00</div>
         <div>提现会在 3-5 个工作日内到账</div>
         <div>结算后的收益，提现不再收取手续费</div>
@@ -47,4 +61,4 @@
       </li>
     </ul>
   </div>
-</app-layout-one-column>
+</app-layout-all-column>
