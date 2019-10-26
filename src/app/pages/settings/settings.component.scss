@@ -56,26 +56,6 @@
           }
           td {
             padding: 20px 0;
-            &.top-line {
-              padding-top: 0;
-              .avatar {
-                width: 100px;
-                height: 100px;
-                display: block;
-                cursor: pointer;
-              }
-              a {
-                &.btn {
-                }
-                &.btn-hollow {
-                  font-size: 14px;
-                }
-              }
-            }
-            &.setting-title {
-              font-size: 15px;
-              color: #969696;
-            }
             .hide {
               position: absolute;
               display: block !important;
@@ -91,57 +71,87 @@
               background-color: hsla(0, 0%, 71%, 0.1);
               outline: none;
             }
-            .setted {
-              div {
-                font-size: 15px;
-                display: inline-block;
+            p {
+              margin: 0;
+              padding: 8px 0 0;
+              font-size: 12px;
+              color: #969696;
+              clear: both;
+            }
+            input[type='radio'] {
+              box-sizing: border-box;
+              padding: 0;
+              line-height: normal;
+              margin: 4px 0 0;
+            }
+            span {
+              margin: 0 20px 0 6px;
+              font-size: 15px;
+              vertical-align: middle;
+            }
+          }
+          .top-line {
+            padding-top: 0;
+            .avatar {
+              width: 100px;
+              height: 100px;
+              display: block;
+              cursor: pointer;
+            }
+            a {
+              &.btn {
               }
-              i {
-                margin: 0 0 0 10px;
-                font-size: 12px;
-                color: #969696;
-                vertical-align: middle;
-              }
-              span {
-                margin: 0 0 0 3px;
+              &.btn-hollow {
                 font-size: 14px;
-                color: #969696;
-                vertical-align: middle;
               }
-              a {
-                margin-left: 8px;
-                margin: 0 0 0 3px;
-                font-size: 14px;
-                color: #969696;
-                // display: none;
-                display: block;
+            }
+          }
+          .setting-title {
+            font-size: 15px;
+            color: #969696;
+          }
+          .setted {
+            div {
+              font-size: 15px;
+              display: inline-block;
+            }
+            i {
+              margin: 0 0 0 10px;
+              font-size: 12px;
+              color: #969696;
+              vertical-align: middle;
+            }
+            span {
+              margin: 0 0 0 3px;
+              font-size: 14px;
+              color: #969696;
+              vertical-align: middle;
+            }
+            a {
+              margin-left: 8px;
+              margin: 0 0 0 3px;
+              font-size: 14px;
+              color: #969696;
+              display: inline;
+              visibility: hidden;
+            }
+            &:hover {
+              .cancel-bind {
+                color: #2f2f2f;
+                text-decoration: none;
+                outline: 0;
+                cursor: pointer;
+                background-color: transparent;
+                visibility: visible;
               }
-              .setting-editor {
-                line-height: 26px;
-              }
-              input[type='radio'] {
-                box-sizing: border-box;
-                padding: 0;
-                line-height: normal;
-                margin: 4px 0 0;
-              }
-              span {
-                margin: 0 20px 0 6px;
-                font-size: 15px;
-                vertical-align: middle;
-              }
-              p {
-                margin: 0;
-                padding: 8px 0 0;
-                font-size: 12px;
-                color: #969696;
-                clear: both;
-              }
-              .setting-verticle {
-                vertical-align: bottom;
-              }
-              .responsive-span {
-              }
+            }
+            .setting-editor {
+              line-height: 26px;
+            }
+            .setting-verticle {
+              vertical-align: bottom;
+            }
+            .responsive-span {
             }
           }
         }
@@ -191,5 +201,11 @@
     line-height: normal;
     border-radius: 40px;
     background: none;
+  }
+  &.btn-success {
+    border-radius: 40px;
+    color: #fff;
+    background-color: #42c02e;
+    border-color: #42c02e;
   }
 }
