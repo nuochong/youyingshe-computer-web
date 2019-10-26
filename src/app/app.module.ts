@@ -39,6 +39,7 @@ import { PaidComponent } from './pages/paid/paid.component';
 import { WalletComponent } from './pages/wallet/wallet.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
+import { LayoutOneColumnComponent } from './components/layout-one-column/layout-one-column.component';
 
 registerLocaleData(zh);
 
@@ -75,6 +76,7 @@ registerLocaleData(zh);
     WalletComponent,
     SettingsComponent,
     FaqsComponent,
+    LayoutOneColumnComponent,
   ],
   imports: [
     BrowserModule,

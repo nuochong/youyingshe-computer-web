@@ -1,0 +1,24 @@
+.body-one-wrap {
+  .recommend-banner {
+    width: 100%;
+    min-height: 100px;
+    background-color: hsla(0, 0%, 71%, 0.2);
+    border-radius: 6px;
+    vertical-align: middle;
+    border: 0;
+    margin-bottom:30px;
+  }
+  #list-container {
+    .note-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+}
+@media (max-width: 1080px) {
+  .recommend-banner {
+    min-height: 78px;
+    border-radius: 4px;
+  }
+}
