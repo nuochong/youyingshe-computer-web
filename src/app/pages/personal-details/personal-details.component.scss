@@ -241,40 +241,9 @@
     clear: both;
     word-break: break-word !important;
     .js-intro {
-      argin-bottom: 10px;
-      line-height: 20px;
-      font-size: 14px;
-    }
-  }
-  .user-focus {
-    padding-bottom: 6px;
-    margin-bottom: 16px;
-    list-style: none;
-    border-bottom: 1px solid #f0f0f0;
-    clear: both;
-    padding-left: 0;
-    margin-top: 0;
-    li {
       margin-bottom: 10px;
       line-height: 20px;
-      list-style: none;
-      a {
-        display: inline-block;
-        font-size: 14px;
-        color: #333;
-        line-height: 30px;
-        cursor: pointer;
-        text-decoration: none;
-        background-color: transparent;
-        i {
-          margin-right: 10px;
-          font-size: 20px;
-          vertical-align: middle;
-        }
-        span {
-          vertical-align: middle;
-        }
-      }
+      font-size: 14px;
     }
   }
   .user-project {

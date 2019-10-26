@@ -32,6 +32,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { ListMiniAuthorComponent } from './components/list-mini-author/list-mini-author.component';
 import { CardFocusAuthorComponent } from './components/card-focus-author/card-focus-author.component';
 import { CardArticleComponent } from './components/card-article/card-article.component';
+import { ColumnUserDynamicComponent } from './components/column-user-dynamic/column-user-dynamic.component';
 
 registerLocaleData(zh);
 
@@ -61,6 +62,7 @@ registerLocaleData(zh);
     ListMiniAuthorComponent,
     CardFocusAuthorComponent,
     CardArticleComponent,
+    ColumnUserDynamicComponent,
   ],
   imports: [
     BrowserModule,
