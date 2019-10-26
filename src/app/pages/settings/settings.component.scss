@@ -1,6 +1,43 @@
-.body-aside-wrap{
-
+.body-aside-wrap {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    li {
+      line-height: 20px;
+      &.active, &:hover {
+        a {
+          background-color: #f0f0f0;
+          border-radius: 4px;
+        }
+      }
+      a {
+        padding: 10px 15px;
+        font-size: 15px;
+        display: block;
+        .setting-icon {
+          margin-right: 15px;
+          width: 32px;
+          height: 32px;
+          text-align: center;
+          color: #fff;
+          background-color: #a0a0a0;
+          border-radius: 4px;
+          display: inline-block;
+          vertical-align: middle;
+          i {
+            margin: 6px 0 0 1px;
+            font-size: 18px;
+            display: block;
+          }
+        }
+        span {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
 }
-.body-main-wrap{
-  
+.body-main-wrap {
 }
