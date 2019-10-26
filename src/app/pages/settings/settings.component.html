@@ -149,5 +149,187 @@
       </tbody>
     </table>
     <input type="submit" class="btn btn-success setting-save" value="保存" />
+
+    <table class="personal">
+      <thead>
+        <tr>
+          <th class="setting-head"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="information">
+        <tr>
+          <td class="top-line setting-title setting-verticle">
+            性别
+          </td>
+          <td class="top-line">
+            <input type="radio" value="1" /> <span>男</span>
+            <input type="radio" value="2" /> <span>女</span>
+            <input type="radio" value="3" /> <span>保密</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title pull-left">个人简介</td>
+          <td>
+            <form><textarea placeholder="填写你的个人简介"></textarea></form>
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title pull-left setting-input">个人网站</td>
+          <td>
+            <form>
+              <input type="text" name="website" placeholder="http://你的网址" />
+              <p class="pull-right">填写后会在个人主页显示图标</p>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title">微信二维码</td>
+          <td class="weixin-qrcode">
+            <input type="file" class="hide" />
+            <a class="btn btn-hollow"
+              ><input type="file" class="hide" />
+              更换图片
+            </a>
+            <p class="pull-right">上传后会在个人主页显示图标</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title setting-input pull-left">社交帐号</td>
+          <td class="social-bind">
+            <p>
+              你可以通过绑定的社交帐号登录简书。出于安全因素,
+              你最初用来创建账户的社交帐号不能移除。
+            </p>
+            <p>
+              如果帐号被占用，你可以在<a href="/p/eea64a29cf9d"
+                >简书帐号绑定解绑相关问题汇总</a
+              >中获得相关帮助。
+            </p>
+            <ul class="social-bind-list">
+              <li>
+                <div class="bind-name">
+                  <i class="iconfont ic-weibo iconsina"></i>
+                  <a href="/users/auth/weibo?can_transfer=true"
+                    >绑定微博<i class="iconfont ic-arrow iconleft"></i
+                  ></a>
+                </div>
+              </li>
+              <li>
+                <div class="bind-name">
+                  <i class="iconfont ic-wechat iconweixin"></i>
+                  <a href="/users/auth/wechat?can_transfer=true"
+                    >绑定微信<i class="iconfont ic-arrow iconleft"></i
+                  ></a>
+                </div>
+              </li>
+              <li class="has-bind">
+                <div class="bind-name">
+                  <i class="iconfont ic-qq_connect iconqq"></i>
+                  <i
+                    class="iconfont ic-collections-followed icongezicomfollowd"
+                  ></i>
+                  <span>已绑定</span> <a class="cancel-bind">解除绑定</a>
+                </div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <input type="submit" class="btn btn-success setting-save" value="保存" />
+
+    <div class="blacklist">
+      <div class="title">
+        你可以在用户主页将用户加入你的黑名单。在你黑名单中的用户无法在你文章下评论，无法在其它评论中提到你，无法给你发送简信，自动从你的粉丝列表移除且无法再关注你。
+      </div>
+      <ul>
+        <li><a href="/u/2f30fc28df95">路上阳光</a> <a>从黑名单中移除</a></li>
+      </ul>
+    </div>
+
+    <input type="submit" class="btn btn-success setting-save" value="保存" />
+
+    <table class="pay-money">
+      <thead>
+        <tr>
+          <th class="setting-head"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="setting-pay">
+        <tr>
+          <td class="setting-title pull-left setting-editor top-line">
+            赞赏功能
+          </td>
+          <td class="top-line">
+            <div nz-col nzXs="6" class="col-xs-6">
+              <input type="radio" value="true" /> <span>开启</span>
+            </div>
+            <div nz-col nzXs="18" class="col-xs-18">
+              <input type="radio" value="false" /> <span>关闭</span>
+            </div>
+            <p>开启后赞赏按钮将出现在你的文章底部</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="setting-title pull-left setting-input">赞赏描述</td>
+          <td><textarea row="3"></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <input type="submit" class="btn btn-success setting-save" value="保存" />
+
+    <table class="download-article">
+      <thead>
+        <tr>
+          <th class="setting-head"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="account">
+        <tr>
+          <td class="setting-title top-line">打包下载文章</td>
+          <td class="top-line">
+            <a href="/backup/download" class="btn btn-hollow">下载所有文章</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="delete-account-content">
+      <a
+        class="show-button"
+        (click)="changeShowDeleteBtn()"
+        [hidden]="showDeleteBtn"
+      >
+        删除帐号 <i class="iconfont ic-show iconbottom"></i
+      ></a>
+      <div class="content" [hidden]="!showDeleteBtn">
+        <h4>永久删除帐号</h4>
+        <ul>
+          <li>
+            如果你不小心创建出了多余的帐号，或在绑定帐号的时候提示帐号被占用，你可以在<a
+              href="/p/eea64a29cf9d"
+              >简书帐号绑定解绑相关问题汇总</a
+            >中获得相关帮助。
+          </li>
+          <li>
+            如果你对简书上的某些内容、功能或社区规则不满意，你可以在<a
+              href="/help"
+              >帮助与反馈页</a
+            >向我们提出。
+          </li>
+          <li>
+            删除帐号前，请确保已经没有任何公开或私密文章，且钱包中全部余额已清零。
+          </li>
+          <li>删除帐号是不可逆的操作，删除后将无法恢复。</li>
+        </ul>
+        <a class="btn btn-hollow">保留我的帐号</a>
+        <a class="btn btn-delete">删除帐号</a>
+      </div>
+    </div>
   </div>
 </app-left-right-layout-follow>

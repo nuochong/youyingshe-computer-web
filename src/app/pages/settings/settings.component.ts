@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./settings.component.scss']
 })
 export class SettingsComponent implements OnInit {
-
+  showDeleteBtn: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
-
+  changeShowDeleteBtn() {
+    this.showDeleteBtn = true;
+  }
 }
