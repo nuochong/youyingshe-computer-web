@@ -51,6 +51,8 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { ResetMobileComponent } from './pages/reset-mobile/reset-mobile.component';
 import { ResetEmailComponent } from './pages/reset-email/reset-email.component';
 import { WriteComponent } from './pages/write/write.component';
+import { LoginWrapComponent } from './components/login-wrap/login-wrap.component';
+import { LoginSocialComponent } from './components/login-social/login-social.component';
 
 registerLocaleData(zh);
 
@@ -99,6 +101,8 @@ registerLocaleData(zh);
     ResetMobileComponent,
     ResetEmailComponent,
     WriteComponent,
+    LoginWrapComponent,
+    LoginSocialComponent,
   ],
   imports: [
     BrowserModule,
