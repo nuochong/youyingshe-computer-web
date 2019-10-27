@@ -24,6 +24,7 @@ import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { ResetMobileComponent } from './pages/reset-mobile/reset-mobile.component';
 import { ResetEmailComponent } from './pages/reset-email/reset-email.component';
+import { WriteComponent } from './pages/write/write.component';
 
 
 const routes: Routes = [
@@ -75,6 +76,8 @@ const routes: Routes = [
     path: 'reset-mobile', component: ResetMobileComponent, data: { title: '用手机重置密码' }
   }, {
     path: 'reset-email', component: ResetEmailComponent, data: { title: '用邮箱重置密码' }
+  }, {
+    path: 'write', component: WriteComponent, data: { title: '写文章' }
   }
 ];
 
