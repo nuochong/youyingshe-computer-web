@@ -1,0 +1,128 @@
+.login-main-wrap {
+  h4 {
+    font-size: 18px;
+    font-family: inherit;
+    line-height: 1.1;
+  }
+  .reset-title {
+    color: #333;
+    font-weight: 700;
+    margin: 0 auto 50px;
+    padding: 10px;
+  }
+  form {
+    margin: 0 0 20px;
+    margin-bottom: 30px;
+
+    .input-prepend {
+      position: relative;
+      width: 100%;
+      .overseas {
+        input {
+          padding-left: 110px !important;
+        }
+        .overseas-number {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100px;
+          height: 50px;
+          font-size: 18px;
+          color: #969696;
+          border-right: 1px solid #c8c8c8;
+          span {
+            margin-top: 17px;
+            padding-left: 35px;
+            text-align: left;
+            font-size: 14px;
+            display: block;
+          }
+        }
+        .dropdown-menu {
+          //some styles
+        }
+      }
+      .btn-in-resend {
+        background-color: #3194d0;
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        width: 100px;
+        height: 36px;
+        font-size: 13px;
+        color: #fff;
+        border-radius: 20px;
+        line-height: 36px;
+      }
+      .disable {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+      i {
+        position: absolute;
+        top: 14px;
+        left: 10px;
+        font-size: 18px;
+        color: #969696;
+      }
+      .ic-show {
+        top: 18px;
+        left: auto;
+        right: 8px;
+        font-size: 12px;
+      }
+      span {
+        color: #333;
+      }
+      input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 0;
+        padding: 4px 12px 4px 35px;
+        border: 1px solid #c8c8c8;
+        border-radius: 0 0 4px 4px;
+        background-color: hsla(0, 0%, 71%, 0.1);
+        vertical-align: middle;
+        outline: none;
+      }
+    }
+    .restyle {
+      margin-bottom: 0;
+      input {
+        border-bottom: none !important;
+        border-radius: 4px 4px 0 0;
+      }
+    }
+    .no-radius {
+      input {
+        border-radius: 0;
+      }
+    }
+    .sign-in-button {
+      background: #3194d0;
+      margin-top: 20px;
+      width: 100%;
+      padding: 9px 18px;
+      font-size: 18px;
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      cursor: pointer;
+      outline: none;
+      display: block;
+      clear: both;
+      line-height: inherit;
+      font: inherit;
+      &:hover {
+        background: #187cb7;
+      }
+    }
+  }
+  .return {
+    margin-left: -8px;
+    color: #969696;
+    i {
+      margin-right: 5px;
+    }
+  }
+}
