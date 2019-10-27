@@ -20,13 +20,13 @@
             id="mobile_number"
             placeholder="手机号"
           />
-          <a class="overseas-number js-overseas-number" href="javascript:void(null);" data-toggle="dropdown" data-action="choose-country" aria-expanded="false">
-              <i class="iconfont ic-phonenumber iconshoujihao"></i> <span>+86<i class="iconfont ic-show iconbottom"></i></span>
-            </a>
-          <!-- <a class="overseas-number js-overseas-number" href="javascript:void(null);" data-toggle="dropdown" data-action="choose-country" aria-expanded="false">
-                  <i class="iconfont ic-phonenumber"></i> <span>+86<i class="iconfont ic-show"></i></span>
+              <div class="drop-down-wrap" (clickOutside)="close($event)">
+          <a (click)="changeStyleModal()"
+          class="overseas-number js-overseas-number" href="javascript:void(null);" data-toggle="dropdown" data-action="choose-country" aria-expanded="false">
+                  <i class="iconfont ic-phonenumber iconbottom"></i> <span>+86<i class="iconfont ic-show"></i></span>
                 </a>
-                <ul class="dropdown-menu">
+                <ul  *ngIf="styleModal"       
+                class="dropdown-menu">
                     <li data-calling-code="61" data-country-code="AU">
                       <a><span class="nation-code">+61</span><span>澳大利亚</span></a>
                     </li>
@@ -694,7 +694,8 @@
                     <li data-calling-code="886" data-country-code="TW">
                       <a><span class="nation-code">+886</span><span>中国台湾</span></a>
                     </li>
-                </ul> -->
+                </ul>
+              </div>
         </div>
       </div>
       <input type="hidden" name="country_code" id="country_code" value="CN" />
