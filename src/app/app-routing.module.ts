@@ -19,6 +19,7 @@ import { FaqsComponent } from './pages/faqs/faqs.component';
 import { HelpComponent } from './pages/help/help.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { AppsComponent } from './pages/apps/apps.component';
 
 
 const routes: Routes = [
@@ -60,6 +61,8 @@ const routes: Routes = [
     path: 'contact', component: ContactComponent, data: { title: '联系我们' }
   }, {
     path: 'error', component: ErrorComponent, data: { title: '错误' }
+  }, {
+    path: 'apps', component: AppsComponent, data: { title: '下载应用' }
   }
 ];
 

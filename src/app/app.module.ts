@@ -45,6 +45,7 @@ import { HelpComponent } from './pages/help/help.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HeaderSimpleComponent } from './components/header-simple/header-simple.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { AppsComponent } from './pages/apps/apps.component';
 
 registerLocaleData(zh);
 
@@ -87,6 +88,7 @@ registerLocaleData(zh);
     ContactComponent,
     HeaderSimpleComponent,
     ErrorComponent,
+    AppsComponent,
   ],
   imports: [
     BrowserModule,
