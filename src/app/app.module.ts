@@ -54,6 +54,7 @@ import { WriteComponent } from './pages/write/write.component';
 import { LoginWrapComponent } from './components/login-wrap/login-wrap.component';
 import { LoginSocialComponent } from './components/login-social/login-social.component';
 import { LoginTitleComponent } from './components/login-title/login-title.component';
+import { ResetFooterComponent } from './components/reset-footer/reset-footer.component';
 
 registerLocaleData(zh);
 
@@ -105,6 +106,7 @@ registerLocaleData(zh);
     LoginWrapComponent,
     LoginSocialComponent,
     LoginTitleComponent,
+    ResetFooterComponent,
   ],
   imports: [
     BrowserModule,
