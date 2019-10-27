@@ -1,0 +1,88 @@
+.login-main-wrap {
+  .js-sign-up-container {
+    form {
+      margin-bottom: 30px;
+      margin: 0 0 20px;
+      input {
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+        font: inherit;
+        margin: 0;
+      }
+      .restyle {
+        margin-bottom: 0;
+        input {
+          border-bottom: none !important;
+          border-radius: 4px 4px 0 0;
+        }
+      }
+      .input-prepend {
+        position: relative;
+        width: 100%;
+        input {
+          width: 100%;
+          height: 50px;
+          margin-bottom: 0;
+          padding: 4px 12px 4px 35px;
+          border: 1px solid #c8c8c8;
+          background-color: hsla(0, 0%, 71%, 0.1);
+          vertical-align: middle;
+          outline: none;
+        }
+        i {
+          position: absolute;
+          top: 14px;
+          left: 10px;
+          font-size: 18px;
+          color: #969696;
+        }
+        .btn-up-resend {
+          position: absolute;
+          top: 7px;
+          right: 7px;
+          width: 100px;
+          height: 36px;
+          font-size: 13px;
+          color: #fff;
+          background-color: #42c02e;
+          border-radius: 20px;
+          line-height: 36px;
+        }
+      }
+      .no-radius {
+        input {
+          border-radius: 0;
+        }
+      }
+      .sign-up-button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 9px 18px;
+        font-size: 18px;
+        border: none;
+        border-radius: 25px;
+        color: #fff;
+        background: #42c02e;
+        cursor: pointer;
+        outline: none;
+        display: block;
+        clear: both;
+        &:hover {
+          background: #3db922;
+        }
+      }
+      .sign-up-msg {
+        margin: 10px 0;
+        padding: 0;
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        color: #969696;
+        a {
+          color: #3194d0;
+        }
+      }
+    }
+  }
+}

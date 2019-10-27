@@ -1,7 +1,134 @@
 <app-login-wrap>
   <div class="login-main-wrap">
     <app-login-title></app-login-title>
-    <!-- 更多登录方式 -->
-    <app-login-social></app-login-social>
+    <div class="js-sign-up-container">
+      <form
+        class="new_user"
+        id="new_user"
+        action="/users/register"
+        accept-charset="UTF-8"
+        method="post"
+      >
+        <input name="utf8" type="hidden" value="✓" /><input
+          type="hidden"
+          name="authenticity_token"
+          value="RzloFkGG8iegr1GlURvbqV+TJm2ix7ubN2LyM9cj0LycOyUA84BpH8wqXgah8OH5h5wZPeiXb54tLvDkYONQqA=="
+        />
+        <div class="input-prepend restyle">
+          <input
+            placeholder="你的昵称"
+            type="text"
+            value=""
+            name="user[nickname]"
+            id="user_nickname"
+          />
+          <i class="iconfont ic-user iconicon"></i>
+        </div>
+        <div class="input-prepend restyle no-radius js-normal">
+          <input
+            type="hidden"
+            value="CN"
+            name="user[mobile_number_country_code]"
+            id="user_mobile_number_country_code"
+          />
+          <input
+            placeholder="手机号"
+            type="tel"
+            name="user[mobile_number]"
+            id="user_mobile_number"
+          />
+          <i class="iconfont ic-phonenumber iconshoujihao"></i>
+        </div>
+        <input type="hidden" name="oversea" id="oversea" value="false" />
+        <input
+          type="hidden"
+          name="force_user_nonexist"
+          id="force_user_nonexist"
+          value="true"
+        />
+        <div
+          class="input-prepend restyle no-radius security-up-code js-security-number hide"
+        >
+          <input
+            type="text"
+            name="sms_code"
+            id="sms_code"
+            placeholder="手机验证码"
+          />
+          <i class="iconfont ic-verify iconyanzhengma"></i>
+          <a
+            tabindex="-1"
+            class="btn-up-resend js-send-code-button disable"
+            href="javascript:void(0);"
+            id="send_code"
+            >发送验证码</a
+          >
+          <div>
+            <div class="captcha">
+              <input
+                name="captcha[validation][challenge]"
+                autocomplete="off"
+                type="hidden"
+                value="45c75b31f99b849fa672bc1b5191fe90"
+              />
+              <input
+                name="captcha[validation][gt]"
+                autocomplete="off"
+                type="hidden"
+                value="ec47641997d5292180681a247db3c92e"
+              />
+              <input
+                name="captcha[validation][validate]"
+                autocomplete="off"
+                type="hidden"
+                value=""
+              />
+              <input
+                name="captcha[validation][seccode]"
+                autocomplete="off"
+                type="hidden"
+                value=""
+              />
+              <input
+                name="captcha[id]"
+                autocomplete="off"
+                type="hidden"
+                value=""
+              />
+              <div id="geetest-area" class="geetest"></div>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" name="security_number" id="security_number" />
+        <div class="input-prepend">
+          <input
+            placeholder="设置密码"
+            type="password"
+            name="user[password]"
+            id="user_password"
+          />
+          <i class="iconfont ic-password iconmima1"></i>
+        </div>
+        <input
+          type="submit"
+          name="commit"
+          value="注册"
+          class="sign-up-button"
+          id="sign_up_btn"
+          data-disable-with="注册"
+        />
+        <p class="sign-up-msg">
+          点击 “注册” 即表示您同意并愿意遵守简书<br />
+          <a target="_blank" href="http://www.jianshu.com/p/c44d171298ce"
+            >用户协议</a
+          >
+          和
+          <a target="_blank" href="http://www.jianshu.com/p/2ov8x3">隐私政策</a>
+          。
+        </p>
+      </form>
+      <!-- 更多登录方式 -->
+      <app-login-social></app-login-social>
+    </div>
   </div>
 </app-login-wrap>
