@@ -46,6 +46,10 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HeaderSimpleComponent } from './components/header-simple/header-simple.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { AppsComponent } from './pages/apps/apps.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { ResetMobileComponent } from './pages/reset-mobile/reset-mobile.component';
+import { ResetEmailComponent } from './pages/reset-email/reset-email.component';
 
 registerLocaleData(zh);
 
@@ -89,6 +93,10 @@ registerLocaleData(zh);
     HeaderSimpleComponent,
     ErrorComponent,
     AppsComponent,
+    SignInComponent,
+    SignUpComponent,
+    ResetMobileComponent,
+    ResetEmailComponent,
   ],
   imports: [
     BrowserModule,

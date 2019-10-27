@@ -20,6 +20,10 @@ import { HelpComponent } from './pages/help/help.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { AppsComponent } from './pages/apps/apps.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { ResetMobileComponent } from './pages/reset-mobile/reset-mobile.component';
+import { ResetEmailComponent } from './pages/reset-email/reset-email.component';
 
 
 const routes: Routes = [
@@ -63,6 +67,14 @@ const routes: Routes = [
     path: 'error', component: ErrorComponent, data: { title: '错误' }
   }, {
     path: 'apps', component: AppsComponent, data: { title: '下载应用' }
+  }, {
+    path: 'sign-in', component: SignInComponent, data: { title: '登录' }
+  }, {
+    path: 'sign-up', component: SignUpComponent, data: { title: '注册' }
+  }, {
+    path: 'reset-mobile', component: ResetMobileComponent, data: { title: '用手机重置密码' }
+  }, {
+    path: 'reset-email', component: ResetEmailComponent, data: { title: '用邮箱重置密码' }
   }
 ];
 
