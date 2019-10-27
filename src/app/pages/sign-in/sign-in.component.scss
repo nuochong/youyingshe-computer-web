@@ -62,7 +62,7 @@
         .restyle {
           margin-bottom: 0;
           input {
-            border-bottom: none!important;
+            border-bottom: none !important;
           }
         }
         .input-prepend {
@@ -76,7 +76,7 @@
             border: 1px solid #c8c8c8;
             vertical-align: middle;
             border-radius: 4px 4px 0 0;
-            background-color: rgb(232, 240, 254)
+            background-color: rgb(232, 240, 254);
           }
           i {
             position: absolute;
@@ -201,12 +201,12 @@
               .ic-more {
                 color: #999;
               }
-            }
-            .hide {
-              display: none !important;
               .ic-douban {
                 color: #00820f;
               }
+            }
+            .hide {
+              display: none !important;
             }
           }
         }
