@@ -53,6 +53,7 @@ import { ResetEmailComponent } from './pages/reset-email/reset-email.component';
 import { WriteComponent } from './pages/write/write.component';
 import { LoginWrapComponent } from './components/login-wrap/login-wrap.component';
 import { LoginSocialComponent } from './components/login-social/login-social.component';
+import { LoginTitleComponent } from './components/login-title/login-title.component';
 
 registerLocaleData(zh);
 
@@ -103,6 +104,7 @@ registerLocaleData(zh);
     WriteComponent,
     LoginWrapComponent,
     LoginSocialComponent,
+    LoginTitleComponent,
   ],
   imports: [
     BrowserModule,

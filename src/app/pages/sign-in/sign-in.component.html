@@ -1,19 +1,6 @@
-<div class="sign">
-  <div class="logo">
-    <a href="/"
-      ><img
-        src="//cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png"
-        alt="Logo"
-    /></a>
-  </div>
-  <div class="main">
-    <h4 class="title">
-      <div class="normal-title">
-        <a class="active" href="/sign_in">登录</a>
-        <b>·</b>
-        <a id="js-sign-up-btn" class="" href="/sign_up">注册</a>
-      </div>
-    </h4>
+<app-login-wrap>
+  <div class="login-main-wrap">
+    <app-login-title></app-login-title>
     <div class="js-sign-in-container">
       <form
         id="new_session"
@@ -92,18 +79,18 @@
         </div>
         <div class="forget-btn">
           <!-- <a class="" data-toggle="dropdown" href="">登录遇到问题?</a>
-          <ul class="dropdown-menu">
-            <li><a href="/users/password/mobile_reset">用手机号重置密码</a></li>
-            <li><a href="/users/password/email_reset">用邮箱重置密码</a></li>
-            <li>
-              <a target="_blank" href="/p/9058d0b8711d">无法用海外手机号登录</a>
-            </li>
-            <li>
-              <a target="_blank" href="/p/498a9fa7da08"
-                >无法用 Google 帐号登录</a
-              >
-            </li>
-          </ul> -->
+                  <ul class="dropdown-menu">
+                    <li><a href="/users/password/mobile_reset">用手机号重置密码</a></li>
+                    <li><a href="/users/password/email_reset">用邮箱重置密码</a></li>
+                    <li>
+                      <a target="_blank" href="/p/9058d0b8711d">无法用海外手机号登录</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="/p/498a9fa7da08"
+                        >无法用 Google 帐号登录</a
+                      >
+                    </li>
+                  </ul> -->
           <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu" class=""
             >登录遇到问题?</a
           >
@@ -139,42 +126,7 @@
         </button>
       </form>
       <!-- 更多登录方式 -->
-      <div class="more-sign">
-        <h6>社交帐号登录</h6>
-        <ul>
-          <li id="weibo-link-wrap" class="">
-            <a class="weibo" id="weibo-link">
-              <i class="iconfont ic-weibo iconsina"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              id="weixin"
-              class="weixin"
-              target="_blank"
-              href="/users/auth/wechat"
-              ><i class="iconfont ic-wechat iconweixin"></i
-            ></a>
-          </li>
-          <li>
-            <a id="qq" class="qq" target="_blank" href="/users/auth/qq_connect"
-              ><i class="iconfont ic-qq_connect iconqq"></i
-            ></a>
-          </li>
-          <li class="js-more-method" id="more">
-            <a href="javascript:void(0);"
-              ><i class="iconfont ic-more iconmoreread"></i
-            ></a>
-          </li>
-          <li class="js-hide-method hide">
-            <a class="douban" target="_blank" href="/users/auth/douban"
-              ><i class="iconfont ic-douban icondouban"></i
-            ></a>
-          </li>
-        </ul>
-
-        <div class="weibo-geetest-captcha"></div>
-      </div>
+      <app-login-social></app-login-social>
     </div>
   </div>
-</div>
+</app-login-wrap>
