@@ -42,6 +42,8 @@ import { FaqsComponent } from './pages/faqs/faqs.component';
 import { LayoutOneColumnComponent } from './components/layout-one-column/layout-one-column.component';
 import { LayoutAllColumnComponent } from './components/layout-all-column/layout-all-column.component';
 import { HelpComponent } from './pages/help/help.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { HeaderSimpleComponent } from './components/header-simple/header-simple.component';
 
 registerLocaleData(zh);
 
@@ -81,6 +83,8 @@ registerLocaleData(zh);
     LayoutOneColumnComponent,
     LayoutAllColumnComponent,
     HelpComponent,
+    ContactComponent,
+    HeaderSimpleComponent,
   ],
   imports: [
     BrowserModule,
