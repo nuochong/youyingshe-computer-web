@@ -1,9 +1,35 @@
 .container-fluid {
+  color: #333;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  &.misc {
+    position: relative;
+  }
   .row {
     position: relative;
     margin-left: -15px;
     margin-right: -15px;
+    &:first-child:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      background-image: linear-gradient(
+        0deg,
+        hsla(0, 0%, 59%, 0.15),
+        hsla(0, 0%, 59%, 0)
+      );
+    }
     .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding: 30px 0;
+      &:after {
+        clear: both;
+      }
     }
     .top-part {
       position: relative;
@@ -11,42 +37,59 @@
       text-align: center;
       .top-logo {
         margin-bottom: 40px;
+        .logo {
+          width: 100px;
+          height: 100px;
+        }
         img {
           vertical-align: middle;
           border: 0;
         }
-        .background-img {
-          margin-top: -100px;
-          width: 765px;
-          height: 172px;
-          position: absolute;
-          left: 50%;
-          margin-left: -380px;
-          z-index: -1;
-        }
-        .phone-img {
-          width: 410px;
-          height: 314px;
-        }
-        .top-qrcode {
+        .info {
           display: inline-block;
-          margin: 0 0 40px 40px;
-          vertical-align: bottom;
+          margin-left: 20px;
           text-align: left;
-          img {
-            margin-left: -2px;
-            width: 140px;
-            height: 140px;
-          }
+          vertical-align: middle;
           .title {
-            margin-top: 4px;
-            font-size: 24px;
+            font-size: 30px;
           }
-          .description {
-            margin-top: 4px;
-            font-size: 16px;
+          .slogan {
+            font-size: 24px;
             font-weight: 300;
           }
+        }
+      }
+      .background-img {
+        margin-top: -100px;
+        width: 765px;
+        height: 172px;
+        position: absolute;
+        left: 50%;
+        margin-left: -380px;
+        z-index: -1;
+      }
+      .phone-img {
+        width: 410px;
+        height: 314px;
+      }
+      .top-qrcode {
+        display: inline-block;
+        margin: 0 0 40px 40px;
+        vertical-align: bottom;
+        text-align: left;
+        img {
+          margin-left: -2px;
+          width: 140px;
+          height: 140px;
+        }
+        .title {
+          margin-top: 4px;
+          font-size: 24px;
+        }
+        .description {
+          margin-top: 4px;
+          font-size: 16px;
+          font-weight: 300;
         }
       }
     }
@@ -67,15 +110,15 @@
           margin-top: 10px;
           margin-bottom: 10px;
         }
-        .col-xs-24 {
-          width: 100%;
-          margin-top: -130px;
-        }
-        img {
-          width: 100%;
-          vertical-align: middle;
-          border: 0;
-        }
+      }
+      .col-xs-24 {
+        width: 100%;
+        margin-top: -130px;
+      }
+      img {
+        width: 100%;
+        vertical-align: middle;
+        border: 0;
       }
     }
     .bottom-part {
@@ -89,6 +132,14 @@
       img {
         vertical-align: middle;
         border: 0;
+      }
+      .background-img {
+        width: 765px;
+        height: 172px;
+        position: absolute;
+        left: 50%;
+        margin-left: -380px;
+        z-index: -1;
       }
       .bottom-logo {
         margin-top: 30px;
@@ -113,43 +164,19 @@
     }
   }
 }
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.misc {
-  position: relative;
-}
-
-@media (max-width: 1080px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 960px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
 
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (max-width: 1080px) {
+  .container {
+    width: 750px;
+  }
 }
