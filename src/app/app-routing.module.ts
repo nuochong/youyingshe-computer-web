@@ -18,6 +18,7 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { HelpComponent } from './pages/help/help.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ErrorComponent } from './pages/error/error.component';
 
 
 const routes: Routes = [
@@ -57,6 +58,8 @@ const routes: Routes = [
     path: 'help', component: HelpComponent, data: { title: '帮助与反馈' }
   }, {
     path: 'contact', component: ContactComponent, data: { title: '联系我们' }
+  }, {
+    path: 'error', component: ErrorComponent, data: { title: '错误' }
   }
 ];
 
