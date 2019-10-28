@@ -24,8 +24,9 @@
       <ul class="_3MbJ4 _3t059">
         <li class="_3DM7w _31PCv" title="日记本">
           <div class="_3P4JX _2VLy-">
-            <i class="fa fa-gear"></i
-            ><span
+            <!-- <i class="fa fa-gear"></i
+            >
+            <span
               ><ul class="_2V8zt _3FcHm _2w9pn">
                 <li class="_2po2r cRfUr" title="">
                   <span class=""
@@ -38,16 +39,35 @@
                   >
                 </li>
               </ul></span
-            >
+            > -->
+            <i nz-popover
+            nzPopoverTrigger="click"
+            [nzPopoverContent]="contentTemplate"
+            nzPopoverPlacement="bottomRight" class="fa fa-gear"></i
+              >
+              <ng-template #contentTemplate>
+                  
+                    <div>Content</div>
+                    <div>Content</div>
+                  
+                </ng-template>
           </div>
           <span>日记本</span>
         </li>
         <li class="_3DM7w" title="随笔"><span>随笔</span></li>
       </ul>
       <div role="button" nz-col nzSpan="4" class="ant-col-4 h-5Am">
-        <span class="ant-dropdown-trigger"
-          ><i class="fa fa-bars"></i><span>设置</span></span
-        ><span class="Yv5Zx"
+        <span nz-dropdown  nzTrigger="click" [nzDropdownMenu]="menu" class="ant-dropdown-trigger">
+          <i class="fa fa-bars"></i><span>设置</span>
+          </span>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu>
+            <li nz-menu-item>1st menu item length</li>
+            <li nz-menu-item>2nd menu item length</li>
+            <li nz-menu-item>3rd menu item length</li>
+          </ul>
+        </nz-dropdown-menu>
+        <span class="Yv5Zx"
           >遇到问题<i class="fa fa-question-circle-o"></i
         ></span>
       </div>

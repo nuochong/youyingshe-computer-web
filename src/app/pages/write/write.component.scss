@@ -33,6 +33,11 @@
             -webkit-transition: border-color 0.2s ease-in;
             -o-transition: border-color 0.2s ease-in;
             transition: border-color 0.2s ease-in;
+            &:hover {
+              will-change: border-color;
+              color: #ec7259;
+              border-color: #ec7259;
+            }
           }
         }
         ._1iZMb {
