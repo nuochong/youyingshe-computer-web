@@ -130,7 +130,21 @@
               <p class="_3-3KB">已保存</p>
               <div class="_1WI52" tabindex="-1">
                 <input type="text" class="_24i7u" value="2019-09-10" />
-                <ul class="_3LYoB clearfix">
+                <div
+                  id="md"
+                  appEditorMd
+                  [editormdConfig]="conf"
+                  (onEditorChange)="syncModel($event)"
+                >
+                  <textarea
+                    style="display: block;"
+                    [(ngModel)]="markdown"
+                  ></textarea>
+                </div>
+                <!-- <hr>
+<h2>Markdown内容:</h2>
+<span>{{markdown}}</span> -->
+                <!-- <ul class="_3LYoB clearfix">
                   <li class="tGbI7 cztJE">
                     <a data-action="publicize"
                       ><i class="fa fa-mail-forward"></i> 发布文章</a
@@ -267,7 +281,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
