@@ -189,39 +189,38 @@
               white-space: nowrap;
             }
           }
-          .h-5Am {
-            position: fixed;
-            bottom: 0;
-            height: 50px;
-            line-height: 50px;
-            font-size: 15px;
-            padding-left: 15px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            z-index: 150;
-            background-color: #404040;
-            .ant-dropdown-trigger {
-              display: inline-block;
-              color: #999;
-              cursor: pointer;
-              -webkit-transition: color 0.2s
-                cubic-bezier(0.645, 0.045, 0.355, 1);
-              -o-transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-              transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-              span {
-                margin-left: 4px;
-              }
+        }
+        .h-5Am {
+          position: fixed;
+          bottom: 0;
+          height: 50px;
+          line-height: 50px;
+          font-size: 15px;
+          padding-left: 15px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          z-index: 150;
+          background-color: #404040;
+          .ant-dropdown-trigger {
+            display: inline-block;
+            color: #999;
+            cursor: pointer;
+            -webkit-transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+            -o-transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+            span {
+              margin-left: 4px;
             }
-            .Yv5Zx {
-              float: right;
-              margin-right: 15px;
-              color: #999;
-              cursor: pointer;
-              i {
-                margin-left: 5px;
-              }
+          }
+          .Yv5Zx {
+            float: right;
+            margin-right: 15px;
+            color: #999;
+            cursor: pointer;
+            i {
+              margin-left: 5px;
             }
           }
         }
@@ -526,5 +525,5 @@ ul {
   height: 100%;
 }
 .editormd {
-margin-bottom:0px!important;
+  margin-bottom: 0px !important;
 }
