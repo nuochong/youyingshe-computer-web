@@ -308,3 +308,20 @@ h3 {
     }
   }
 }
+@media (max-width: 1080px) {
+  .download {
+    padding: 7px 10px !important;
+    .qrcode {
+      width: 50px !important;
+      height: 50px !important;
+    }
+    .info {
+      .title {
+        font-size: 14px !important;
+      }
+      .description {
+        font-size: 12px !important;
+      }
+    }
+  }
+}
