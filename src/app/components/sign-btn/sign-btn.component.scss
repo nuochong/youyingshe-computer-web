@@ -1,0 +1,28 @@
+.sign-in-button {
+  background: #3194d0;
+  margin-top: 20px;
+  width: 100%;
+  padding: 9px 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+
+  cursor: pointer;
+  outline: none;
+  display: block;
+  clear: both;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  margin: 0;
+  #sign-in-loading {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 2px;
+    display: none;
+  }
+}

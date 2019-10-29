@@ -116,15 +116,7 @@
             </ul>
           </nz-dropdown-menu>
         </div>
-        <button
-          [routerLink]="['/discovery']"
-          class="sign-in-button"
-          id="sign-in-form-submit-btn"
-          type="button"
-        >
-          <span id="sign-in-loading"></span>
-          登录
-        </button>
+        <app-sign-btn></app-sign-btn>
       </form>
       <!-- 更多登录方式 -->
       <app-login-social></app-login-social>
