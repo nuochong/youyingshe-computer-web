@@ -56,6 +56,7 @@ import { LoginSocialComponent } from './components/login-social/login-social.com
 import { LoginTitleComponent } from './components/login-title/login-title.component';
 import { ResetFooterComponent } from './components/reset-footer/reset-footer.component';
 import {EditorMdDirective} from './components/editor/editor-md.directive';
+import { SignBtnComponent } from './components/sign-btn/sign-btn.component';
 
 registerLocaleData(zh);
 
@@ -108,7 +109,8 @@ registerLocaleData(zh);
     LoginSocialComponent,
     LoginTitleComponent,
     ResetFooterComponent,
-    EditorMdDirective
+    EditorMdDirective,
+    SignBtnComponent
   ],
   imports: [
     BrowserModule,
