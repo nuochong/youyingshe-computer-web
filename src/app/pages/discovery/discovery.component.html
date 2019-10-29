@@ -126,21 +126,14 @@
         </div>
         <ul class="list">
           <li>
-            <a
-              href="/u/51b4ef597b53?utm_source=desktop&amp;utm_medium=index-users"
-              target="_blank"
-              class="avatar"
+            <a [routerLink]="['/personal-details']" class="avatar"
               ><img
                 src="//upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
             /></a>
             <a class="follow" state="0"
               ><i class="iconfont iconadd"></i>关注
             </a>
-            <a
-              href="/u/51b4ef597b53?utm_source=desktop&amp;utm_medium=index-users"
-              target="_blank"
-              class="name"
-            >
+            <a [routerLink]="['/personal-details']" class="name">
               董克平日记
             </a>
             <p>
@@ -148,11 +141,7 @@
             </p>
           </li>
         </ul>
-        <a
-          href="/recommendations/users?utm_source=desktop&amp;utm_medium=index-users"
-          target="_blank"
-          class="find-more"
-        >
+        <a [routerLink]="['/recommend']" class="find-more">
           查看全部<i class="iconfont iconleft"></i
         ></a>
       </div>

@@ -5,7 +5,7 @@
   class="li"
   [ngClass]="{ 'have-img': isHaveImg }"
 >
-  <a class="wrap-img" href="/p/#" target="_blank">
+  <a class="wrap-img" [routerLink]="['/article']">
     <img
       class="img-blur-done"
       src="https://upload-images.jianshu.io/upload_images/4646413-e3ebeb6b86df617a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/150/h/120"
@@ -13,7 +13,7 @@
     />
   </a>
   <div class="content ">
-    <a class="title" target="_blank" href="/p/#"
+    <a class="title" [routerLink]="['/article']"
       >关注你的公众号后，天天和老公吵架</a
     >
     <p class="abstract">
@@ -25,7 +25,7 @@
       <a target="_blank" href="/p/#">
         <i class="iconfont iconread"></i> 4507
       </a>
-      <a target="_blank" href="/p/#">
+      <a [routerLink]="['/article']">
         <i class="iconfont iconliuyan"></i> 73
       </a>
       <span><i class="iconfont iconhome_ico_like-"></i> 49</span>

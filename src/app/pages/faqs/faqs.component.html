@@ -37,7 +37,7 @@
       />
       <div class="text">
         没解决你的疑问？
-        <a href="/help"> 去反馈 <i class="iconfont ic-link"></i></a>
+        <a [routerLink]="['/help']"> 去反馈 <i class="iconfont ic-link"></i></a>
       </div>
     </div>
     <div class="hint-text">
@@ -48,7 +48,9 @@
       反馈，可添加“简书专题社群委员会委员长”微信号：Jianshu_dama，备注“Web公测”，加群第一时间获得帮助。
     </div>
     <div class="hint-text">
-      也可以<a href="/contact"> 联系我们 <i class="iconfont ic-link"></i></a>
+      也可以<a [routerLink]="['/contact']">
+        联系我们 <i class="iconfont ic-link"></i
+      ></a>
     </div>
   </div>
 </app-left-right-layout>
