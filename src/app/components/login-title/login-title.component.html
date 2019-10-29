@@ -1,7 +1,7 @@
 <h4 class="title">
   <div class="normal-title">
-    <a class="active" [routerLink]="['/sign-in']">登录</a>
+    <a [ngClass]="{'active': active == 'login' ? true : false}" [routerLink]="['/sign-in']">登录</a>
     <b>·</b>
-    <a id="js-sign-up-btn" class="" [routerLink]="['/sign-up']">注册</a>
+    <a [ngClass]="{'active': active == 'login' ? false : true}" id="js-sign-up-btn" [routerLink]="['/sign-up']">注册</a>
   </div>
 </h4>

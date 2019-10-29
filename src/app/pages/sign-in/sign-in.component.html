@@ -1,6 +1,9 @@
 <app-login-wrap>
   <div class="login-main-wrap">
-    <app-login-title></app-login-title>
+    <app-login-title
+      [soonInput]="inputTransmission"
+      [active]="active"
+    ></app-login-title>
     <div class="js-sign-in-container">
       <form
         id="new_session"

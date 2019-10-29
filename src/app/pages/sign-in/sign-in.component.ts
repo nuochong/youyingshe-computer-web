@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-in.component.scss']
 })
 export class SignInComponent implements OnInit {
-
+  inputTransmission:string="这是父组件给子组件（input值）";
+  active:string='login';
   constructor() { }
 
   ngOnInit() {
