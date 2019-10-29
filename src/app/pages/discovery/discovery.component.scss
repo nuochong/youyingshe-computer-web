@@ -180,8 +180,7 @@ h3 {
     border: 1px solid #f0f0f0;
     border-radius: 6px;
     background-color: #fff;
-    :hover{
-        
+    :hover {
     }
     .qrcode {
       width: 60px;
@@ -312,6 +311,13 @@ h3 {
   }
 }
 @media (max-width: 1080px) {
+  .board {
+    a {
+      img {
+        min-height: 39px !important;
+      }
+    }
+  }
   .download {
     padding: 7px 10px !important;
     .qrcode {
