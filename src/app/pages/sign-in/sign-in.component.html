@@ -97,10 +97,10 @@
           <nz-dropdown-menu #menu="nzDropdownMenu">
             <ul nz-menu>
               <li nz-menu-item>
-                <a href="/users/password/mobile_reset">用手机号重置密码</a>
+                <a [routerLink]="['/reset-mobile']">用手机号重置密码</a>
               </li>
               <li nz-menu-item>
-                <a href="/users/password/email_reset">用邮箱重置密码</a>
+                <a [routerLink]="['/reset-email']">用邮箱重置密码</a>
               </li>
               <li nz-menu-divider></li>
               <li nz-menu-item nzDisabled>
@@ -117,6 +117,7 @@
           </nz-dropdown-menu>
         </div>
         <button
+          [routerLink]="['/discovery']"
           class="sign-in-button"
           id="sign-in-form-submit-btn"
           type="button"
