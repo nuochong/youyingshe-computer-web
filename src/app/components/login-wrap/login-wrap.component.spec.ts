@@ -8,9 +8,9 @@ describe('LoginWrapComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoginWrapComponent ]
+      declarations: [LoginWrapComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

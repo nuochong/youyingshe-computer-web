@@ -8,9 +8,9 @@ describe('ListMiniAuthorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListMiniAuthorComponent ]
+      declarations: [ListMiniAuthorComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

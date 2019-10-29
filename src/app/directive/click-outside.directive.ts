@@ -16,7 +16,7 @@ export class ClickOutsideDirective {
     console.log('clickedInside :', clickedInside);
     if (!clickedInside) {
       this.clickOutside.emit(true);
-    }else{
+    } else {
       this.clickOutside.emit(false);
     }
   }

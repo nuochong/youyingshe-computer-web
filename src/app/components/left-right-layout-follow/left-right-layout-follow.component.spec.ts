@@ -8,9 +8,9 @@ describe('LeftRightLayoutFollowComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LeftRightLayoutFollowComponent ]
+      declarations: [LeftRightLayoutFollowComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

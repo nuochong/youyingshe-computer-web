@@ -8,9 +8,9 @@ describe('SignBtnComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SignBtnComponent ]
+      declarations: [SignBtnComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

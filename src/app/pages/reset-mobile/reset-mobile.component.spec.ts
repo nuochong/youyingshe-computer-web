@@ -8,9 +8,9 @@ describe('ResetMobileComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResetMobileComponent ]
+      declarations: [ResetMobileComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -11,7 +11,7 @@ export class ResetMobileComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   close($event) {
     console.log('传递的数据', $event)
     this.styleModal = !$event ? true : false;

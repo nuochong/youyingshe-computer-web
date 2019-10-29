@@ -8,9 +8,9 @@ describe('CardMessageToolsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardMessageToolsComponent ]
+      declarations: [CardMessageToolsComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

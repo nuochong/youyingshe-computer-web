@@ -8,9 +8,9 @@ describe('LayoutAllColumnComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LayoutAllColumnComponent ]
+      declarations: [LayoutAllColumnComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

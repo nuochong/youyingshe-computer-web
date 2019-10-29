@@ -8,9 +8,9 @@ describe('LayoutOneColumnComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LayoutOneColumnComponent ]
+      declarations: [LayoutOneColumnComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

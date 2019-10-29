@@ -8,9 +8,9 @@ describe('ZorroComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ZorroComponent ]
+      declarations: [ZorroComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

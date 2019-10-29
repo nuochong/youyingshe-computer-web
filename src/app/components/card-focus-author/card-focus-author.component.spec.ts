@@ -8,9 +8,9 @@ describe('CardFocusAuthorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardFocusAuthorComponent ]
+      declarations: [CardFocusAuthorComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

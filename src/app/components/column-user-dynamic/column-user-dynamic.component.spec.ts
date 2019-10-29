@@ -8,9 +8,9 @@ describe('ColumnUserDynamicComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ColumnUserDynamicComponent ]
+      declarations: [ColumnUserDynamicComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

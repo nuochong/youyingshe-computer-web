@@ -1,7 +1,7 @@
 <div id="root">
   <div nz-row class="ant-row _1gp6t">
     <div nz-col nzSpan="4" class="ant-col-4 _2v5v5">
-      <div class="_3zibT"><a [routerLink]="[ '/discovery' ]">回首页</a></div>
+      <div class="_3zibT"><a [routerLink]="['/discovery']">回首页</a></div>
       <div class="_1iZMb">
         <div class="_33Zlg">
           <i class="fa fa-plus"></i><span>新建文集</span>
@@ -40,26 +40,31 @@
                 </li>
               </ul></span
             > -->
-            <i nz-popover
-            nzPopoverTrigger="click"
-            [nzPopoverContent]="contentTemplate"
-            nzPopoverPlacement="bottomRight" class="fa fa-gear"></i
-              >
-              <ng-template #contentTemplate>
-                  
-                    <div>Content</div>
-                    <div>Content</div>
-                  
-                </ng-template>
+            <i
+              nz-popover
+              nzPopoverTrigger="click"
+              [nzPopoverContent]="contentTemplate"
+              nzPopoverPlacement="bottomRight"
+              class="fa fa-gear"
+            ></i>
+            <ng-template #contentTemplate>
+              <div>Content</div>
+              <div>Content</div>
+            </ng-template>
           </div>
           <span>日记本</span>
         </li>
         <li class="_3DM7w" title="随笔"><span>随笔</span></li>
       </ul>
       <div nz-col nzSpan="4" class="ant-col-4 h-5Am">
-        <span nz-dropdown  nzTrigger="click" [nzDropdownMenu]="menu" class="ant-dropdown-trigger">
+        <span
+          nz-dropdown
+          nzTrigger="click"
+          [nzDropdownMenu]="menu"
+          class="ant-dropdown-trigger"
+        >
           <i class="fa fa-bars"></i><span>设置</span>
-          </span>
+        </span>
         <nz-dropdown-menu #menu="nzDropdownMenu">
           <ul nz-menu>
             <li nz-menu-item>1st menu item length</li>
