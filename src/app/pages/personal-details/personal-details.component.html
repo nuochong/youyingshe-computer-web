@@ -244,11 +244,34 @@
       >
       ·
       <a
+        nzType="primary"
+        (click)="showModalMiddle()"
         class="js-report-button"
         data-reportable-id="15783563"
         data-reportable-type="user"
         >举报用户</a
       >
+      <nz-modal
+        nzWrapClassName="vertical-center-modal"
+        [(nzVisible)]="isVisibleMiddle"
+        nzTitle="举报用户"
+        (nzOnCancel)="handleCancelMiddle()"
+        (nzOnOk)="handleOkMiddle()"
+      >
+        <form>
+          <input type="radio" name="report" value="ad" /><span
+            >广告及垃圾信息</span
+          >
+          <input type="radio" name="report" value="plagiarism" /><span
+            >抄袭或未授权转载</span
+          >
+          <input type="radio" name="report" value="other" /><span>其它</span>
+          <textarea
+            placeholder="写下举报的详情情况（选填）"
+            class="form-control"
+          ></textarea>
+        </form>
+      </nz-modal>
     </div>
 
     <div class="notice">
