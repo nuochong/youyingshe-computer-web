@@ -425,7 +425,146 @@
         }
       }
       .search {
-        display: none;
+        // display: none;
+        padding-left: 15px;
+        form {
+          position: relative;
+          top: 9px;
+          margin: 0 0 20px;
+          input {
+            color: inherit;
+            font: inherit;
+            margin: 0;
+            font-size: inherit;
+            line-height: inherit;
+          }
+          .search-input {
+            padding: 0 40px 0 20px;
+            width: 160px;
+            height: 38px;
+            font-size: 14px;
+            border: 1px solid #eee;
+            border-radius: 40px;
+            background: #eee;
+            transition: width 0.5s;
+            -moz-transition: width 0.5s;
+            -webkit-transition: width 0.5s;
+            -o-transition: width 0.5s;
+            transition-delay: 0.1s;
+            -moz-transition-delay: 0.1s;
+            -webkit-transition-delay: 0.1s;
+            -o-transition-delay: 0.1s;
+            outline: none;
+            &:focus {
+              transition-delay: 0s;
+              -moz-transition-delay: 0s;
+              -webkit-transition-delay: 0s;
+              -o-transition-delay: 0s;
+              width: 240px;
+              outline: none;
+            }
+          }
+          .search-input:focus + .search-btn {
+            background-color: #969696;
+            border-radius: 50%;
+            color: #fff !important;
+          }
+          .search-input:focus ~ #navbar-search-tips {
+            visibility: visible;
+            opacity: 1;
+          }
+          .search-btn {
+            position: absolute;
+            top: 4px;
+            right: 5px;
+            width: 30px;
+            height: 30px !important;
+            line-height: normal !important;
+            padding: 0 !important;
+            color: #969696 !important;
+            text-align: center;
+            .ic-search {
+              margin: 5px -1px 0 0;
+              display: block;
+            }
+          }
+          #navbar-search-tips,
+          #navbar-search-tips:before {
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+          }
+          #navbar-search-tips {
+            margin-top: 9px;
+            width: 250px;
+            left: 0;
+            top: 100%;
+            visibility: hidden;
+            opacity: 0;
+            border-radius: 4px;
+            .search-recent {
+              padding: 5px;
+              ul {
+                list-style-type: none;
+                margin-bottom: 0;
+                padding-left: 0;
+                margin-top: 0;
+                li {
+                  margin-right: 0;
+                  line-height: 20px;
+                  a {
+                    display: block;
+                    height: 40px;
+                    line-height: 20px;
+                    padding: 10px 15px;
+                    font-size: 14px;
+                    color: #333;
+                    position: relative;
+                    &:hover {
+                      .ic-unfollow {
+                        display: block;
+                      }
+                    }
+                    .ic-search-history {
+                      float: left;
+                      margin-right: 10px;
+                      font-size: 18px;
+                      color: #787878;
+                    }
+                    span {
+                      vertical-align: middle;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      display: block;
+                      padding-right: 30px;
+                    }
+                    .ic-unfollow {
+                      position: absolute;
+                      right: 15px;
+                      top: 10px;
+                      color: #a0a0a0;
+                      display: none;
+                      &:hover {
+                        color: rgb(47, 47, 47);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          #navbar-search-tips:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 12px solid transparent;
+            border-bottom-color: #fff;
+            left: 20px;
+            bottom: 99%;
+          }
+        }
       }
     }
   }
@@ -489,7 +628,7 @@
       .navbar-nav {
         float: left;
         margin: 0;
-        li {
+        > li {
           float: left;
           a {
             padding-top: 15px;
