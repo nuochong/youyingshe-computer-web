@@ -351,6 +351,13 @@
         display: block;
         line-height: 20px;
         text-align: -webkit-match-parent;
+        &.active {
+          a,
+          a:hover {
+            color: #ea6f5a;
+            background: none;
+          }
+        }
         a {
           position: relative;
           display: block;

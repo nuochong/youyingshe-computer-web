@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./follow.component.scss']
 })
 export class FollowComponent implements OnInit {
-
+  active:string='follow';
   constructor() { }
 
   ngOnInit() {

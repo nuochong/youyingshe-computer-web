@@ -162,7 +162,7 @@
       </div>
       <div class="collapse navbar-collapse" id="menu">
         <ul class="nav navbar-nav">
-          <li class="tab ">
+          <li class="tab active" [ngClass]="{'active': active == 'discovery' ? true : false}">
             <a [routerLink]="['/discovery']">
               <span class="menu-text">发现</span
               ><i
@@ -170,7 +170,7 @@
               ></i>
             </a>
           </li>
-          <li class="tab ">
+          <li class="tab" [ngClass]="{'active': active == 'follow' ? true : false}">
             <a [routerLink]="['/follow']">
               <span class="menu-text">关注</span
               ><i
@@ -178,7 +178,7 @@
               ></i>
             </a>
           </li>
-          <li class="tab notification">
+          <li class="tab notification"  [ngClass]="{'active': active == 'message' ? true : false}">
             <a
               (click)="dropdownMenu($event)"
               (mouseover)="dropdownMenuOpen()"

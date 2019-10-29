@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
   fontFamily: string = 'hei';
   fontStyle: string = 'jian';
   styleModal: boolean = false;
+  @Input() active:string;
   constructor() { }
 
   ngOnInit() { }
