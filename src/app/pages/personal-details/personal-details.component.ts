@@ -39,4 +39,11 @@ export class PersonalDetailsComponent implements OnInit {
   handleCancelMiddle(): void {
     this.isVisibleMiddle = false;
   }
+  handleCancel(){
+    this.isVisibleMiddle = false;
+  }
+  handleOk(){
+    console.log('提交了 :');
+    this.isVisibleMiddle = false;
+  }
 }
