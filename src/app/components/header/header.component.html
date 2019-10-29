@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="width-limit">
     <!-- 左上方 Logo -->
-    <a class="logo" [routerLink]="['/write']"
+    <a [routerLink]="['/write']" class="logo"
       ><img
         src="//cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"
         alt="Nav logo"
@@ -9,7 +9,7 @@
 
     <!-- 右上角 -->
     <!-- 登录显示写文章 -->
-    <a class="btn write-btn" [routerLink]="['/write']">
+    <a [routerLink]="['/write']" class="btn write-btn">
       <i class="iconfont ic-write iconquill"></i>写文章
     </a>
     <!-- 如果用户登录，显示下拉菜单 -->
@@ -33,7 +33,7 @@
         [hidden]="!expression2"
       >
         <li>
-          <a href="">
+          <a [routerLink]="['/home']">
             <i class="iconfont ic-navigation-profile iconwode"></i
             ><span>我的主页</span>
           </a>
@@ -75,7 +75,7 @@
           </a>
         </li>
         <li>
-          <a rel="nofollow" data-method="delete" [routerLink]="['/sign_out']">
+          <a [routerLink]="['/sign_out']" rel="nofollow" data-method="delete">
             <i class="iconfont ic-navigation-signout icontuichu"></i
             ><span>退出</span>
           </a>
@@ -199,43 +199,43 @@
               #dropdownmenu
             >
               <li>
-                <a href="/notifications#/comments"
+                <a [routerLink]="['/message']"
                   ><i class="iconfont ic-comments iconpinglun1"></i>
                   <span>评论</span>
                 </a>
               </li>
               <li>
-                <a href="/notifications#/chats"
+                <a [routerLink]="['/message']"
                   ><i class="iconfont ic-chats iconjianxin"></i>
                   <span>简信</span>
                 </a>
               </li>
               <li>
-                <a href="/notifications#/requests"
+                <a [routerLink]="['/message']"
                   ><i class="iconfont ic-requests icontougaoqingqiu"></i>
                   <span>投稿请求</span>
                 </a>
               </li>
               <li>
-                <a href="/notifications#/likes"
+                <a [routerLink]="['/message']"
                   ><i class="iconfont ic-likes iconxihuan"></i>
                   <span>喜欢和赞</span>
                 </a>
               </li>
               <li>
-                <a href="/notifications#/follows"
+                <a [routerLink]="['/message']"
                   ><i class="iconfont ic-follows iconguanzhu1"></i>
                   <span>关注</span>
                 </a>
               </li>
               <li>
-                <a href="/notifications#/money"
+                <a [routerLink]="['/message']"
                   ><i class="iconfont ic-money iconzanshang"></i>
                   <span>赞赏和付费</span>
                 </a>
               </li>
               <li>
-                <a href="/notifications#/others"
+                <a [routerLink]="['/message']"
                   ><i class="iconfont ic-others iconqita"></i>
                   <span>其它提醒</span>
                 </a>
