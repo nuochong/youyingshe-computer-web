@@ -646,11 +646,19 @@
 }
 @media (max-width: 1080px) and (min-width: 768px) {
   nav {
-    .navbar-nav li {
-      margin-right: 5px;
+    .navbar-nav {
+      li {
+        margin-right: 5px !important;
+      }
     }
     .menu-text {
       display: none;
+    }
+    form {
+      .search-input,
+      .search-input:focus {
+        width: 150px !important;
+      }
     }
   }
 }
@@ -667,8 +675,18 @@
   }
 }
 @media (min-width: 1439px) {
-  nav .menu-icon {
-    margin-right: 5px;
+  nav {
+    form {
+      .search-input {
+        width: 240px !important;
+        &:focus {
+          width: 320px !important;
+        }
+      }
+    }
+    .menu-icon {
+      margin-right: 5px;
+    }
   }
 }
 .header-fill {
