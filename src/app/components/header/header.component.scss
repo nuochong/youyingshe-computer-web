@@ -51,6 +51,11 @@
       white-space: nowrap;
       padding: 6px 12px;
       user-select: none;
+      &:hover {
+        color: #fff;
+        background-color: #ec6149;
+        text-decoration: none;
+      }
       .ic-write {
         margin-right: 3px;
         font-size: 19px;
