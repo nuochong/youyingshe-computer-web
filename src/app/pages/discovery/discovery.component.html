@@ -68,6 +68,7 @@
     <!-- APP下载提示 -->
     <a
       [routerLink]="['/apps']"
+      nz-popover [nzPopoverContent]="contentTemplate" nzPopoverPlacement="top"
       nzXs="8"
       id="index-aside-download-qrbox"
       class="col-xs-8 download"
@@ -89,6 +90,11 @@
         <div class="description">随时随地发现和创作内容</div>
       </div>
     </a>
+    <ng-template #contentTemplate>
+      <div>
+        <img width="168px" src="//cdn2.jianshu.io/assets/web/download-apps-page-top-qrcode-92108f625f507613863b730c74ebf235.png" alt="Download apps page top qrcode">
+      </div>
+    </ng-template>
 
     <!-- 推荐作者 -->
     <div class="recommended-author-wrap">
