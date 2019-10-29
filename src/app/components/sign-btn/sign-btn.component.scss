@@ -15,7 +15,11 @@
   overflow: visible;
   text-transform: none;
   -webkit-appearance: button;
-  margin: 0;
+  line-height: inherit;
+  font: inherit;
+  &:hover {
+    background: #187cb7;
+  }
   #sign-in-loading {
     position: relative;
     width: 20px;
