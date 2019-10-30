@@ -41,15 +41,25 @@
               </ul></span
             > -->
             <i
-              nz-popover
               nzPopoverTrigger="click"
+              nz-popover
               [nzPopoverContent]="contentTemplate"
-              nzPopoverPlacement="bottomRight"
+              nzPopoverPlacement="topLeft"
               class="fa fa-gear"
             ></i>
             <ng-template #contentTemplate>
-              <div>Content</div>
-              <div>Content</div>
+              <ul class="_2V8zt _3FcHm NvfK4 _2w9pn">
+                <li class="_2po2r cRfUr" title="">
+                  <span class=""
+                    ><i class="fa fa-pencil-square-o _22XWG"></i>修改文集</span
+                  >
+                </li>
+                <li class="_2po2r cRfUr" title="">
+                  <span class=""
+                    ><i class="fa fa-trash-o _22XWG"></i>删除文集</span
+                  >
+                </li>
+              </ul>
             </ng-template>
           </div>
           <span>日记本</span>
@@ -57,19 +67,43 @@
         <li class="_3DM7w" title="随笔"><span>随笔</span></li>
       </ul>
       <div nz-col nzSpan="4" class="ant-col-4 h-5Am">
-        <span
-          nz-dropdown
-          nzTrigger="click"
-          [nzDropdownMenu]="menu"
-          class="ant-dropdown-trigger"
-        >
-          <i class="fa fa-bars"></i><span>设置</span>
+        <span class="ant-dropdown-trigger">
+          <i
+            nz-dropdown
+            nzTrigger="click"
+            nzPopoverPlacement="left"
+            [nzDropdownMenu]="menu"
+            class="fa fa-bars"
+          ></i
+          ><span>设置</span>
         </span>
         <nz-dropdown-menu #menu="nzDropdownMenu">
           <ul nz-menu>
-            <li nz-menu-item>1st menu item length</li>
-            <li nz-menu-item>2nd menu item length</li>
-            <li nz-menu-item>3rd menu item length</li>
+            <li nz-submenu nzTitle="默认编辑器" nzIcon="setting">
+              <ul>
+                <li nz-menu-item>MarkDown编辑器</li>
+                <li nz-menu-item>
+                  <i nz-icon nzType="check" nzTheme="outline"></i>默认编辑器
+                </li>
+              </ul>
+            </li>
+            <li nz-submenu nzTitle="设置显示模式" nzIcon="diff">
+              <ul>
+                <li nz-menu-item>夜间模式</li>
+                <li nz-menu-item>
+                  <i nz-icon nzType="check" nzTheme="outline"></i>宋体
+                </li>
+                <li nz-menu-item>繁体</li>
+              </ul>
+            </li>
+            <li nz-menu-item>
+              <i nz-icon nzType="delete" nzTheme="outline"></i>
+              <span>回收站</span>
+            </li>
+            <li nz-menu-item>
+              <i nz-icon nzType="question-circle" nzTheme="outline"></i>
+              <span>帮助与反馈</span>
+            </li>
           </ul>
         </nz-dropdown-menu>
         <span class="Yv5Zx"
@@ -89,9 +123,48 @@
                 <li class="_25Ilv _33nt7" title="2019-09-10">
                   <i class="_13kgp"></i>
                   <div class="_3P4JX poOXI">
-                    <i class="fa fa-gear"></i
-                    ><span
-                      ><ul class="_2V8zt _3FcHm _2w9pn">
+                    <i
+                      nz-dropdown
+                      nzTrigger="click"
+                      [nzDropdownMenu]="menus"
+                      class="fa fa-gear"
+                    ></i>
+                    <nz-dropdown-menu #menus="nzDropdownMenu">
+                      <ul nz-menu>
+                        <li nz-menu-item>
+                          <i nz-icon nzType="rise" nzTheme="outline"></i>
+                          <span>直接发布</span>
+                        </li>
+                        <li nz-menu-item>
+                          <i nz-icon nzType="sketch" nzTheme="outline"></i>
+                          <span>发布为付费文章</span>
+                        </li>
+                        <li nz-submenu nzTitle="移动文章" nzIcon="scissor">
+                          <ul>
+                            <li nz-menu-item>随笔</li>
+                            <li nz-menu-item>其它</li>
+                          </ul>
+                        </li>
+                        <li nz-menu-item>
+                          <i nz-icon nzType="history" nzTheme="outline"></i>
+                          <span>历史版本</span>
+                        </li>
+                        <li nz-menu-item>
+                          <i nz-icon nzType="delete" nzTheme="outline"></i>
+                          <span>删除文章</span>
+                        </li>
+                        <li nz-menu-item>
+                          <i nz-icon nzType="stop" nzTheme="outline"></i>
+                          <span>禁止转载</span>
+                        </li>
+                        <li nz-menu-item>
+                          <i nz-icon nzType="stop" nzTheme="outline"></i>
+                          <span>取消禁止转载</span>
+                        </li>
+                      </ul>
+                    </nz-dropdown-menu>
+                    <span>
+                      <ul class="_2V8zt _3FcHm _2w9pn">
                         <li class="_2po2r cRfUr" title="">
                           <span class=""
                             ><i class="fa fa-share _22XWG"></i>直接发布</span
