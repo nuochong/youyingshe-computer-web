@@ -3,7 +3,10 @@ export class EditorConfig {
   public height = '100%';
   // public height = 'calc(100% - 85px)';
   public path = '../../../../assets/editor.md/lib/';
-  public lineNumbers = false;         // 显示编辑器行号
+  public toolbarIcons = function () {
+    return ["undo", "redo", "|", "bold", "hr", "|", "preview", "watch", "|", "fullscreen", "info", "testIcon", "testIcon2", "file", "faicon", "||", "watch", "fullscreen", "preview", "testIcon"]
+  };
+  public lineNumbers = false;// 显示编辑器行号
   public codeFold = false;
   public searchReplace = true;
   public toolbar = true;
