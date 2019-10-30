@@ -67,15 +67,14 @@
         <li class="_3DM7w" title="随笔"><span>随笔</span></li>
       </ul>
       <div nz-col nzSpan="4" class="ant-col-4 h-5Am">
-        <span nz-dropdown
-        nzTrigger="click"
-        nzPopoverPlacement="left"
-        [nzDropdownMenu]="menu" class="ant-dropdown-trigger">
-          <i
-            
-            class="fa fa-bars"
-          ></i
-          ><span>设置</span>
+        <span
+          nz-dropdown
+          nzTrigger="click"
+          nzPopoverPlacement="left"
+          [nzDropdownMenu]="menu"
+          class="ant-dropdown-trigger"
+        >
+          <i class="fa fa-bars"></i><span>设置</span>
         </span>
         <nz-dropdown-menu #menu="nzDropdownMenu">
           <ul nz-menu>
@@ -96,7 +95,7 @@
                 <li nz-menu-item>繁体</li>
               </ul>
             </li>
-            <li nz-menu-item>
+            <li nz-menu-item [routerLink]="['/recycle']">
               <i nz-icon nzType="delete" nzTheme="outline"></i>
               <span>回收站</span>
             </li>
@@ -132,7 +131,7 @@
                     ></i>
                     <nz-dropdown-menu #menus="nzDropdownMenu">
                       <ul nz-menu>
-                        <li nz-menu-item>
+                        <li nz-menu-item (click)="createMessage('success')">
                           <i nz-icon nzType="rise" nzTheme="outline"></i>
                           <span>直接发布</span>
                         </li>
@@ -146,19 +145,19 @@
                             <li nz-menu-item>其它</li>
                           </ul>
                         </li>
-                        <li nz-menu-item>
+                        <li nz-menu-item [routerLink]="['/history']">
                           <i nz-icon nzType="history" nzTheme="outline"></i>
                           <span>历史版本</span>
                         </li>
-                        <li nz-menu-item>
+                        <li nz-menu-item nzType="dashed" (click)="showDeleteConfirm()">
                           <i nz-icon nzType="delete" nzTheme="outline"></i>
                           <span>删除文章</span>
                         </li>
-                        <li nz-menu-item>
+                        <li nz-menu-item (click)="createMessage('error')">
                           <i nz-icon nzType="stop" nzTheme="outline"></i>
                           <span>禁止转载</span>
                         </li>
-                        <li nz-menu-item>
+                        <li nz-menu-item (click)="createMessage('warning')">
                           <i nz-icon nzType="stop" nzTheme="outline"></i>
                           <span>取消禁止转载</span>
                         </li>
