@@ -1,1 +1,60 @@
 <app-header></app-header>
+<app-layout-one-column>
+  <div class="body-one-wrap">
+    <img
+      class="tag-banner"
+      src="//cdn2.jianshu.io/assets/web/collect-note-955d8c71641a360924390da9da4b0151.png"
+      alt="Collect note"
+    />
+    <app-tabs></app-tabs>
+    <ul class="note-list">
+      <li id="note-53278090" data-note-id="53278090" class="have-img">
+        <app-card-article [isHaveImg]="true"></app-card-article>
+      </li>
+    </ul>
+
+    <div id="list-container">
+      <ul
+        class="user-list"
+        infinite-scroll-url="/users/26b6edd6b0da/subscriptions"
+        data-placeholder="collection"
+      >
+        <li class="paid-notebook-item">
+          <a class="avatar-collection" href="/nb/31388811">
+            <img
+              src="//upload.jianshu.io/book/image/a6b96748-9a66-4f93-8885-43324314f265"
+              alt="A6b96748 9a66 4f93 8885 43324314f265"
+            />
+          </a>
+          <div class="info">
+            <a class="name" href="/nb/31388811">谱写·生命之诗</a>
+            <div class="meta">
+              收录了337篇文章，216人关注
+            </div>
+          </div>
+          <a class="btn btn-default following"
+            ><i class="iconfont ic-followed icongezicomfollowd"></i> <span>已关注</span></a
+          >
+        </li>
+
+        <li class="paid-notebook-item">
+          <a class="avatar-collection" href="/nb/39703878">
+            <img
+              src="//upload.jianshu.io/book/image/660b825f-2248-4675-a22f-48bb129b2397"
+              alt="660b825f 2248 4675 a22f 48bb129b2397"
+            />
+          </a>
+          <div class="info">
+            <a class="name" href="/nb/39703878">诗</a>
+            <div class="meta">
+              收录了43篇文章，94人关注
+            </div>
+          </div>
+          <a class="btn btn-default following"
+            ><i class="iconfont ic-followed icongezicomfollowd"></i> <span>已关注</span></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</app-layout-one-column>
