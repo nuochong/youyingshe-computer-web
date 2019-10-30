@@ -67,12 +67,12 @@
         <li class="_3DM7w" title="随笔"><span>随笔</span></li>
       </ul>
       <div nz-col nzSpan="4" class="ant-col-4 h-5Am">
-        <span class="ant-dropdown-trigger">
+        <span nz-dropdown
+        nzTrigger="click"
+        nzPopoverPlacement="left"
+        [nzDropdownMenu]="menu" class="ant-dropdown-trigger">
           <i
-            nz-dropdown
-            nzTrigger="click"
-            nzPopoverPlacement="left"
-            [nzDropdownMenu]="menu"
+            
             class="fa fa-bars"
           ></i
           ><span>设置</span>
@@ -107,7 +107,7 @@
           </ul>
         </nz-dropdown-menu>
         <span class="Yv5Zx"
-          >遇到问题<i class="fa fa-question-circle-o"></i
+          >遇到问题<i class="fa fa-question-circle-o iconfont iconbangzhu"></i
         ></span>
       </div>
     </div>
