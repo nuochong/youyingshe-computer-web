@@ -1,1 +1,55 @@
-<p>verify works!</p>
+<nz-modal
+  [(nzVisible)]="isVisible"
+  [nzTitle]="modalTitle"
+  [nzContent]="modalContent"
+  [nzFooter]="modalFooter"
+  (nzOnCancel)="handleCancel()"
+>
+  <ng-template #modalTitle>
+    <div class="modal-title">
+      <div class="-K8Re">
+        安全验证
+        <span class="_3O4M2"
+          >绑定遇到问题？<a
+            href="https://www.jianshu.com/p/794b92192f62"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            点击查看帮助</a
+          ></span
+        >
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #modalContent>
+    <div class="_1Ksj7">
+      <p class="_3slx8">
+        为了保证你的账号安全，请先验证身份，验证成功后进行下一步操作，验证码10分钟内有效
+      </p>
+      <p class="DsKt7">用手机<span>178****3440</span>验证</p>
+      <div class="_267rA">
+        <i class="fa fa-shield"></i
+        ><input type="text" name="security" placeholder="验证码" /><a
+          class="_3Hq0E"
+          >发送验证码</a
+        >
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #modalFooter>
+    <!-- <button nz-button nzType="default" (click)="handleCancel()">
+      取消
+    </button> -->
+    <div
+      class="_3vO5f"
+      nz-button
+      nzType="primary"
+      (click)="handleOk()"
+      [nzLoading]="isConfirmLoading"
+    >
+      确认
+    </div>
+  </ng-template>
+</nz-modal>

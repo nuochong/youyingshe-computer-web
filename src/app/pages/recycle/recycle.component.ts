@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-recycle',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecycleComponent implements OnInit {
   isVisibleMiddle: boolean;
+  showDeleteBtn: boolean = false;
+  isVisible = false;
+  @ViewChild('verify',{static:true}) verify;
 
   constructor() { }
 
@@ -22,5 +25,12 @@ export class RecycleComponent implements OnInit {
   handleOk(){
     console.log('提交了 :');
     this.isVisibleMiddle = false;
+  }
+  showModal(): void {
+    this.isVisible = true;
+  }
+  runParent(msg:string){ 
+    this.isVisible = false;
+    //alert(msg); 
   }
 }

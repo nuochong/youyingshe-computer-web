@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-history',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoryComponent implements OnInit {
   showScreen: boolean = false;
-  constructor() { }
+  constructor(private renderer2: Renderer2) { }
 
   ngOnInit() {
   }
