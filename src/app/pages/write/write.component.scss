@@ -117,7 +117,7 @@
           ._31PCv {
             background-color: #666;
             border-left: 3px solid #ec7259;
-            padding-left: 12px;
+            padding-left: 12px !important;
           }
           ._3DM7w {
             position: relative;
@@ -125,13 +125,16 @@
             list-style: none;
             font-size: 15px;
             color: #f2f2f2;
-            background-color: #404040;
+            // background-color: #404040;
             padding: 0 15px;
             cursor: pointer;
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            &:hover {
+              background-color: #666;
+            }
             ._2VLy- {
               float: right;
             }
@@ -611,13 +614,12 @@ ul {
     white-space: nowrap;
     text-align: left;
     position: relative;
-    &:hover{
+    &:hover {
       background-color: #b3b3b3;
       cursor: pointer;
     }
     span {
       display: block;
-      margin-right: 20px;
       overflow: hidden;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
