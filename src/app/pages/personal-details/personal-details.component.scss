@@ -616,3 +616,31 @@
     line-height: 1.42857;
   }
 }
+
+::ng-deep .ant-popover-inner-content {
+  font-weight: bold;
+  color: white;
+}
+::ng-deep .ant-popover-inner {
+  background-color: #000;
+}
+::ng-deep
+  .ant-popover-placement-top
+  > .ant-popover-content
+  > .ant-popover-arrow {
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+
+.share-list {
+  padding: 5px 0;
+  list-style: none;
+  margin:0;
+  li {
+    a {
+      span {
+        color: white;
+      }
+    }
+  }
+}

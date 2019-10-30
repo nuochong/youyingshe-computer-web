@@ -245,7 +245,6 @@
       ·
       <a
         nzType="primary"
-        
         (click)="showModalMiddle()"
         class="js-report-button"
         data-reportable-id="15783563"
@@ -254,7 +253,7 @@
       >
       <ng-template #modalTitle>
         <div class="modal-header">
-            <h4 class="modal-title">举报用户</h4>
+          <h4 class="modal-title">举报用户</h4>
         </div>
       </ng-template>
       <nz-modal
@@ -315,9 +314,21 @@
       <a class="option" data-action="weixin-share"
         ><i class="iconfont ic-share-wechat iconweixin"></i
       ></a>
-      <a class="option" href="javascript:;" data-original-title=""
+      <a
+        class="option"
+        href="javascript:;"
+        data-original-title=""
+        nz-popover
+        [nzPopoverContent]="contentTemplate"
+        nzPopoverTrigger="click"
         ><i class="iconfont ic-share-more iconqita"></i
       ></a>
+      <ng-template #contentTemplate>
+          <ul class="share-list">
+              <li><a ><i class="iconfont social-icon-sprite social-icon-zone iconqq"></i><span>分享到QQ空间</span></a></li>
+              <li><a ><i class="iconfont social-icon-sprite social-icon-douban icondouban"></i><span>分享到豆瓣</span></a></li>
+            </ul>
+      </ng-template>
     </div>
 
     <div class="about-people">
@@ -340,7 +351,14 @@
         <div class="title">关注的人(8611)</div>
         <ul class="list collection-follower">
           <li>
-            <a href="javascript:;" class="avatar"
+            <a
+              nz-popover
+              nzPopoverContent="17667535377 · 39分钟前 关注"
+              nzPopoverPlacement="bottom"
+              [nzOverlayStyle]="{ 'font-weight': 'bold' }"
+              nzPopoverTrigger="click"
+              href="javascript:;"
+              class="avatar"
               ><img
                 src="//cdn2.jianshu.io/assets/default_avatar/9-cceda3cf5072bcdd77e8ca4f21c40998.jpg"
                 data-toggle="tooltip"
