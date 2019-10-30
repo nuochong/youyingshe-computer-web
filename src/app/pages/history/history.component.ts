@@ -6,12 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./history.component.scss']
 })
 export class HistoryComponent implements OnInit {
-  showScreen:boolean = true;
+  showScreen: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
-  isShowScreen():void{
+  isShowScreen(): void {
     this.showScreen = !this.showScreen;
+  }
+  over(e) {
+    console.log('overe :', e);
+  } 
+  leave(e) {
+    console.log('leavee :', e);
   }
 }

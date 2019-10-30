@@ -10,7 +10,7 @@
             >筛选<i class="fa fa-angle-double-down"></i
           ></span>
         </div>
-        <div class="_3ciQq" [ngClass]="{'_1pDW4': showScreen}">
+        <div class="_3ciQq" [ngClass]="{ _1pDW4: showScreen }">
           <label class="checkbox"
             ><input
               type="checkbox"
@@ -47,7 +47,7 @@
         </div>
       </div>
       <ul class="_334h2">
-        <li class="">
+        <li class="" (mouseover)="over($event)" (mouseleave)="leave($event)">
           <a
             href="#/notebooks/39426856/notes/53778835/history/a23188d7-7bf9-4acf-9564-fb78bdc5b64e"
             ><span
@@ -69,21 +69,7 @@
             >自动保存</a
           >
         </li>
-        <div class="_2y-qc _3ZWln">
-          <div class="lRx6g _25kuI">
-            <div class="_21yV1">
-              <svg class="_3l2Da" viewBox="25 25 50 50">
-                <circle
-                  class="_3sMBB"
-                  cx="50"
-                  cy="50"
-                  r="20"
-                  fill="none"
-                ></circle>
-              </svg>
-            </div>
-          </div>
-        </div>
+        <app-write-loading></app-write-loading>
       </ul>
     </div>
     <div class="_3Kp23">
@@ -97,21 +83,7 @@
       </div>
       <div class="_33LvZ">
         <div class="note-view _1mtk4"><p>tyttttt</p></div>
-        <div class="_2y-qc _3ZWln _1aPDY">
-          <div class="lRx6g _25kuI">
-            <div class="_21yV1">
-              <svg class="_3l2Da" viewBox="25 25 50 50">
-                <circle
-                  class="_3sMBB"
-                  cx="50"
-                  cy="50"
-                  r="20"
-                  fill="none"
-                ></circle>
-              </svg>
-            </div>
-          </div>
-        </div>
+        <app-write-loading></app-write-loading>
       </div>
     </div>
   </div>

@@ -50,7 +50,7 @@
         }
 
         ._3ciQq {
-           height: 0;
+          height: 0;
           margin-top: 0;
           padding-top: 0;
           border-top: 1px solid transparent;
@@ -88,7 +88,7 @@
           border-color: #333;
           // overflow-y: auto;
           overflow: hidden;
-      }
+        }
       }
       ._334h2 {
         overflow-y: auto;
@@ -120,63 +120,7 @@
           }
         }
         //加载动画
-        ._2y-qc {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          z-index: 999;
-          ._25kuI {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-          }
-          .lRx6g {
-            color: #999;
-            text-align: center;
-            vertical-align: middle;
-            display: none;
-            opacity: 0;
-            ._21yV1 {
-              width: 48px;
-              height: 48px;
-              display: inline-block;
-              svg:not(:root) {
-                overflow: hidden;
-              }
-              ._3l2Da {
-                -webkit-animation: _3kk3L 2s linear infinite;
-                animation: _3kk3L 2s linear infinite;
-                height: 100%;
-                -webkit-transform-origin: center center;
-                -ms-transform-origin: center center;
-                transform-origin: center center;
-                width: 100%;
-                will-change: transfrom;
-                ._3sMBB {
-                  stroke-width: 5;
-                  stroke-miterlimit: 10;
-                  stroke-dasharray: 1, 151;
-                  stroke-dashoffset: 0;
-                  stroke-linecap: round;
-                  stroke: #ec7259;
-                  -webkit-animation: pjsmG 1.5s
-                    cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
-                  animation: pjsmG 1.5s cubic-bezier(0.645, 0.045, 0.355, 1)
-                    infinite;
-                  will-change: stroke-dasharray, stroke-dashoffset;
-                }
-              }
-            }
-          }
-        }
-        ._3ZWln {
-          display: none;
-        }
+        // ._2y-qc {}
       }
     }
     //右侧
