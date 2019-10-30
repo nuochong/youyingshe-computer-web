@@ -1,5 +1,13 @@
-<div class="ant-back-top">
-  <div class="back-top-wrap" aria-label="回到顶部">
-    <i aria-label="icon: caret-up" class="anticon anticon-caret-up"></i>
-  </div>
-</div>
+<nz-back-top
+  [nzTemplate]="tpl"
+  [nzVisibilityHeight]="100"
+  (nzOnClick)="notify()"
+>
+  <ng-template #tpl>
+    <div class="ant-back-top">
+      <div class="back-top-wrap" aria-label="回到顶部">
+        <i aria-label="icon: caret-up" class="anticon anticon-caret-up"></i>
+      </div>
+    </div>
+  </ng-template>
+</nz-back-top>
