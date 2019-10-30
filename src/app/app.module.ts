@@ -61,6 +61,7 @@ import { BindEmailComponent } from './components/bind-email/bind-email.component
 import { RecycleComponent } from './pages/recycle/recycle.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { VerifyComponent } from './components/verify/verify.component';
+import { WriteLoadingComponent } from './components/write-loading/write-loading.component';
 
 registerLocaleData(zh);
 
@@ -118,7 +119,8 @@ registerLocaleData(zh);
     BindEmailComponent,
     RecycleComponent,
     HistoryComponent,
-    VerifyComponent
+    VerifyComponent,
+    WriteLoadingComponent
   ],
   imports: [
     BrowserModule,
