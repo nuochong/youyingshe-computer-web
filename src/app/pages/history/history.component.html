@@ -5,12 +5,12 @@
   <div class="ant-row _10ibe">
     <div class="SJkAD">
       <div class="_24LeD">
-        <div class="_3WaPV">
-          <i class="fa fa-clock-o"></i>共2条历史版本<span class="_35zzW"
+        <div class="_3WaPV" (click)="isShowScreen()">
+          <i class="fa fa-clock-o"></i> 共2条历史版本<span class="_35zzW"
             >筛选<i class="fa fa-angle-double-down"></i
           ></span>
         </div>
-        <div class="_3ciQq">
+        <div class="_3ciQq" [ngClass]="{'_1pDW4': showScreen}">
           <label class="checkbox"
             ><input
               type="checkbox"
