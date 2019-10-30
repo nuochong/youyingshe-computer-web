@@ -60,6 +60,7 @@ import { SignBtnComponent } from './components/sign-btn/sign-btn.component';
 import { BindEmailComponent } from './components/bind-email/bind-email.component';
 import { RecycleComponent } from './pages/recycle/recycle.component';
 import { HistoryComponent } from './pages/history/history.component';
+import { VerifyComponent } from './components/verify/verify.component';
 
 registerLocaleData(zh);
 
@@ -116,7 +117,8 @@ registerLocaleData(zh);
     SignBtnComponent,
     BindEmailComponent,
     RecycleComponent,
-    HistoryComponent
+    HistoryComponent,
+    VerifyComponent
   ],
   imports: [
     BrowserModule,
