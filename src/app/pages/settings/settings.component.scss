@@ -209,6 +209,7 @@
     line-height: normal;
     border-radius: 40px;
     background: none;
+    outline: none;
     &:hover {
       border: 1px solid #42c02e;
       color: #42c02e !important;
@@ -220,6 +221,11 @@
     color: #fff;
     background-color: #42c02e;
     border-color: #42c02e;
+    &:hover {
+      background-color: #3db922;
+      color: #fff;
+      text-decoration: none;
+    }
   }
 }
 

@@ -159,10 +159,11 @@
   </div>
   <div class="body-right-wrap">
     <div class="title">个人介绍</div>
-    <a class="function-btn" data-action="start-edit-intro" href="javascript:;"
+    <a (click)="changeEdit()" class="function-btn" data-action="start-edit-intro" href="javascript:;"
       ><i class="iconfont ic-edit-s iconbianji2"></i>编辑</a
     >
     <form
+    [hidden]="!isEdit"
       class="profile-edit js-intro-form"
       data-type="json"
       id="edit_user_19245301"

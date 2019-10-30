@@ -1,0 +1,46 @@
+<nz-modal
+  [(nzVisible)]="isVisible"
+  [nzTitle]="modalTitle"
+  [nzContent]="modalContent"
+  [nzFooter]="modalFooter"
+  (nzOnCancel)="handleCancel()"
+>
+  <ng-template #modalTitle>
+    <div class="modal-title">
+      <h4>绑定邮箱</h4>
+    </div>
+  </ng-template>
+
+  <ng-template #modalContent>
+    <form>
+      <div>
+        <i class="iconfont ic-email iconemail"></i>
+        <div class="input-wrap">
+          <input type="email" placeholder="请输入你的常用邮箱" />
+        </div>
+      </div>
+      <div class="form-item">
+        <i class="iconfont ic-verify iconyanzhengma"></i>
+        <button type="button" class="auth-code-btn">
+          发送验证码
+        </button>
+        <div class="input-wrap"><input type="text" placeholder="验证码" /></div>
+      </div>
+    </form>
+  </ng-template>
+
+  <ng-template #modalFooter>
+    <!-- <button nz-button nzType="default" (click)="handleCancel()">
+      取消
+    </button> -->
+    <button
+    class="submit-email-btn"
+      nz-button
+      nzType="primary"
+      (click)="handleOk()"
+      [nzLoading]="isConfirmLoading"
+    >
+      确认
+    </button>
+  </ng-template>
+</nz-modal>

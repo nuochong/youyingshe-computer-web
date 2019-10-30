@@ -77,7 +77,8 @@
         <tr>
           <td class="setting-title">电子邮件</td>
           <td>
-            <button class="btn btn-hollow">点击绑定</button>
+            <button  nzType="primary" (click)="showModal()" class="btn btn-hollow">点击绑定</button>
+            <app-bind-email (outer)="runParent($event)" #bindEmail [isVisible]="isVisible"></app-bind-email>
           </td>
         </tr>
         <tr>

@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   isOver:boolean = true;
+  isEdit:boolean = true;
   constructor() { }
 
   ngOnInit() {
   }
-
+  changeEdit(){
+    this.isEdit = !this.isEdit;
+  }
 }

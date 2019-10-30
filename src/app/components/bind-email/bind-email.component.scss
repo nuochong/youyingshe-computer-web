@@ -1,0 +1,92 @@
+.modal-title {
+  display: block;
+  h4 {
+    margin: 0;
+    color: #333;
+    text-align: left;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+}
+
+form {
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  background-color: rgba(181, 181, 181, 0.1);
+  overflow: hidden;
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  .iconfont {
+    float: left;
+    font-size: 18px;
+    color: #969696;
+    display: block;
+    width: 40px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .input-wrap {
+    overflow: hidden;
+    input {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      border: none;
+      background-color: transparent;
+      padding-left: 0;
+      padding: 5px 10px;
+      font-size: 15px;
+      border-radius: 4px;
+      outline: none;
+    }
+  }
+  .form-item {
+    border-top: 1px solid #c8c8c8;
+    .auth-code-btn {
+      float: right;
+      margin: 7px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 18px;
+      width: 120px;
+      // padding: 9px 18px;
+      text-align: center;
+      border: none;
+      color: #fff;
+      background: #3194d0;
+      cursor: pointer;
+      outline: none;
+      display: block;
+      font-family: inherit;
+      font-size: inherit;
+      text-transform: none;
+      overflow: visible;
+      font: inherit;
+    }
+  }
+}
+
+.submit-email-btn {
+  // margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 25px;
+  // padding: 9px 18px;
+  text-align: center;
+  border: none;
+  color: #fff;
+  background: #3194d0;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  font-family: inherit;
+  line-height: inherit;
+  text-transform: none;
+  overflow: visible;
+  font: inherit;
+  height: 40px;
+  line-height: 40px;
+}
