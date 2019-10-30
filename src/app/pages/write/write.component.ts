@@ -7,7 +7,7 @@ import { EditorConfig } from '../../components/editor/model/editor-config';
   styleUrls: ['./write.component.scss']
 })
 export class WriteComponent implements OnInit {
-
+  showNewFile = false;
   title = 'app';
   conf = new EditorConfig();
   markdown = '测试语句';
@@ -20,6 +20,10 @@ export class WriteComponent implements OnInit {
   // 同步属性内容
   syncModel(str): void {
     this.markdown = str;
+  }
+  //新建文集
+  changeNewFile(){
+    this.showNewFile = !this.showNewFile;
   }
 
 }

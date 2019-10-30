@@ -25,6 +25,8 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { ResetMobileComponent } from './pages/reset-mobile/reset-mobile.component';
 import { ResetEmailComponent } from './pages/reset-email/reset-email.component';
 import { WriteComponent } from './pages/write/write.component';
+import { RecycleComponent } from './pages/recycle/recycle.component';
+import { HistoryComponent } from './pages/history/history.component';
 
 
 const routes: Routes = [
@@ -78,6 +80,10 @@ const routes: Routes = [
     path: 'reset-email', component: ResetEmailComponent, data: { title: '用邮箱重置密码' }
   }, {
     path: 'write', component: WriteComponent, data: { title: '写文章' }
+  }, {
+    path: 'recycle', component: RecycleComponent, data: { title: '回收站' }
+  }, {
+    path: 'history', component: HistoryComponent, data: { title: '历史' }
   }
 ];
 

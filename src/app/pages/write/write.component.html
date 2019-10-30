@@ -3,10 +3,10 @@
     <div nz-col nzSpan="4" class="ant-col-4 _2v5v5">
       <div class="_3zibT"><a [routerLink]="['/discovery']">回首页</a></div>
       <div class="_1iZMb">
-        <div class="_33Zlg">
+        <div class="_33Zlg" (click)="changeNewFile()">
           <i class="fa fa-plus"></i><span>新建文集</span>
         </div>
-        <div class="_2G97m">
+        <div class="_2G97m" [hidden]="!showNewFile">
           <form class="M8J6Q _1mU5v">
             <input
               type="text"

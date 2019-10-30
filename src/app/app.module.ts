@@ -58,6 +58,8 @@ import { ResetFooterComponent } from './components/reset-footer/reset-footer.com
 import { EditorMdDirective } from './components/editor/editor-md.directive';
 import { SignBtnComponent } from './components/sign-btn/sign-btn.component';
 import { BindEmailComponent } from './components/bind-email/bind-email.component';
+import { RecycleComponent } from './pages/recycle/recycle.component';
+import { HistoryComponent } from './pages/history/history.component';
 
 registerLocaleData(zh);
 
@@ -112,7 +114,9 @@ registerLocaleData(zh);
     ResetFooterComponent,
     EditorMdDirective,
     SignBtnComponent,
-    BindEmailComponent
+    BindEmailComponent,
+    RecycleComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
