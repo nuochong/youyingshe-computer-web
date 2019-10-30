@@ -74,8 +74,13 @@
                       alt="Avatar notebook default"
                     />
                   </a>
-                  <a class="btn btn-default following"
-                    ><i class="iconfont ic-followed"></i> <span>已关注</span></a
+                  <a class="btn btn-default following" (mouseover)="isOver  = false" (mouseleave)="isOver = true"
+                    >
+                    <i class="iconfont ic-followed icongezicomfollowd" [hidden]="!isOver"></i>
+                     <span [hidden]="!isOver">已关注</span>
+                     <i class="iconfont ic-followed iconhebingxingzhuang" [hidden]="isOver"></i>
+                     <span [hidden]="isOver">取消关注</span>
+                     </a
                   >
                   <a class="title" href="javascript:;">诗</a>
                   <p>
