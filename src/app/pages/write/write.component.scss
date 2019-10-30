@@ -293,7 +293,7 @@
                   position: relative;
                   height: 90px;
                   color: #595959;
-                  // background-color: #fff;
+                  background-color: #fff;
                   margin-bottom: 0;
                   padding: 15px 10px 15px 60px;
                   -webkit-box-shadow: 0 0 0 1px #d9d9d9;
@@ -306,6 +306,9 @@
                   -moz-user-select: none;
                   -ms-user-select: none;
                   user-select: none;
+                  &:hover {
+                    background-color: #e6e6e6;
+                  }
                   ._13kgp {
                     position: absolute;
                     top: 30px;
