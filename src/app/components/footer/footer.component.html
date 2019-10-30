@@ -20,11 +20,27 @@
           ><span>赞1159</span>
         </div>
         <div
+          nz-dropdown
+          [nzDropdownMenu]="menu"
+          [nzPlacement]="'topCenter'"
           class="article-footerTools-li article-footerTools-more"
           aria-label="更多操作"
         >
           <i aria-label="ic-others" class="iconfont iconmoreread"></i>
         </div>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu>
+            <li nz-submenu nzTitle="分享文章">
+              <ul>
+                <li nz-menu-item>分享到微信</li>
+                <li nz-menu-item>分享到微博</li>
+              </ul>
+            </li>
+            <li nz-menu-item>收入专题</li>
+            <li nz-menu-item>收藏文章</li>
+            <li nz-menu-item>举报文章</li>
+          </ul>
+        </nz-dropdown-menu>
       </div>
     </div>
   </div>
