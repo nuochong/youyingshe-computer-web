@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit, Renderer2, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-history',
@@ -7,7 +7,7 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class HistoryComponent implements OnInit {
   showScreen: boolean = false;
-  constructor(private renderer2: Renderer2) { }
+  constructor(private el: ElementRef, private renderer2: Renderer2) { }
 
   ngOnInit() {
   }
@@ -16,8 +16,17 @@ export class HistoryComponent implements OnInit {
   }
   over(e) {
     console.log('overe :', e);
+    //this.renderer2.setStyle(e.fromElement,'color','red')
+    console.log(e.target.querySelector('span'))
+    const span = e.target.querySelector('span');
+    const title = span.getAttribute('data-title')
+    span.innerText = title
+
   }
   leave(e) {
     console.log('leavee :', e);
+    const span = e.target.querySelector('span');
+    const timeage = span.getAttribute('data-timeago')
+    span.innerText = timeage
   }
 }
