@@ -255,6 +255,12 @@
               margin: 0;
               font-family: inherit;
               line-height: inherit;
+              &:focus,
+              &:hover {
+                color: #ec7259;
+                background-color: #fef8f7;
+                border-color: #ec7259;
+              }
             }
             .article-focus {
               padding-right: 20px;
