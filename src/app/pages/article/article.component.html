@@ -261,8 +261,9 @@
               ><span>上一篇</span></a
             >
           </div>
-          <div class="_2bdkP8 _3dvb2i" role="button" tabindex="-1">
+          <div (click)="changeArticleDirectoryLook()" class="_2bdkP8 _3dvb2i" role="button" tabindex="-1">
             查看连载目录
+            <app-article-directory-look #articleDirectoryLook></app-article-directory-look>
           </div>
           <div class="_2bdkP8">已是最后</div>
         </div>

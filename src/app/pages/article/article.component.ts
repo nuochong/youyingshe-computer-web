@@ -12,10 +12,16 @@ export class ArticleComponent implements OnInit {
   @ViewChild('admire', { static: true }) admire;
   showReplyArea: boolean = false;
   @ViewChild('modalReport',{static:true}) modalReport;
+  @ViewChild('articleDirectoryLook',{static:true}) articleDirectoryLook;
   constructor() { }
 
   ngOnInit() {
   }
+  changeArticleDirectoryLook(){
+    this.articleDirectoryLook.showModalMiddle();
+  }
+
+  
   showModalMiddle(): void {
     this.isVisibleMiddle = true;
     this.modalReport.showModalMiddle()
