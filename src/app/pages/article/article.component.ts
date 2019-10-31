@@ -9,7 +9,8 @@ export class ArticleComponent implements OnInit {
   isVisibleMiddle: boolean;
   showDeleteBtn: boolean = false;
   isVisible = false;
-  @ViewChild('admire',{static:true}) admire;
+  @ViewChild('admire', { static: true }) admire;
+  showReplyArea: boolean = false;
   constructor() { }
 
   ngOnInit() {
@@ -17,18 +18,24 @@ export class ArticleComponent implements OnInit {
   showModalMiddle(): void {
     this.isVisibleMiddle = true;
   }
-  handleCancel(){
+  handleCancel() {
     this.isVisibleMiddle = false;
   }
-  handleOk(){
+  handleOk() {
     console.log('提交了 :');
     this.isVisibleMiddle = false;
   }
   showModal(): void {
     this.isVisible = true;
   }
-  runParent(msg:string){ 
+  runParent(msg: string) {
     this.isVisible = false;
     //alert(msg); 
   }
+
+  //显示评论区
+  changeShowReplyArea() {
+    this.showReplyArea = !this.showReplyArea;
+  }
+
 }
