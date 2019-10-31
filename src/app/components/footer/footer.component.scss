@@ -91,3 +91,115 @@
     }
   }
 }
+
+//评论发布按钮
+.article-btns {
+  ._1OyPqC[disabled] {
+    cursor: not-allowed;
+  }
+  ._3Mi9q9._1YbC5u,
+  ._3Mi9q9._1YbC5u[disabled]:hover {
+    color: #fff;
+    background-color: #ec7259;
+    border-color: #ec7259;
+  }
+  button {
+    text-transform: none;
+    overflow: visible;
+    margin: 0;
+  }
+  ._1OyPqC[disabled]:before,
+  ._31-TB-:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: inherit;
+    opacity: 0.35;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    pointer-events: none;
+  }
+  ._1OyPqC[disabled] {
+    cursor: not-allowed;
+  }
+}
+._1OyPqC {
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  font-size: 14px;
+  padding: 4px 12px;
+  color: #969696;
+  background-color: #fff;
+  border: 1px solid #999;
+}
+.new-textarea {
+  width: 560px !important;
+  height: 56px !important;
+  padding-right: 80px !important;
+  border-radius: 4px !important;
+  display: inline-flex;
+  resize: none;
+  margin-right: 16px !important;
+  padding: 8px 18px !important;
+  border: none;
+  -webkit-transition: all 0.2s cubic-bezier(0.19, 0.4, 0.17, 0.85);
+  -o-transition: all 0.2s cubic-bezier(0.19, 0.4, 0.17, 0.85);
+  transition: all 0.2s cubic-bezier(0.19, 0.4, 0.17, 0.85);
+  background-color: #f2f2f2;
+  overflow: auto;
+}
+.card-emoji {
+  &.anticon {
+    display: inline-block;
+    color: inherit;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &._2qhU6p {
+    position: absolute;
+    right: 16px;
+    bottom: 8px;
+    font-size: 20px;
+    margin-right: 12px;
+    color: #969696;
+  }
+  &.anticon[tabindex] {
+    cursor: pointer;
+  }
+}

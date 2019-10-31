@@ -70,6 +70,7 @@ import { ModalAdmireComponent } from './components/modal-admire/modal-admire.com
 import { BookrackComponent } from './pages/bookrack/bookrack.component';
 import { DirectoryComponent } from './pages/directory/directory.component';
 import { ModalReportComponent } from './components/modal-report/modal-report.component';
+import { ArticleDirectoryLookComponent } from './components/article-directory-look/article-directory-look.component';
 
 registerLocaleData(zh);
 
@@ -136,7 +137,8 @@ registerLocaleData(zh);
     ModalAdmireComponent,
     BookrackComponent,
     DirectoryComponent,
-    ModalReportComponent
+    ModalReportComponent,
+    ArticleDirectoryLookComponent
   ],
   imports: [
     BrowserModule,

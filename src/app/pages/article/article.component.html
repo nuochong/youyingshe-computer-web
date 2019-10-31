@@ -198,6 +198,74 @@
             </div>
           </div>
         </div>
+
+        <!-- 本文来自以下连载 -->
+        <div class="article-from">
+          <div class="_3h2LgE">文章来自以下连载</div>
+          <div class="_2pnG2B">
+            <a
+              class="_1OhGeD"
+              href="/nb/24586791"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="_1UTYGj"
+                src="//upload.jianshu.io/book/image/a922e814-8ad4-404c-bedf-5b210c2124e1?imageMogr2/auto-orient/strip|imageView2/1/w/128/h/168/format/webp"
+                alt="  "
+            /></a>
+            <div class="_3ZnwgR">
+              <div class="_2pIEsr" title="威士忌笔记 | 天使的一份">
+                <a
+                  class="_1OhGeD"
+                  href="/nb/24586791"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >威士忌笔记 | 天使的一份</a
+                >
+              </div>
+              <div class="_3MbC71">
+                <span>6451字</span><span>4,712阅读</span><span>21人关注</span>
+              </div>
+              <div
+                class="NkHoT6"
+                title="对自己喝过的威士忌进行的评价。
+酒后评价，要用酒后的语言。"
+              >
+                对自己喝过的威士忌进行的评价。 酒后评价，要用酒后的语言。
+              </div>
+            </div>
+            <button data-locale="zh-CN" type="button" class="_1OyPqC _3Mi9q9">
+              <span>关注连载</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 查看连载目录 -->
+        <div class="article-look _2ssoa1">
+          <div class="_2bdkP8">
+            <a class="_1OhGeD" href="/p/a7f4aa576735"
+              ><i aria-label="icon: left" class="anticon anticon-left"
+                ><svg
+                  viewBox="64 64 896 896"
+                  focusable="false"
+                  class=""
+                  data-icon="left"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+                  ></path></svg></i
+              ><span>上一篇</span></a
+            >
+          </div>
+          <div class="_2bdkP8 _3dvb2i" role="button" tabindex="-1">
+            查看连载目录
+          </div>
+          <div class="_2bdkP8">已是最后</div>
+        </div>
       </section>
 
       <section class="article-comment">
@@ -254,7 +322,7 @@
                       5
                     </span>
                     <span
-                    (click)="changeShowReplyArea()"
+                      (click)="changeShowReplyArea()"
                       class="article-comment-listRight-toolsReply"
                       aria-label="添加评论"
                     >
@@ -263,13 +331,18 @@
                     </span>
                   </div>
                   <div class="article-comment-listRight-report">
-                    <span nzType="primary"
-                    (click)="showModalMiddle()" aria-label="举报评论"
+                    <span
+                      nzType="primary"
+                      (click)="showModalMiddle()"
+                      aria-label="举报评论"
                       ><i class="anticon anticon-alert"></i> 举报</span
                     >
                   </div>
                 </div>
-                <div [hidden]="!showReplyArea" class="article-comment-listRight-comment">
+                <div
+                  [hidden]="!showReplyArea"
+                  class="article-comment-listRight-comment"
+                >
                   <app-card-article-comment></app-card-article-comment>
                 </div>
                 <div class="article-comment-listRight-Reply">
@@ -322,8 +395,10 @@
                       <div
                         class="article-comment-listRight-ReplyBack-footerReport"
                       >
-                        <span nzType="primary"
-                        (click)="showModalMiddle()" aria-label="举报评论"
+                        <span
+                          nzType="primary"
+                          (click)="showModalMiddle()"
+                          aria-label="举报评论"
                           ><i class="anticon anticon-alert"></i> 举报</span
                         >
                       </div>

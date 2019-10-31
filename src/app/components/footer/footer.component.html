@@ -2,9 +2,20 @@
   <div class="article-footerContainer">
     <div class="article-footerWrap">
       <div class="article-footerTextarea">
-        <textarea class="" placeholder="写下你的评论..."></textarea>
+        <textarea
+          (focus)="change()"
+          [ngClass]="{ 'new-textarea': !changeTools }"
+          placeholder="写下你的评论..."
+        ></textarea>
+        <div
+          [hidden]="changeTools"
+          class="card-emoji anticon anticon-smile _2qhU6p"
+        >
+          <app-card-article-emoji></app-card-article-emoji>
+        </div>
       </div>
-      <div class="article-footerTools">
+
+      <div class="article-footerTools" [hidden]="!changeTools">
         <div
           class="article-footerTools-li article-footerTools-comment"
           aria-label="添加评论"
@@ -23,9 +34,18 @@
           class="article-footerTools-li article-footerTools-more"
           aria-label="更多操作"
         >
-        <!-- <i aria-label="ic-others" class="iconfont iconmoreread"></i> -->
+          <!-- <i aria-label="ic-others" class="iconfont iconmoreread"></i> -->
           <app-card-article-more></app-card-article-more>
         </div>
+      </div>
+
+      <div class="article-btns" [hidden]="changeTools">
+        <span disabled="" type="button" class="_1OyPqC _3Mi9q9 _1YbC5u"
+          ><span>发布</span></span
+        >
+        <button type="button" class="_1OyPqC" (click)="change()">
+          <span>取消</span>
+        </button>
       </div>
     </div>
   </div>
