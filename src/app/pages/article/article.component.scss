@@ -395,6 +395,129 @@
           line-height: inherit;
           -webkit-appearance: none;
         }
+        > div {
+          ._3IXP9Q {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            margin-top: 16px;
+            font-size: 14px;
+            color: #969696;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            .SKZUyR {
+              -ms-flex-negative: 0;
+              flex-shrink: 0;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              .anticon[tabindex] {
+                cursor: pointer;
+              }
+              ._3MkVdm {
+                font-size: 18px;
+                margin-right: 12px;
+              }
+              .anticon {
+                display: inline-block;
+                color: inherit;
+                font-style: normal;
+                line-height: 0;
+                text-align: center;
+                text-transform: none;
+                vertical-align: -0.125em;
+                text-rendering: optimizeLegibility;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+              }
+            }
+            ._3Tp4of {
+              -ms-flex-negative: 0;
+              flex-shrink: 0;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              ._1OyPqC[disabled] {
+                cursor: not-allowed;
+              }
+              ._3Mi9q9 {
+                color: #ec7259;
+                background-color: #fff;
+                border-color: #ec7259;
+                &._1YbC5u {
+                  color: #fff;
+                  background-color: #ec7259;
+                  border-color: #ec7259;
+                  &:hover {
+                    color: #fff;
+                    background-color: #ed7961;
+                    border-color: #ec7259;
+                  }
+                }
+              }
+              ._1OyPqC {
+                position: relative;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                border-radius: 50px;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                background-image: none;
+                white-space: nowrap;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -webkit-transition: all 0.2s
+                  cubic-bezier(0.645, 0.045, 0.355, 1);
+                -o-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+                transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+                font-size: 14px;
+                padding: 4px 12px;
+                color: #969696;
+                background-color: #fff;
+                border: 1px solid #999;
+              }
+              ._2nzlC_ {
+                color: #999;
+                background-color: #fff;
+                border-color: #999;
+                &:hover {
+                  color: #999;
+                  background-color: #fafafa;
+                  border-color: #999;
+                }
+              }
+              button {
+                text-transform: none;
+                overflow: visible;
+              }
+              ._1OyPqC + ._1OyPqC {
+                margin-left: 8px;
+              }
+            }
+          }
+        }
       }
     }
     .article-comment-wonderful {
