@@ -62,6 +62,7 @@ import { RecycleComponent } from './pages/recycle/recycle.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { VerifyComponent } from './components/verify/verify.component';
 import { WriteLoadingComponent } from './components/write-loading/write-loading.component';
+import { CardArticleMoreComponent } from './components/card-article-more/card-article-more.component';
 
 registerLocaleData(zh);
 
@@ -120,7 +121,8 @@ registerLocaleData(zh);
     RecycleComponent,
     HistoryComponent,
     VerifyComponent,
-    WriteLoadingComponent
+    WriteLoadingComponent,
+    CardArticleMoreComponent
   ],
   imports: [
     BrowserModule,
