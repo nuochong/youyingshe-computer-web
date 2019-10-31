@@ -47,6 +47,25 @@
         -ms-flex-align: center;
         align-items: center;
         // emoji
+        .anticon[tabindex] {
+          cursor: pointer;
+        }
+        ._3MkVdm {
+          font-size: 18px;
+          margin-right: 12px;
+        }
+        .anticon {
+          display: inline-block;
+          color: inherit;
+          font-style: normal;
+          line-height: 0;
+          text-align: center;
+          text-transform: none;
+          vertical-align: -0.125em;
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
       }
       ._3Tp4of {
         -ms-flex-negative: 0;
