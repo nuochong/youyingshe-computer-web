@@ -11,12 +11,14 @@ export class ArticleComponent implements OnInit {
   isVisible = false;
   @ViewChild('admire', { static: true }) admire;
   showReplyArea: boolean = false;
+  @ViewChild('modalReport',{static:true}) modalReport;
   constructor() { }
 
   ngOnInit() {
   }
   showModalMiddle(): void {
     this.isVisibleMiddle = true;
+    this.modalReport.showModalMiddle()
   }
   handleCancel() {
     this.isVisibleMiddle = false;

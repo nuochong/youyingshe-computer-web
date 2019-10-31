@@ -251,48 +251,7 @@
         data-reportable-type="user"
         >举报用户</a
       >
-      <ng-template #modalTitle>
-        <div class="modal-header">
-          <h4 class="modal-title">举报用户</h4>
-        </div>
-      </ng-template>
-      <nz-modal
-        nzWrapClassName="vertical-center-modal"
-        [(nzVisible)]="isVisibleMiddle"
-        [nzTitle]="modalTitle"
-        (nzOnCancel)="handleCancelMiddle()"
-        (nzOnOk)="handleOkMiddle()"
-      >
-        <form>
-          <input type="radio" name="report" value="ad" /><span
-            >广告及垃圾信息</span
-          >
-          <input type="radio" name="report" value="plagiarism" /><span
-            >抄袭或未授权转载</span
-          >
-          <input type="radio" name="report" value="other" /><span>其它</span>
-          <textarea
-            placeholder="写下举报的详情情况（选填）"
-            class="form-control"
-          ></textarea>
-        </form>
-        <div *nzModalFooter>
-          <div class="action">
-            <a class="button" (click)="handleCancel()">
-              取消
-            </a>
-            <button
-              class="btn btn-hollow"
-              nz-button
-              nzType="primary"
-              (click)="handleOk()"
-              [nzLoading]="isConfirmLoading"
-            >
-              提交
-            </button>
-          </div>
-        </div>
-      </nz-modal>
+      <app-modal-report #modalReport></app-modal-report>
     </div>
 
     <div class="notice">

@@ -263,7 +263,8 @@
                     </span>
                   </div>
                   <div class="article-comment-listRight-report">
-                    <span class=" " aria-label="举报评论"
+                    <span nzType="primary"
+                    (click)="showModalMiddle()" aria-label="举报评论"
                       ><i class="anticon anticon-alert"></i> 举报</span
                     >
                   </div>
@@ -321,7 +322,8 @@
                       <div
                         class="article-comment-listRight-ReplyBack-footerReport"
                       >
-                        <span class=" " aria-label="举报评论"
+                        <span nzType="primary"
+                        (click)="showModalMiddle()" aria-label="举报评论"
                           ><i class="anticon anticon-alert"></i> 举报</span
                         >
                       </div>
@@ -554,3 +556,5 @@
 
 <app-footer></app-footer>
 <app-back-top></app-back-top>
+
+<app-modal-report #modalReport></app-modal-report>

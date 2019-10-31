@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-personal-details',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./personal-details.component.scss']
 })
 export class PersonalDetailsComponent implements OnInit {
-
+  @ViewChild('modalReport',{static:true}) modalReport;
   constructor() { }
 
   ngOnInit() {
@@ -20,6 +20,7 @@ export class PersonalDetailsComponent implements OnInit {
 
   showModalMiddle(): void {
     this.isVisibleMiddle = true;
+    this.modalReport.showModalMiddle()
   }
 
   handleOkTop(): void {
