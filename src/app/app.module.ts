@@ -63,6 +63,9 @@ import { HistoryComponent } from './pages/history/history.component';
 import { VerifyComponent } from './components/verify/verify.component';
 import { WriteLoadingComponent } from './components/write-loading/write-loading.component';
 import { CardArticleMoreComponent } from './components/card-article-more/card-article-more.component';
+import { CardArticleReleaseComponent } from './components/card-article-release/card-article-release.component';
+import { CardArticleEmojiComponent } from './components/card-article-emoji/card-article-emoji.component';
+import { CardArticleCommentComponent } from './components/card-article-comment/card-article-comment.component';
 
 registerLocaleData(zh);
 
@@ -122,7 +125,10 @@ registerLocaleData(zh);
     HistoryComponent,
     VerifyComponent,
     WriteLoadingComponent,
-    CardArticleMoreComponent
+    CardArticleMoreComponent,
+    CardArticleReleaseComponent,
+    CardArticleEmojiComponent,
+    CardArticleCommentComponent
   ],
   imports: [
     BrowserModule,
