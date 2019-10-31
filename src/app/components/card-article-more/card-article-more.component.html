@@ -1,1 +1,47 @@
-<p>card-article-more works!</p>
+<div
+  nz-dropdown
+  nzTrigger="click"
+  [nzDropdownMenu]="menu"
+  [nzPlacement]="'topCenter'"
+>
+  <i aria-label="ic-others" class="iconfont iconmoreread"></i>
+  <nz-dropdown-menu #menu="nzDropdownMenu">
+    <ul nz-menu>
+      <li nz-submenu nzTitle="分享文章">
+        <ul>
+          <li nz-menu-item nzType="primary" (click)="showModal()">
+            分享到微信
+          </li>
+          <li nz-menu-item>分享到微博</li>
+        </ul>
+      </li>
+      <li nz-menu-item>收入专题</li>
+      <li nz-menu-item>收藏文章</li>
+      <li nz-menu-item>举报文章</li>
+    </ul>
+  </nz-dropdown-menu>
+  <nz-modal
+    [(nzVisible)]="isVisible"
+    [nzTitle]="modalTitle"
+    [nzContent]="modalContent"
+    [nzFooter]="null"
+    (nzOnCancel)="handleCancel()"
+  >
+    <!-- 微信分享 -->
+    <ng-template #modalTitle>
+      <div class="weixin-share-title">微信分享</div>
+    </ng-template>
+
+    <ng-template #modalContent>
+      <div class="weixin-share-body">
+        <div class="_2rxlQh">
+          打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮
+        </div>
+        <img
+          src="https://cdn2.jianshu.io/assets/web/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png"
+          width="180px"
+        />
+      </div>
+    </ng-template>
+  </nz-modal>
+</div>
