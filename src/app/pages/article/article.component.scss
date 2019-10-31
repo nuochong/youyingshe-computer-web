@@ -178,10 +178,16 @@
             align-items: center;
             font-size: 14px;
             color: #969696;
+            .like-active {
+              border-color: #ec7259;
+              background-color: #ec7259;
+              color: #fff!important;
+            }
             .article-tools-like {
               margin-right: 12px;
               display: flex;
               align-items: center;
+
               .article-tools-likeWrap {
                 display: flex;
                 align-items: center;
@@ -194,6 +200,7 @@
                 font-size: 18px;
                 cursor: pointer;
                 touch-action: manipulation;
+
                 i {
                 }
               }
