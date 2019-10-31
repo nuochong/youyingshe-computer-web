@@ -165,9 +165,10 @@
               <div class="article-admire-wrap">
                 <span class="">"小礼物走一走，来简书关注我"</span>
               </div>
-              <button type="button" class="article-admire-btn">
+              <button (click)="showModal()" type="button" class="article-admire-btn">
                 <span>赞赏</span>
               </button>
+              <app-modal-admire (outer)="runParent($event)" #admire [isVisible]="isVisible"></app-modal-admire>
             </div>
           </div>
         </div>
