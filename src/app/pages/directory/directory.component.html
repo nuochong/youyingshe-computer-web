@@ -1,1 +1,19 @@
-<p>directory works!</p>
+<app-header></app-header>
+
+
+
+<div class="buttons">
+  <!-- 付费连载 -->
+  <a class="btn btn-success btn-read" href="/p/51ae78421324">开始阅读</a>
+  <!-- 如果未登录，或已登录且当前用户不是文集创建者，才显示关注按钮 -->
+  <a class="btn btn-default following" (mouseenter)="changeBtnState()" (mouseleave)="changeBtnState()">
+    <div class="guanzhu" [hidden]="btnState">
+      <i class="iconfont ic-followed icongezicomfollowd"></i>
+      <span>已关注</span>
+    </div>
+    <div class="quxiao" [hidden]="!btnState">
+      <i class="iconfont ic-followed iconhebingxingzhuang"></i>
+      <span>取消关注</span>
+    </div>
+  </a>
+</div>
