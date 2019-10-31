@@ -181,7 +181,7 @@
             .like-active {
               border-color: #ec7259;
               background-color: #ec7259;
-              color: #fff!important;
+              color: #fff !important;
             }
             .article-tools-like {
               margin-right: 12px;
@@ -688,6 +688,11 @@
             font-size: 15px;
 
             user-select: none;
+            &:hover {
+              span {
+                opacity: 1 !important;
+              }
+            }
             .article-comment-listRight-toolsWrap {
               display: block;
               .article-comment-listRight-toolsLike {
@@ -809,6 +814,11 @@
                 -webkit-user-select: none;
 
                 user-select: none;
+                &:hover {
+                  span {
+                    opacity: 1 !important;
+                  }
+                }
                 .article-comment-listRight-ReplyBack-footerReply {
                   display: block;
                   span {
