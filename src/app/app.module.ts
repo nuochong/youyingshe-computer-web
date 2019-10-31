@@ -69,6 +69,7 @@ import { CardArticleCommentComponent } from './components/card-article-comment/c
 import { ModalAdmireComponent } from './components/modal-admire/modal-admire.component';
 import { BookrackComponent } from './pages/bookrack/bookrack.component';
 import { DirectoryComponent } from './pages/directory/directory.component';
+import { ModalReportComponent } from './components/modal-report/modal-report.component';
 
 registerLocaleData(zh);
 
@@ -134,7 +135,8 @@ registerLocaleData(zh);
     CardArticleCommentComponent,
     ModalAdmireComponent,
     BookrackComponent,
-    DirectoryComponent
+    DirectoryComponent,
+    ModalReportComponent
   ],
   imports: [
     BrowserModule,
