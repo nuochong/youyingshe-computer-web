@@ -66,6 +66,7 @@ import { CardArticleMoreComponent } from './components/card-article-more/card-ar
 import { CardArticleReleaseComponent } from './components/card-article-release/card-article-release.component';
 import { CardArticleEmojiComponent } from './components/card-article-emoji/card-article-emoji.component';
 import { CardArticleCommentComponent } from './components/card-article-comment/card-article-comment.component';
+import { ModalAdmireComponent } from './components/modal-admire/modal-admire.component';
 
 registerLocaleData(zh);
 
@@ -128,7 +129,8 @@ registerLocaleData(zh);
     CardArticleMoreComponent,
     CardArticleReleaseComponent,
     CardArticleEmojiComponent,
-    CardArticleCommentComponent
+    CardArticleCommentComponent,
+    ModalAdmireComponent
   ],
   imports: [
     BrowserModule,
