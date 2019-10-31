@@ -63,8 +63,20 @@
         color: #969696;
         opacity: 0.5;
       }
-      ._3PA8BN {
+      &._3PA8BN {
         color: #404040;
+        > i {
+          font-size: 30px;
+        }
+        > span {
+          font-size: 16px;
+          font-style: normal;
+          margin-left: 4px;
+        }
+      }
+      &._1vONvL {
+        color: #ec7259;
+        border-color: #ec7259;
       }
       > i {
         font-size: 20px;
@@ -106,15 +118,57 @@
       &:nth-child(3n) {
         margin-right: 0;
       }
-      &._1vONvL {
-        color: #ec7259;
-        border-color: #ec7259;
-      }
     }
     ._2ByDWa {
       position: relative;
       font-size: 28px;
+      > span {
+        font-size: 16px;
+        font-style: normal;
+        opacity: 1;
+      }
+      > input {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 36px;
+        margin: 0 auto;
+        text-align: center;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
+        cursor: pointer;
+        border: 0;
+        overflow: visible;
+      }
+      input:not([type='range']) {
+        touch-action: manipulation;
+      }
+      input[type='number'] {
+        -webkit-appearance: none;
+      }
     }
+  }
+  ._1yN79W {
+    display: block;
+    width: 100%;
+    height: 80px;
+    resize: none;
+    margin-top: 12px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    overflow: auto;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    touch-action: manipulation;
+    outline: none;
   }
   ._1OyPqC {
     position: relative;
@@ -158,6 +212,11 @@
     background-color: #ec7259;
     border-color: #ec7259;
     -webkit-appearance: button;
+    &:hover {
+      color: #fff;
+      background-color: #ed7961;
+      border-color: #ec7259;
+    }
   }
   ._3A-4KL {
     margin-top: 24px;
@@ -165,24 +224,7 @@
     font-weight: normal;
     padding: 10px 48px;
   }
-  ._1yN79W {
-    display: block;
-    width: 100%;
-    height: 80px;
-    resize: none;
-    margin-top: 12px;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    background-color: #f2f2f2;
-    overflow: auto;
-    margin: 0;
-    color: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    line-height: inherit;
-    touch-action: manipulation;
-  }
+
   ._1_B577 {
     font-size: 15px;
     margin: 12px 0;
@@ -200,7 +242,7 @@
   img {
     height: 200px;
     width: 200px;
-    margin:5px;
+    margin: 5px;
   }
   .weixin-pay-content {
     font-size: 16px;
