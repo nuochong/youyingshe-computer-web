@@ -28,7 +28,7 @@ export class ModalAdmireComponent implements OnInit {
   }
   changeWeiXin(){
     this.showWeiXin = !this.showWeiXin;
-    this.isVisible = !this.isVisible;
+    this.isVisible = false;
   }
   handleCancelWeiXin(){
     this.showWeiXin = !this.showWeiXin;
