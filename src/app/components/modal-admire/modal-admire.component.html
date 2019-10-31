@@ -6,7 +6,6 @@
   (nzOnCancel)="handleCancel()"
   [nzWidth]="640"
 >
-
   <ng-template #modalContent>
     <div class="_3uZ5OL">
       <div class="_2PLkjk">
@@ -124,9 +123,28 @@
         </div>
         <div class="LMa6S_ _3PA8BN _1sSZ6C" aria-disabled="true">简书余额</div>
       </div>
-      <button type="button" class="_3A-4KL _1OyPqC _3Mi9q9 _1YbC5u">
+      <button (click)="changeWeiXin()" type="button" class="_3A-4KL _1OyPqC _3Mi9q9 _1YbC5u">
         <span>确认支付</span><span> ￥</span>2
       </button>
+    </div>
+  </ng-template>
+</nz-modal>
+
+
+<nz-modal
+  [(nzVisible)]="showWeiXin"
+  [nzTitle]=""
+  [nzContent]="modalContentWeiXin"
+  [nzFooter]="null"
+  (nzOnCancel)="handleCancelWeiXin()"
+  [nzWidth]="360"
+>
+  <ng-template #modalContentWeiXin>
+    <div class="_3uZ5OL">
+      <div class="_2PLkjk">
+        <div class="_2h5tnQ">给作者送糖</div>
+      </div>
+      <div class="_1_B577">选择支付方式</div>
     </div>
   </ng-template>
 </nz-modal>

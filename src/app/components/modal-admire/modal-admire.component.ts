@@ -9,6 +9,7 @@ export class ModalAdmireComponent implements OnInit {
   @Input() isVisible:boolean;
   isConfirmLoading = false;
   @Output() private outer=new EventEmitter<string>();
+  showWeiXin = false;
   constructor() { }
 
   ngOnInit() {
@@ -24,5 +25,12 @@ export class ModalAdmireComponent implements OnInit {
   handleCancel(): void {
     this.isVisible = false;
     this.outer.emit('msg from child') 
+  }
+  changeWeiXin(){
+    this.showWeiXin = !this.showWeiXin;
+    this.isVisible = !this.isVisible;
+  }
+  handleCancelWeiXin(){
+    this.showWeiXin = !this.showWeiXin;
   }
 }
