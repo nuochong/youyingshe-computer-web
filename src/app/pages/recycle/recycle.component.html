@@ -39,8 +39,12 @@
       </div>
       <div class="_2X1Nj">
         <span class="_1XG6y _3Ib_G">恢复文章</span
-        ><span class="_1XG6y _2_Gwf"  (click)="showModal()">彻底删除</span>
-        <app-verify (outer)="runParent($event)" #verify [isVisible]="isVisible"></app-verify>
+        ><span class="_1XG6y _2_Gwf" (click)="showModal()">彻底删除</span>
+        <app-verify
+          (outer)="runParent($event)"
+          #verify
+          [isVisible]="isVisible"
+        ></app-verify>
       </div>
     </div>
   </div>

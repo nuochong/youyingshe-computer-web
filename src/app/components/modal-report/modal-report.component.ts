@@ -39,10 +39,10 @@ export class ModalReportComponent implements OnInit {
   handleCancelMiddle(): void {
     this.isVisibleMiddle = false;
   }
-  handleCancel(){
+  handleCancel() {
     this.isVisibleMiddle = false;
   }
-  handleOk(){
+  handleOk() {
     console.log('提交了 :');
     this.isVisibleMiddle = false;
   }

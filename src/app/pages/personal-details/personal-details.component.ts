@@ -6,7 +6,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./personal-details.component.scss']
 })
 export class PersonalDetailsComponent implements OnInit {
-  @ViewChild('modalReport',{static:true}) modalReport;
+  @ViewChild('modalReport', { static: true }) modalReport;
   constructor() { }
 
   ngOnInit() {
@@ -40,10 +40,10 @@ export class PersonalDetailsComponent implements OnInit {
   handleCancelMiddle(): void {
     this.isVisibleMiddle = false;
   }
-  handleCancel(){
+  handleCancel() {
     this.isVisibleMiddle = false;
   }
-  handleOk(){
+  handleOk() {
     console.log('提交了 :');
     this.isVisibleMiddle = false;
   }

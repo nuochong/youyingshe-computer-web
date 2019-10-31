@@ -6,9 +6,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./modal-admire.component.scss']
 })
 export class ModalAdmireComponent implements OnInit {
-  @Input() isVisible:boolean;
+  @Input() isVisible: boolean;
   isConfirmLoading = false;
-  @Output() private outer=new EventEmitter<string>();
+  @Output() private outer = new EventEmitter<string>();
   showWeiXin = false;
   constructor() { }
 
@@ -24,13 +24,13 @@ export class ModalAdmireComponent implements OnInit {
 
   handleCancel(): void {
     this.isVisible = false;
-    this.outer.emit('msg from child') 
+    this.outer.emit('msg from child')
   }
-  changeWeiXin(){
+  changeWeiXin() {
     this.showWeiXin = !this.showWeiXin;
     this.isVisible = false;
   }
-  handleCancelWeiXin(){
+  handleCancelWeiXin() {
     this.showWeiXin = !this.showWeiXin;
   }
 }

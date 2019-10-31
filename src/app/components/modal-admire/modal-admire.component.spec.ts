@@ -8,9 +8,9 @@ describe('ModalAdmireComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ModalAdmireComponent ]
+      declarations: [ModalAdmireComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

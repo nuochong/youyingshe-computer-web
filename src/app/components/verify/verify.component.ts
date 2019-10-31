@@ -6,9 +6,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./verify.component.scss']
 })
 export class VerifyComponent implements OnInit {
-  @Input() isVisible:boolean;
+  @Input() isVisible: boolean;
   isConfirmLoading = false;
-  @Output() private outer=new EventEmitter<string>();
+  @Output() private outer = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
@@ -23,6 +23,6 @@ export class VerifyComponent implements OnInit {
 
   handleCancel(): void {
     this.isVisible = false;
-    this.outer.emit('msg from child') 
+    this.outer.emit('msg from child')
   }
 }

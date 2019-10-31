@@ -13,7 +13,7 @@ export class WriteComponent implements OnInit {
   conf = new EditorConfig();
   markdown = '测试语句';
 
-  constructor(private modalService: NzModalService,private message: NzMessageService) { }
+  constructor(private modalService: NzModalService, private message: NzMessageService) { }
 
   ngOnInit() {
   }
@@ -23,7 +23,7 @@ export class WriteComponent implements OnInit {
     this.markdown = str;
   }
   //新建文集
-  changeNewFile(){
+  changeNewFile() {
     this.showNewFile = !this.showNewFile;
   }
   showDeleteConfirm(): void {

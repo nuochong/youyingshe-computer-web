@@ -8,9 +8,9 @@ describe('ArticleDirectoryLookComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArticleDirectoryLookComponent ]
+      declarations: [ArticleDirectoryLookComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

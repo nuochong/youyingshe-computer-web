@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   fontFamily: string = 'hei';
   fontStyle: string = 'jian';
   styleModal: boolean = false;
-  @Input() active:string;
+  @Input() active: string;
   constructor() { }
 
   ngOnInit() { }

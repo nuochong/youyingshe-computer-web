@@ -8,9 +8,9 @@ describe('RecycleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RecycleComponent ]
+      declarations: [RecycleComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

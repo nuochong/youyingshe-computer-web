@@ -16,7 +16,7 @@ export class HistoryComponent implements OnInit {
   }
   over(e) {
     console.log('overe :', e);
-  } 
+  }
   leave(e) {
     console.log('leavee :', e);
   }

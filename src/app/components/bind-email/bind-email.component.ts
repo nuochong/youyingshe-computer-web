@@ -6,9 +6,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./bind-email.component.scss']
 })
 export class BindEmailComponent implements OnInit {
-  @Input() isVisible:boolean;
+  @Input() isVisible: boolean;
   isConfirmLoading = false;
-  @Output() private outer=new EventEmitter<string>();
+  @Output() private outer = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
@@ -24,6 +24,6 @@ export class BindEmailComponent implements OnInit {
 
   handleCancel(): void {
     this.isVisible = false;
-    this.outer.emit('msg from child') 
+    this.outer.emit('msg from child')
   }
 }

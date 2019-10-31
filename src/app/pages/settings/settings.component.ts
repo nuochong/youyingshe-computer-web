@@ -8,7 +8,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class SettingsComponent implements OnInit {
   showDeleteBtn: boolean = false;
   isVisible = false;
-  @ViewChild('bindEmail',{static:true}) bindEmail;
+  @ViewChild('bindEmail', { static: true }) bindEmail;
   constructor() { }
 
   ngOnInit() {
@@ -19,7 +19,7 @@ export class SettingsComponent implements OnInit {
   showModal(): void {
     this.isVisible = true;
   }
-  runParent(msg:string){ 
+  runParent(msg: string) {
     this.isVisible = false;
     //alert(msg); 
   }

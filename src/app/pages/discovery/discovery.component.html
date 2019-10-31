@@ -48,7 +48,10 @@
           src="//cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
           alt="Banner s club"
       /></a>
-      <a [routerLink]="['/bookrack']" utm_medium="index-banner-s" href="javascript:;"
+      <a
+        [routerLink]="['/bookrack']"
+        utm_medium="index-banner-s"
+        href="javascript:;"
         ><img
           src="//cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
           alt="Banner s 7"
@@ -68,7 +71,9 @@
     <!-- APP下载提示 -->
     <a
       [routerLink]="['/apps']"
-      nz-popover [nzPopoverContent]="contentTemplate" nzPopoverPlacement="top"
+      nz-popover
+      [nzPopoverContent]="contentTemplate"
+      nzPopoverPlacement="top"
       nzXs="8"
       id="index-aside-download-qrbox"
       class="col-xs-8 download"
@@ -92,7 +97,11 @@
     </a>
     <ng-template #contentTemplate>
       <div>
-        <img width="168px" src="//cdn2.jianshu.io/assets/web/download-apps-page-top-qrcode-92108f625f507613863b730c74ebf235.png" alt="Download apps page top qrcode">
+        <img
+          width="168px"
+          src="//cdn2.jianshu.io/assets/web/download-apps-page-top-qrcode-92108f625f507613863b730c74ebf235.png"
+          alt="Download apps page top qrcode"
+        />
       </div>
     </ng-template>
 

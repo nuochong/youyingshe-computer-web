@@ -8,9 +8,9 @@ describe('WriteLoadingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WriteLoadingComponent ]
+      declarations: [WriteLoadingComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

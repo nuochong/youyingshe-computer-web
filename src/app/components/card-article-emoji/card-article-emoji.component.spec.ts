@@ -8,9 +8,9 @@ describe('CardArticleEmojiComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardArticleEmojiComponent ]
+      declarations: [CardArticleEmojiComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

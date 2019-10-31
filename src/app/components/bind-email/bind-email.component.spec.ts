@@ -8,9 +8,9 @@ describe('BindEmailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BindEmailComponent ]
+      declarations: [BindEmailComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

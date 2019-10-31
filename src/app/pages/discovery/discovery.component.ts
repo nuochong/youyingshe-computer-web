@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiscoveryComponent implements OnInit {
   array = [1, 2, 3, 4];
-  active:string='discovery';
+  active: string = 'discovery';
   constructor() { }
 
   ngOnInit() {

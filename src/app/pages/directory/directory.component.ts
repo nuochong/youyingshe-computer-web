@@ -11,7 +11,7 @@ export class DirectoryComponent implements OnInit {
 
   ngOnInit() {
   }
-  changeBtnState(){
+  changeBtnState() {
     this.btnState = !this.btnState;
   }
 }

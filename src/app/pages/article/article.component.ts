@@ -11,17 +11,17 @@ export class ArticleComponent implements OnInit {
   isVisible = false;
   @ViewChild('admire', { static: true }) admire;
   showReplyArea: boolean = false;
-  @ViewChild('modalReport',{static:true}) modalReport;
-  @ViewChild('articleDirectoryLook',{static:true}) articleDirectoryLook;
+  @ViewChild('modalReport', { static: true }) modalReport;
+  @ViewChild('articleDirectoryLook', { static: true }) articleDirectoryLook;
   constructor() { }
 
   ngOnInit() {
   }
-  changeArticleDirectoryLook(){
+  changeArticleDirectoryLook() {
     this.articleDirectoryLook.showModalMiddle();
   }
 
-  
+
   showModalMiddle(): void {
     this.isVisibleMiddle = true;
     this.modalReport.showModalMiddle()
