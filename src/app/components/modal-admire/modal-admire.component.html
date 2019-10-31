@@ -123,13 +123,16 @@
         </div>
         <div class="LMa6S_ _3PA8BN _1sSZ6C" aria-disabled="true">简书余额</div>
       </div>
-      <button (click)="changeWeiXin()" type="button" class="_3A-4KL _1OyPqC _3Mi9q9 _1YbC5u">
+      <button
+        (click)="changeWeiXin()"
+        type="button"
+        class="_3A-4KL _1OyPqC _3Mi9q9 _1YbC5u"
+      >
         <span>确认支付</span><span> ￥</span>2
       </button>
     </div>
   </ng-template>
 </nz-modal>
-
 
 <nz-modal
   [(nzVisible)]="showWeiXin"
@@ -141,11 +144,13 @@
   [nzMaskClosable]="true"
 >
   <ng-template #modalContentWeiXin>
-    <div class="_3uZ5OL">
-      <div class="_2PLkjk">
-        <div class="_2h5tnQ">给作者送糖</div>
-      </div>
-      <div class="_1_B577">选择支付方式</div>
+    <div class="weixin-pay">
+      <div class="weixin-title">微信扫码支付</div>
+      <img
+        src="https://cdn2.jianshu.io/assets/web/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png"
+        alt=""
+      />
+      <div class="weixin-pay-content">支付金额:<span>￥2</span></div>
     </div>
   </ng-template>
 </nz-modal>

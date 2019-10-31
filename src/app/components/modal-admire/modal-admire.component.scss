@@ -188,3 +188,26 @@
     margin: 12px 0;
   }
 }
+
+//微信扫码支付
+.weixin-pay {
+  text-align: center;
+  .weixin-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  img {
+    height: 200px;
+    width: 200px;
+    margin:5px;
+  }
+  .weixin-pay-content {
+    font-size: 16px;
+    color: #969696;
+    margin-top: 8px;
+    > span {
+      color: #da9e55;
+    }
+  }
+}
