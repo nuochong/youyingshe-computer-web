@@ -1223,6 +1223,11 @@
             text-transform: none;
             overflow: visible;
             margin: 0;
+            &:hover {
+              color: #ec7259;
+              background-color: #fef8f7;
+              border-color: #ec7259;
+            }
             span {
               font-size: 12px;
               color: #ec7259;
