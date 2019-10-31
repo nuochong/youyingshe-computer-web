@@ -2,20 +2,30 @@
 
 <app-left-right-layout-follow>
   <div class="body-aside-wrap">
-    <a data-toggle="dropdown" class="change-type"
-      >全部关注<i class="iconfont ic-filter"></i
+    <a
+      data-toggle="dropdown"
+      class="change-type"
+      nz-popover
+      nzPopoverTitle=""
+      [(nzVisible)]="visible"
+      (nzVisibleChange)="change($event)"
+      nzPopoverTrigger="click"
+      [nzPopoverContent]="contentTemplate"
+      nzPopoverPlacement="bottom"
+      >全部关注<i class="iconfont ic-filter icondown"></i
     ></a>
-
-    <ul class="dropdown-menu arrow-top">
-      <li><a>全部关注</a></li>
-      <li><a>只看作者</a></li>
-      <li><a>只看专题</a></li>
-      <li><a>只看文集</a></li>
-      <li><a>只看推送更新</a></li>
-    </ul>
+    <ng-template #contentTemplate>
+      <ul class="dropdown-menu arrow-top">
+        <li><a>全部关注</a></li>
+        <li><a>只看作者</a></li>
+        <li><a>只看专题</a></li>
+        <li><a>只看文集</a></li>
+        <li><a>只看推送更新</a></li>
+      </ul>
+    </ng-template>
 
     <a href="javascript:;" class="add-people"
-      ><i class="iconfont ic-addpeople"></i> <span>添加关注</span></a
+      ><i class="iconfont iconadd1"></i> <span>添加关注</span></a
     >
 
     <ul class="js-subscription-list">
@@ -69,5 +79,151 @@
         <a href="javascript:;">一只猫猫兔</a> 编 · 收录了35篇文章 · 92人关注
       </div>
     </div>
+
+    <ul class="note-list">
+      <li><app-card-article [isHaveImg]="true"></app-card-article></li>
+      <li><app-card-article></app-card-article></li>
+      <a class="load-more">阅读更多</a>
+    </ul>
+
+    <app-tabs></app-tabs>
+
+    <!-- 专辑占位符 -->
+    <div class="subscription">
+      <div class="subscription-placeholder">
+        <div class="avatar collection"></div>
+        <div class="main-top">
+          <div class="btn"></div>
+          <div class="title"></div>
+          <div class="info"></div>
+        </div>
+        <ul class="trigger-menu">
+          <li>
+            <i class="iconfont ic-articles"></i>
+            <div class="title"></div>
+          </li>
+          <li>
+            <i class="iconfont ic-latestcomments"></i>
+            <div class="title"></div>
+          </li>
+          <li>
+            <i class="iconfont ic-catalog"></i>
+            <div class="title"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="notes-placeholder">
+        <div class="img"></div>
+        <div class="content">
+          <div class="title"></div>
+          <div class="sub-title"></div>
+          <div class="text"></div>
+          <div class="text animation-delay"></div>
+          <div class="meta">
+            <div class="read"></div>
+            <i class="iconfont ic-list-comments"></i>
+            <div class="small"></div>
+            <i class="iconfont ic-list-like"></i>
+            <div class="small"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 作者占位符 -->
+    <div class="auther-placeholder">
+      <div class="subscription-placeholder">
+        <div class="avatar"></div>
+        <div class="main-top">
+          <div class="btn"></div>
+          <div class="btn short"></div>
+          <div class="title"></div>
+          <div class="info"></div>
+        </div>
+        <ul class="trigger-menu">
+          <li>
+            <i class="iconfont ic-articles"></i>
+            <div class="title"></div>
+          </li>
+          <li>
+            <i class="iconfont ic-latestcomments"></i>
+            <div class="title"></div>
+          </li>
+          <li>
+            <i class="iconfont ic-hot"></i>
+            <div class="title"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 添加关注占位符 -->
+
+    <!-- 添加关注 -->
+    <ul class="add-follow-list">
+      <li>
+        <div>
+          <a class="btn btn-success follow"
+            ><i class="iconfont ic-follow"></i><span>关注</span></a
+          >
+          
+          <a href="/c/742422443ad3" target="_blank" class="avatar-collection"
+            ><img
+              src="//upload.jianshu.io/collections/images/105/2.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"
+          /></a>
+          <div class="info">
+            <a href="/c/742422443ad3" target="_blank" class="name"
+              >国学与传统文化</a
+            >
+            <p>
+              国学即中国固有的学术，而传统文化是指中国传统社会，中华民族的整体...
+            </p>
+            <a href="/c/742422443ad3" target="_blank"
+              ><i class="iconfont ic-collection-s"></i
+              ><span>90.9K篇文章 · 1410.0K人关注</span></a
+            >
+            <div class="meta">
+              <a href="/u/521148862721" target="_blank">
+                吴江月
+                </a
+              >
+              <span>关注了专题</span>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <a class="btn btn-success follow"
+            ><i class="iconfont ic-follow"></i><span>关注</span></a
+          >
+          
+          <a href="/u/12bcf5a2be0a" target="_blank" class="avatar"
+            ><img
+              src="//upload.jianshu.io/users/upload_avatars/16701954/205581ee-1aa8-458f-8fe2-6289151f04ab.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"
+          /></a>
+          <div class="info">
+            <a href="/u/12bcf5a2be0a" target="_blank" class="name"
+              >郑辉贤13580204806</a
+            >
+            <p>郑辉(惠)贤 男 于1980年5日4日出生。 广东省揭阳市惠来县...</p>
+            <a href="/p/fbd29e6f694e" target="_blank"
+              ><i class="iconfont ic-article-s"></i
+              ><span>彭大意八尺作品《水声潺...</span></a
+            ><a href="/p/20ef07384fa4" target="_blank"
+              ><i class="iconfont ic-article-s"></i
+              ><span>彭大意老师1973年人...</span></a
+            >
+            <div class="meta">
+              <a href="/u/521148862721" target="_blank">
+                吴江月
+                </a
+              >
+              <span>关注了作者</span>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </app-left-right-layout-follow>

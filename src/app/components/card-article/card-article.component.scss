@@ -57,6 +57,20 @@
       // &:hover {
       //   text-decoration: underline;
       // }
+      &:before {
+        content: '\7F6E\9876';
+        display: inline-block;
+        vertical-align: middle;
+        width: 40px;
+        line-height: 22px;
+        border-radius: 4px;
+        margin-right: 8px;
+        font-size: 12px;
+        text-align: center;
+        background-color: #e9634c;
+        color: #fff;
+        font-weight: 400;
+      }
     }
     .abstract {
       margin: 0 0 8px;

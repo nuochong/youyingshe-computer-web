@@ -67,6 +67,8 @@ import { CardArticleReleaseComponent } from './components/card-article-release/c
 import { CardArticleEmojiComponent } from './components/card-article-emoji/card-article-emoji.component';
 import { CardArticleCommentComponent } from './components/card-article-comment/card-article-comment.component';
 import { ModalAdmireComponent } from './components/modal-admire/modal-admire.component';
+import { BookrackComponent } from './pages/bookrack/bookrack.component';
+import { DirectoryComponent } from './pages/directory/directory.component';
 
 registerLocaleData(zh);
 
@@ -130,7 +132,9 @@ registerLocaleData(zh);
     CardArticleReleaseComponent,
     CardArticleEmojiComponent,
     CardArticleCommentComponent,
-    ModalAdmireComponent
+    ModalAdmireComponent,
+    BookrackComponent,
+    DirectoryComponent
   ],
   imports: [
     BrowserModule,

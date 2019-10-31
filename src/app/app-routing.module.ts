@@ -27,6 +27,8 @@ import { ResetEmailComponent } from './pages/reset-email/reset-email.component';
 import { WriteComponent } from './pages/write/write.component';
 import { RecycleComponent } from './pages/recycle/recycle.component';
 import { HistoryComponent } from './pages/history/history.component';
+import { BookrackComponent } from './pages/bookrack/bookrack.component';
+import { DirectoryComponent } from './pages/directory/directory.component';
 
 
 const routes: Routes = [
@@ -84,6 +86,10 @@ const routes: Routes = [
     path: 'recycle', component: RecycleComponent, data: { title: '回收站' }
   }, {
     path: 'history', component: HistoryComponent, data: { title: '历史' }
+  }, {
+    path: 'bookrack', component: BookrackComponent, data: { title: '书架' }
+  }, {
+    path: 'directory', component: DirectoryComponent, data: { title: '目录' }
   }
 ];
 
