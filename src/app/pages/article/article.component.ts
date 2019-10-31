@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
-import {fromEvent} from 'rxjs';
+import { fromEvent } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import { DOCUMENT } from '@angular/common';
-import { ElementRef} from '@angular/core';
+import { ElementRef } from '@angular/core';
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
@@ -19,15 +19,17 @@ export class ArticleComponent implements OnInit {
   @ViewChild('articleNext', { static: true }) articleNext;
   subscribeScoll: any;
   columnTop: number;
-  fixed:false;
+  fixed: boolean = false;
+  changeTitle: boolean = true;
+  oldNum: number = 0;
 
-  constructor(private el:ElementRef,private renderer2: Renderer2) { }
+  constructor(private el: ElementRef, private renderer2: Renderer2) { }
 
   ngOnInit() {
     this.columnTop = 0;
 
     this.subscribeScoll = fromEvent(window, 'scroll')
-    .pipe(debounceTime(50)) // 防抖
+      .pipe(debounceTime(50)) // 防抖
       .subscribe((event) => {
         this.onWindowScroll();
         console.log('yyy')
@@ -39,23 +41,32 @@ export class ArticleComponent implements OnInit {
   }
   onWindowScroll() {
     console.log('xxx')
-    this.columnTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) ;
+    this.columnTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop);
     console.log('this.columnTop :', this.columnTop);
     let temp = this.articleNext;
     console.log('temp :', temp.offsetWidth);
     let style = this.el.nativeElement.querySelector('.article-next');
     console.log('style :', style.offsetTop);
-    if(this.columnTop>style.offsetTop){
+    if (this.columnTop > style.offsetTop) {
       console.log('超出了')
-      this.renderer2.setStyle(style,'position','fixed')
-      this.renderer2.setStyle(style,'top','66px')
-      this.renderer2.setStyle(style,'width','260px')
-    }else{
+      this.renderer2.setStyle(style, 'position', 'fixed')
+      this.renderer2.setStyle(style, 'top', '66px')
+      this.renderer2.setStyle(style, 'width', '260px')
+    } else {
       console.log('没有超出')
-      this.renderer2.removeStyle(style,'position')
-      this.renderer2.removeStyle(style,'top')
-      this.renderer2.removeStyle(style,'width')
+      this.renderer2.removeStyle(style, 'position')
+      this.renderer2.removeStyle(style, 'top')
+      this.renderer2.removeStyle(style, 'width')
     }
+    if (this.oldNum < this.columnTop) {
+      console.log('向下滑动')
+      this.changeTitle = true;
+    } else if (this.oldNum > this.columnTop) {
+      this.changeTitle = false;
+      console.log('向上滑动')
+    }
+    this.oldNum = this.columnTop;
+    console.log('this.changeTitle :', this.changeTitle);
 
   }
 
@@ -86,6 +97,7 @@ export class ArticleComponent implements OnInit {
   //显示评论区
   changeShowReplyArea() {
     this.showReplyArea = !this.showReplyArea;
+
   }
 
 }

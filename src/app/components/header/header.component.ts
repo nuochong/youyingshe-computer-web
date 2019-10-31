@@ -1,4 +1,6 @@
-import { Component, OnInit, HostListener, ViewChild, ElementRef, Input } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild, ElementRef, Input, Renderer2 } from '@angular/core';
+import { fromEvent } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -17,9 +19,44 @@ export class HeaderComponent implements OnInit {
   fontStyle: string = 'jian';
   styleModal: boolean = false;
   @Input() active: string;
-  constructor() { }
 
-  ngOnInit() { }
+  subscribeScoll: any;
+  columnTop: number;
+  changeTitle: boolean = false;
+  oldNum: number = 500;
+  constructor(private el: ElementRef, private renderer2: Renderer2) { }
+
+  ngOnInit() {
+
+    this.subscribeScoll = fromEvent(window, 'scroll')
+      .pipe(debounceTime(50)) // 防抖
+      .subscribe((event) => {
+        this.onWindowScroll();
+        console.log('yyy')
+      });
+   }
+
+     // 组件销毁时取消订阅事件，防止出现页面多次执行之后卡顿
+  ngOnDestroy() {
+    this.subscribeScoll.unsubscribe();
+  }
+  onWindowScroll() {
+    this.columnTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop);
+    console.log('this.columnTop :', this.columnTop);
+    console.log('this.oldNum :', this.oldNum);
+    if (this.oldNum < this.columnTop) {
+      console.log('向下滑动')
+      this.changeTitle = true;
+    } else if (this.oldNum > this.columnTop) {
+      this.changeTitle = false;
+      console.log('向上滑动')
+    }
+    this.oldNum = this.columnTop;
+    console.log('this.changeTitle :', this.changeTitle);
+
+  }
+
+
   close($event) {
     console.log('传递的数据', $event)
     this.styleModal = !$event ? true : false;

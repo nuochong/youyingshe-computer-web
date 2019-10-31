@@ -722,3 +722,171 @@
   display: block;
   height: 56px;
 }
+
+//滑动头部
+._3t3lfz {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.3s
+    cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  .FTZkZo {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 1000px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 56px;
+    ._16zCst {
+      max-width: 730px;
+      overflow: hidden;
+      padding: 0 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 56px;
+      ._2zeTMs {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #404040;
+        text-rendering: optimizelegibility;
+      }
+    }
+    ._26qd_C {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 56px;
+      .qzhJKO {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        ._2JlnTn {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+        img {
+          vertical-align: middle;
+          border-style: none;
+        }
+        ._22gUMi {
+          color: #7d7d7d;
+          margin: 0 10px;
+        }
+      }
+      ._3Mi9q9 {
+        color: #ec7259;
+        background-color: #fff;
+        border-color: #ec7259;
+        -webkit-appearance: button;
+      }
+      button {
+        text-transform: none;
+        overflow: visible;
+        margin: 0;
+      }
+      ._1YbC5u {
+        color: #fff;
+        background-color: #ec7259;
+        border-color: #ec7259;
+      }
+      ._1OyPqC + ._1OyPqC {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+._1OyPqC {
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  font-size: 14px;
+  padding: 4px 12px;
+  color: #969696;
+  background-color: #fff;
+  border: 1px solid #999;
+}
+
+//切换有关
+._2oDcyf {
+  height: 56px;
+  min-width: 1200px;
+  max-width: 1440px;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+  transition: -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+  -o-transition: transform .3s cubic-bezier(.645,.045,.355,1);
+  transition: transform .3s cubic-bezier(.645,.045,.355,1);
+  transition: transform .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+}
+._1soATd {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.KEKfID {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.navbar{
+  overflow: hidden;
+}
