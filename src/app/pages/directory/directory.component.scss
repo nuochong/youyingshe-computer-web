@@ -1,4 +1,5 @@
 .body-left-wrap {
+  font-size: 17px;
   .main-top {
     height: 143px;
     margin-bottom: 35px;
@@ -60,8 +61,8 @@
         &:hover {
           border: 1px solid #42c02e;
           color: #42c02e;
-          background-color: rgba(59,194,29,.05);
-      }
+          background-color: rgba(59, 194, 29, 0.05);
+        }
       }
       .btn-free-read {
         padding: 6px 21px;
@@ -133,6 +134,7 @@
         color: #ea6f5a;
         margin-right: 20px;
         line-height: 22px;
+        font-size: 20px;
       }
       .name {
         position: absolute;
