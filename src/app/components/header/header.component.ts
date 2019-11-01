@@ -34,9 +34,9 @@ export class HeaderComponent implements OnInit {
         this.onWindowScroll();
         console.log('yyy')
       });
-   }
+  }
 
-     // 组件销毁时取消订阅事件，防止出现页面多次执行之后卡顿
+  // 组件销毁时取消订阅事件，防止出现页面多次执行之后卡顿
   ngOnDestroy() {
     this.subscribeScoll.unsubscribe();
   }

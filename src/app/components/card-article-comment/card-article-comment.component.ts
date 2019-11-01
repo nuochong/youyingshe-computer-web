@@ -14,7 +14,7 @@ export class CardArticleCommentComponent implements OnInit {
   changeFocus() {
     this.isShowTools = true;
   }
-  cancelFocus(){
+  cancelFocus() {
     this.isShowTools = false;
   }
 }

@@ -871,11 +871,13 @@
   min-width: 1200px;
   max-width: 1440px;
   margin: 0 auto;
-  -webkit-transition: -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
-  transition: -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
-  -o-transition: transform .3s cubic-bezier(.645,.045,.355,1);
-  transition: transform .3s cubic-bezier(.645,.045,.355,1);
-  transition: transform .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+  -webkit-transition: -webkit-transform 0.3s
+    cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 ._1soATd {
   -webkit-transform: translateY(-100%);
@@ -887,6 +889,6 @@
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
-.navbar{
+.navbar {
   overflow: hidden;
 }
