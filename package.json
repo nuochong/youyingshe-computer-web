@@ -6,6 +6,7 @@
     "start": "ng serve",
     "start:4202": "ng serve --open --port 4202",
     "build": "ng build",
+    "build-new":"ng build --output-path=docs",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
