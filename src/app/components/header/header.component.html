@@ -1,3 +1,4 @@
+<!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation" [ngStyle]="changeStyle()"> -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="width-limit _2oDcyf" [ngClass]="{ _1soATd: changeTitle }">
     <!-- 左上方 Logo -->
@@ -13,7 +14,7 @@
       <i class="iconfont ic-write iconquill"></i>写文章
     </a>
     <!-- 如果用户登录，显示下拉菜单 -->
-    <div
+    <!-- <div
       class="user"
       (mouseover)="dropdownMenuOpen2()"
       (mouseleave)="dropdownMenuHidden2([$event])"
@@ -38,9 +39,9 @@
             ><span>我的主页</span>
           </a>
         </li>
-        <li>
-          <!-- TODO bookmarks_path -->
-          <a [routerLink]="['/bookmarks']">
+        <li> -->
+    <!-- TODO bookmarks_path -->
+    <!-- <a [routerLink]="['/bookmarks']">
             <i class="iconfont ic-navigation-mark iconarticles"></i
             ><span>收藏的文章</span>
           </a>
@@ -81,6 +82,67 @@
           </a>
         </li>
       </ul>
+    </div> -->
+    <div class="user" nz-dropdown [nzDropdownMenu]="menu2" [nzTrigger]="click">
+      <div data-hover="dropdown">
+        <a class="avatar" href="javascript:;"
+          ><img
+            src="//upload.jianshu.io/users/upload_avatars/19245301/25d33e39-ff2c-4859-8df9-10059f07bd22?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120"
+            alt="120"
+        /></a>
+      </div>
+      <nz-dropdown-menu #menu2="nzDropdownMenu">
+        <ul class="dropdown-menu" nz-menu nzSelectable>
+          <li nz-menu-item>
+            <a [routerLink]="['/home']">
+              <i class="iconfont ic-navigation-profile iconwode"></i
+              ><span>我的主页</span>
+            </a>
+          </li>
+          <li>
+            <!-- TODO bookmarks_path -->
+            <a [routerLink]="['/bookmarks']">
+              <i class="iconfont ic-navigation-mark iconarticles"></i
+              ><span>收藏的文章</span>
+            </a>
+          </li>
+          <li nz-menu-item>
+            <a [routerLink]="['/liked']">
+              <i class="iconfont ic-navigation-like iconxihuan1"></i
+              ><span>喜欢的文章</span>
+            </a>
+          </li>
+          <li nz-menu-item>
+            <a [routerLink]="['/paid']">
+              <i class="iconfont ic-paid iconmoney"></i><span>已购内容</span>
+            </a>
+          </li>
+          <li nz-menu-item>
+            <a [routerLink]="['/wallet']">
+              <i class="iconfont ic-navigation-wallet iconqianbao"></i
+              ><span>我的钱包</span>
+            </a>
+          </li>
+          <li nz-menu-item>
+            <a [routerLink]="['/settings']">
+              <i class="iconfont ic-navigation-settings iconshezhi"></i
+              ><span>设置</span>
+            </a>
+          </li>
+          <li nz-menu-item>
+            <a [routerLink]="['/faqs']">
+              <i class="iconfont ic-navigation-feedback iconpinglun"></i
+              ><span>帮助与反馈</span>
+            </a>
+          </li>
+          <li nz-menu-item>
+            <a [routerLink]="['/sign-in']" rel="nofollow" data-method="delete">
+              <i class="iconfont ic-navigation-signout icontuichu"></i
+              ><span>退出</span>
+            </a>
+          </li>
+        </ul>
+      </nz-dropdown-menu>
     </div>
 
     <div class="nqzzJ71pC-jOnJKAfdtr6_0">
@@ -91,7 +153,7 @@
       /></a>
     </div>
 
-    <div class="style-mode" (clickOutside)="close($event)">
+    <!-- <div class="style-mode" (clickOutside)="close($event)">
       <a href="javascript:;" class="style-mode-btn" (click)="changeStyleModal()"
         ><i class="iconfont ic-navigation-mode icona"></i
       ></a>
@@ -145,7 +207,76 @@
           >
         </div>
       </div>
+    </div> -->
+
+    <div class="style-mode">
+      <a
+        href="javascript:;"
+        class="style-mode-btn"
+        nz-popover
+        nzPopoverPlacement="bottom"
+        nzPopoverTrigger="click"
+        [nzPopoverTitle]="none"
+        [nzPopoverContent]="contentTemplate"
+        ><i class="iconfont ic-navigation-mode icona"></i
+      ></a>
+      <ng-template #titleTemplate
+        ><i nz-icon nzType="close"></i> Title</ng-template
+      >
+      <ng-template #contentTemplate>
+        <div class="popover-modal">
+          <div class="meta">
+            <i class="iconfont ic-navigation-night"></i><span>夜间模式</span>
+          </div>
+          <div class="switch day-night-group">
+            <a
+              href="javascript:;"
+              class="switch-btn"
+              [ngClass]="{ active: dayNight }"
+              (click)="changeDayNight()"
+              >开</a
+            >
+            <a
+              href="javascript:;"
+              class="switch-btn active"
+              [ngClass]="{ active: !dayNight }"
+              (click)="changeDayNight()"
+              >关</a
+            >
+          </div>
+          <hr />
+          <div class="switch font-family-group">
+            <a
+              class="switch-btn font-song"
+              [ngClass]="{ active: fontFamily == 'song' ? true : false }"
+              (click)="fontFamily = 'song'"
+              >宋体</a
+            >
+            <a
+              class="switch-btn font-hei active"
+              [ngClass]="{ active: fontFamily == 'hei' ? true : false }"
+              (click)="fontFamily = 'hei'"
+              >黑体</a
+            >
+          </div>
+          <div class="switch">
+            <a
+              class="switch-btn active"
+              [ngClass]="{ active: fontStyle == 'jian' ? true : false }"
+              (click)="fontStyle = 'jian'"
+              >简</a
+            >
+            <a
+              class="switch-btn"
+              [ngClass]="{ active: fontStyle == 'fan' ? true : false }"
+              (click)="fontStyle = 'fan'"
+              >繁</a
+            >
+          </div>
+        </div>
+      </ng-template>
     </div>
+
     <div class="container">
       <div class="navbar-header">
         <button
@@ -188,7 +319,7 @@
             class="tab notification"
             [ngClass]="{ active: active == 'message' ? true : false }"
           >
-            <a
+            <!-- <a
               (click)="dropdownMenu($event)"
               (mouseover)="dropdownMenuOpen()"
               (mouseleave)="dropdownMenuHidden([$event])"
@@ -200,8 +331,8 @@
               <i
                 class="iconfont ic-navigation-notification menu-icon iconjianxin"
               ></i>
-            </a>
-            <ul
+            </a> -->
+            <!-- <ul
               (mouseleave)="dropdowns([$event])"
               class="dropdown-menu"
               [hidden]="!expression"
@@ -249,9 +380,66 @@
                   <span>其它提醒</span>
                 </a>
               </li>
-            </ul>
+            </ul> -->
+            <a
+              nz-dropdown
+              [nzDropdownMenu]="menu"
+              [nzTrigger]="click"
+              href="javascript:;"
+              class="notification-btn"
+              ><span class="menu-text">消息</span>
+              <i
+                class="iconfont ic-navigation-notification menu-icon iconjianxin"
+              ></i>
+            </a>
+            <nz-dropdown-menu #menu="nzDropdownMenu">
+              <ul class="dropdown-menu" nz-menu nzSelectable>
+                <li nz-menu-item>
+                  <a [routerLink]="['/message']"
+                    ><i class="iconfont ic-comments iconpinglun1"></i>
+                    <span>评论</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a [routerLink]="['/message']"
+                    ><i class="iconfont ic-chats iconjianxin"></i>
+                    <span>简信</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a [routerLink]="['/message']"
+                    ><i class="iconfont ic-requests icontougaoqingqiu"></i>
+                    <span>投稿请求</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a [routerLink]="['/message']"
+                    ><i class="iconfont ic-likes iconxihuan"></i>
+                    <span>喜欢和赞</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a [routerLink]="['/message']"
+                    ><i class="iconfont ic-follows iconguanzhu1"></i>
+                    <span>关注</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a [routerLink]="['/message']"
+                    ><i class="iconfont ic-money iconzanshang"></i>
+                    <span>赞赏和付费</span>
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a [routerLink]="['/message']"
+                    ><i class="iconfont ic-others iconqita"></i>
+                    <span>其它提醒</span>
+                  </a>
+                </li>
+              </ul>
+            </nz-dropdown-menu>
           </li>
-          <li class="search">
+          <!-- <li class="search">
             <form action="/search" accept-charset="UTF-8" method="get">
               <input name="utf8" type="hidden" value="✓" />
               <input
@@ -284,6 +472,73 @@
                   </ul>
                 </div>
               </div>
+            </form>
+          </li> -->
+          <li class="search">
+            <form action="/search" accept-charset="UTF-8" method="get">
+              <input name="utf8" type="hidden" value="✓" />
+              <input
+                type="text"
+                value=""
+                autocomplete="off"
+                placeholder="搜索"
+                class="search-input"
+                (focus)="change(true)"
+                (blur)="change(false)"
+                nz-popover
+                [(nzVisible)]="visible"
+                nzPopoverTrigger="null"
+                [nzPopoverContent]="contentTemplates"
+              />
+              <a class="search-btn" [routerLink]="['/search']"
+                ><i class="iconfont ic-search iconsearch"></i
+              ></a>
+              <ng-template #contentTemplates>
+                <div id="navbar-search-tips">
+                  <div class="search-recent">
+                    <ul class="search-recent-item-wrap">
+                      <li>
+                        <a href="javascript:;"
+                          ><i class="iconfont ic-search-history icontime"></i>
+                          <span>vue</span>
+                          <i
+                            class="iconfont ic-unfollow iconhebingxingzhuang"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="javascript:;"
+                          ><i class="iconfont ic-search-history icontime"></i>
+                          <span>fd</span>
+                          <i
+                            class="iconfont ic-unfollow iconhebingxingzhuang"
+                          ></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ng-template>
+              <!-- <div id="navbar-search-tips">
+                <div class="search-recent">
+                  <ul class="search-recent-item-wrap">
+                    <li>
+                      <a href="javascript:;"
+                        ><i class="iconfont ic-search-history icontime"></i>
+                        <span>vue</span>
+                        <i class="iconfont ic-unfollow iconhebingxingzhuang"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="javascript:;"
+                        ><i class="iconfont ic-search-history icontime"></i>
+                        <span>fd</span>
+                        <i class="iconfont ic-unfollow iconhebingxingzhuang"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
             </form>
           </li>
         </ul>

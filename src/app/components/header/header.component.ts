@@ -5,7 +5,7 @@ import { debounceTime } from 'rxjs/operators';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
   expression: boolean = false;
@@ -24,6 +24,7 @@ export class HeaderComponent implements OnInit {
   columnTop: number;
   changeTitle: boolean = false;
   oldNum: number = 500;
+  visible: boolean;
   constructor(private el: ElementRef, private renderer2: Renderer2) { }
 
   ngOnInit() {
@@ -106,4 +107,15 @@ export class HeaderComponent implements OnInit {
   @HostListener('mouseleave', ['$event']) onMouseLeave(e) {
     // console.log('全局离开事件',e)
   }
+
+  change(value: boolean): void {
+    this.visible = value;
+    console.log('改变了',value);
+  }
+
+  // changeStyle() {
+  //   if (this.changeTitle) {
+  //     return { overflow: 'hidden' }
+  //   }
+  // }
 }
