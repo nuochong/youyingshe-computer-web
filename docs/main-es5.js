@@ -2322,69 +2322,69 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./app-routing.module */
     "./src/app/app-routing.module.ts");
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _pages_article_article_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _pages_article_article_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./pages/article/article.component */
     "./src/app/pages/article/article.component.ts");
     /* harmony import */
 
 
-    var _pages_init_init_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _pages_init_init_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./pages/init/init.component */
     "./src/app/pages/init/init.component.ts");
     /* harmony import */
 
 
-    var _components_header_header_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _components_header_header_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./components/header/header.component */
     "./src/app/components/header/header.component.ts");
     /* harmony import */
 
 
-    var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ./components/footer/footer.component */
     "./src/app/components/footer/footer.component.ts");
     /* harmony import */
 
 
-    var ng_zorro_antd__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var ng_zorro_antd__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ng-zorro-antd */
     "./node_modules/ng-zorro-antd/fesm2015/ng-zorro-antd.js");
     /* harmony import */
 
 
-    var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/fesm2015/forms.js");
     /* harmony import */
 
 
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
     /* harmony import */
 
 
-    var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! @angular/platform-browser/animations */
     "./node_modules/@angular/platform-browser/fesm2015/animations.js");
-    /* harmony import */
-
-
-    var _angular_common__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
-    /*! @angular/common */
-    "./node_modules/@angular/common/fesm2015/common.js");
     /* harmony import */
 
 
@@ -2746,20 +2746,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! ./components/article-directory-look/article-directory-look.component */
     "./src/app/components/article-directory-look/article-directory-look.component.ts");
 
-    Object(_angular_common__WEBPACK_IMPORTED_MODULE_13__["registerLocaleData"])(_angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_14___default.a);
+    Object(_angular_common__WEBPACK_IMPORTED_MODULE_3__["registerLocaleData"])(_angular_common_locales_zh__WEBPACK_IMPORTED_MODULE_14___default.a);
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pages_article_article_component__WEBPACK_IMPORTED_MODULE_5__["ArticleComponent"], _pages_init_init_component__WEBPACK_IMPORTED_MODULE_6__["InitComponent"], _components_header_header_component__WEBPACK_IMPORTED_MODULE_7__["HeaderComponent"], _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_8__["FooterComponent"], _pages_zorro_zorro_component__WEBPACK_IMPORTED_MODULE_15__["ZorroComponent"], _components_back_top_back_top_component__WEBPACK_IMPORTED_MODULE_16__["BackTopComponent"], _pages_personal_details_personal_details_component__WEBPACK_IMPORTED_MODULE_17__["PersonalDetailsComponent"], _pages_discovery_discovery_component__WEBPACK_IMPORTED_MODULE_18__["DiscoveryComponent"], _components_left_right_layout_left_right_layout_component__WEBPACK_IMPORTED_MODULE_19__["LeftRightLayoutComponent"], _components_card_message_tools_card_message_tools_component__WEBPACK_IMPORTED_MODULE_20__["CardMessageToolsComponent"], _pages_follow_follow_component__WEBPACK_IMPORTED_MODULE_21__["FollowComponent"], _components_left_right_layout_follow_left_right_layout_follow_component__WEBPACK_IMPORTED_MODULE_22__["LeftRightLayoutFollowComponent"], _pages_message_message_component__WEBPACK_IMPORTED_MODULE_23__["MessageComponent"], _pages_search_search_component__WEBPACK_IMPORTED_MODULE_24__["SearchComponent"], _components_paging_paging_component__WEBPACK_IMPORTED_MODULE_25__["PagingComponent"], _pages_recommend_recommend_component__WEBPACK_IMPORTED_MODULE_26__["RecommendComponent"], _components_dropdown_dropdown_component__WEBPACK_IMPORTED_MODULE_27__["DropdownComponent"], _directive_click_outside_directive__WEBPACK_IMPORTED_MODULE_28__["ClickOutsideDirective"], _pages_home_home_component__WEBPACK_IMPORTED_MODULE_29__["HomeComponent"], _components_tabs_tabs_component__WEBPACK_IMPORTED_MODULE_30__["TabsComponent"], _components_list_mini_author_list_mini_author_component__WEBPACK_IMPORTED_MODULE_31__["ListMiniAuthorComponent"], _components_card_focus_author_card_focus_author_component__WEBPACK_IMPORTED_MODULE_32__["CardFocusAuthorComponent"], _components_card_article_card_article_component__WEBPACK_IMPORTED_MODULE_33__["CardArticleComponent"], _components_column_user_dynamic_column_user_dynamic_component__WEBPACK_IMPORTED_MODULE_34__["ColumnUserDynamicComponent"], _pages_bookmarks_bookmarks_component__WEBPACK_IMPORTED_MODULE_35__["BookmarksComponent"], _pages_liked_liked_component__WEBPACK_IMPORTED_MODULE_36__["LikedComponent"], _pages_paid_paid_component__WEBPACK_IMPORTED_MODULE_37__["PaidComponent"], _pages_wallet_wallet_component__WEBPACK_IMPORTED_MODULE_38__["WalletComponent"], _pages_settings_settings_component__WEBPACK_IMPORTED_MODULE_39__["SettingsComponent"], _pages_faqs_faqs_component__WEBPACK_IMPORTED_MODULE_40__["FaqsComponent"], _components_layout_one_column_layout_one_column_component__WEBPACK_IMPORTED_MODULE_41__["LayoutOneColumnComponent"], _components_layout_all_column_layout_all_column_component__WEBPACK_IMPORTED_MODULE_42__["LayoutAllColumnComponent"], _pages_help_help_component__WEBPACK_IMPORTED_MODULE_43__["HelpComponent"], _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_44__["ContactComponent"], _components_header_simple_header_simple_component__WEBPACK_IMPORTED_MODULE_45__["HeaderSimpleComponent"], _pages_error_error_component__WEBPACK_IMPORTED_MODULE_46__["ErrorComponent"], _pages_apps_apps_component__WEBPACK_IMPORTED_MODULE_47__["AppsComponent"], _pages_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_48__["SignInComponent"], _pages_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_49__["SignUpComponent"], _pages_reset_mobile_reset_mobile_component__WEBPACK_IMPORTED_MODULE_50__["ResetMobileComponent"], _pages_reset_email_reset_email_component__WEBPACK_IMPORTED_MODULE_51__["ResetEmailComponent"], _pages_write_write_component__WEBPACK_IMPORTED_MODULE_52__["WriteComponent"], _components_login_wrap_login_wrap_component__WEBPACK_IMPORTED_MODULE_53__["LoginWrapComponent"], _components_login_social_login_social_component__WEBPACK_IMPORTED_MODULE_54__["LoginSocialComponent"], _components_login_title_login_title_component__WEBPACK_IMPORTED_MODULE_55__["LoginTitleComponent"], _components_reset_footer_reset_footer_component__WEBPACK_IMPORTED_MODULE_56__["ResetFooterComponent"], _components_editor_editor_md_directive__WEBPACK_IMPORTED_MODULE_57__["EditorMdDirective"], _components_sign_btn_sign_btn_component__WEBPACK_IMPORTED_MODULE_58__["SignBtnComponent"], _components_bind_email_bind_email_component__WEBPACK_IMPORTED_MODULE_59__["BindEmailComponent"], _pages_recycle_recycle_component__WEBPACK_IMPORTED_MODULE_60__["RecycleComponent"], _pages_history_history_component__WEBPACK_IMPORTED_MODULE_61__["HistoryComponent"], _components_verify_verify_component__WEBPACK_IMPORTED_MODULE_62__["VerifyComponent"], _components_write_loading_write_loading_component__WEBPACK_IMPORTED_MODULE_63__["WriteLoadingComponent"], _components_card_article_more_card_article_more_component__WEBPACK_IMPORTED_MODULE_64__["CardArticleMoreComponent"], _components_card_article_release_card_article_release_component__WEBPACK_IMPORTED_MODULE_65__["CardArticleReleaseComponent"], _components_card_article_emoji_card_article_emoji_component__WEBPACK_IMPORTED_MODULE_66__["CardArticleEmojiComponent"], _components_card_article_comment_card_article_comment_component__WEBPACK_IMPORTED_MODULE_67__["CardArticleCommentComponent"], _components_modal_admire_modal_admire_component__WEBPACK_IMPORTED_MODULE_68__["ModalAdmireComponent"], _pages_bookrack_bookrack_component__WEBPACK_IMPORTED_MODULE_69__["BookrackComponent"], _pages_directory_directory_component__WEBPACK_IMPORTED_MODULE_70__["DirectoryComponent"], _components_modal_report_modal_report_component__WEBPACK_IMPORTED_MODULE_71__["ModalReportComponent"], _components_article_directory_look_article_directory_look_component__WEBPACK_IMPORTED_MODULE_72__["ArticleDirectoryLookComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], ng_zorro_antd__WEBPACK_IMPORTED_MODULE_9__["NgZorroAntdModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_10__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__["BrowserAnimationsModule"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _pages_article_article_component__WEBPACK_IMPORTED_MODULE_6__["ArticleComponent"], _pages_init_init_component__WEBPACK_IMPORTED_MODULE_7__["InitComponent"], _components_header_header_component__WEBPACK_IMPORTED_MODULE_8__["HeaderComponent"], _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _pages_zorro_zorro_component__WEBPACK_IMPORTED_MODULE_15__["ZorroComponent"], _components_back_top_back_top_component__WEBPACK_IMPORTED_MODULE_16__["BackTopComponent"], _pages_personal_details_personal_details_component__WEBPACK_IMPORTED_MODULE_17__["PersonalDetailsComponent"], _pages_discovery_discovery_component__WEBPACK_IMPORTED_MODULE_18__["DiscoveryComponent"], _components_left_right_layout_left_right_layout_component__WEBPACK_IMPORTED_MODULE_19__["LeftRightLayoutComponent"], _components_card_message_tools_card_message_tools_component__WEBPACK_IMPORTED_MODULE_20__["CardMessageToolsComponent"], _pages_follow_follow_component__WEBPACK_IMPORTED_MODULE_21__["FollowComponent"], _components_left_right_layout_follow_left_right_layout_follow_component__WEBPACK_IMPORTED_MODULE_22__["LeftRightLayoutFollowComponent"], _pages_message_message_component__WEBPACK_IMPORTED_MODULE_23__["MessageComponent"], _pages_search_search_component__WEBPACK_IMPORTED_MODULE_24__["SearchComponent"], _components_paging_paging_component__WEBPACK_IMPORTED_MODULE_25__["PagingComponent"], _pages_recommend_recommend_component__WEBPACK_IMPORTED_MODULE_26__["RecommendComponent"], _components_dropdown_dropdown_component__WEBPACK_IMPORTED_MODULE_27__["DropdownComponent"], _directive_click_outside_directive__WEBPACK_IMPORTED_MODULE_28__["ClickOutsideDirective"], _pages_home_home_component__WEBPACK_IMPORTED_MODULE_29__["HomeComponent"], _components_tabs_tabs_component__WEBPACK_IMPORTED_MODULE_30__["TabsComponent"], _components_list_mini_author_list_mini_author_component__WEBPACK_IMPORTED_MODULE_31__["ListMiniAuthorComponent"], _components_card_focus_author_card_focus_author_component__WEBPACK_IMPORTED_MODULE_32__["CardFocusAuthorComponent"], _components_card_article_card_article_component__WEBPACK_IMPORTED_MODULE_33__["CardArticleComponent"], _components_column_user_dynamic_column_user_dynamic_component__WEBPACK_IMPORTED_MODULE_34__["ColumnUserDynamicComponent"], _pages_bookmarks_bookmarks_component__WEBPACK_IMPORTED_MODULE_35__["BookmarksComponent"], _pages_liked_liked_component__WEBPACK_IMPORTED_MODULE_36__["LikedComponent"], _pages_paid_paid_component__WEBPACK_IMPORTED_MODULE_37__["PaidComponent"], _pages_wallet_wallet_component__WEBPACK_IMPORTED_MODULE_38__["WalletComponent"], _pages_settings_settings_component__WEBPACK_IMPORTED_MODULE_39__["SettingsComponent"], _pages_faqs_faqs_component__WEBPACK_IMPORTED_MODULE_40__["FaqsComponent"], _components_layout_one_column_layout_one_column_component__WEBPACK_IMPORTED_MODULE_41__["LayoutOneColumnComponent"], _components_layout_all_column_layout_all_column_component__WEBPACK_IMPORTED_MODULE_42__["LayoutAllColumnComponent"], _pages_help_help_component__WEBPACK_IMPORTED_MODULE_43__["HelpComponent"], _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_44__["ContactComponent"], _components_header_simple_header_simple_component__WEBPACK_IMPORTED_MODULE_45__["HeaderSimpleComponent"], _pages_error_error_component__WEBPACK_IMPORTED_MODULE_46__["ErrorComponent"], _pages_apps_apps_component__WEBPACK_IMPORTED_MODULE_47__["AppsComponent"], _pages_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_48__["SignInComponent"], _pages_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_49__["SignUpComponent"], _pages_reset_mobile_reset_mobile_component__WEBPACK_IMPORTED_MODULE_50__["ResetMobileComponent"], _pages_reset_email_reset_email_component__WEBPACK_IMPORTED_MODULE_51__["ResetEmailComponent"], _pages_write_write_component__WEBPACK_IMPORTED_MODULE_52__["WriteComponent"], _components_login_wrap_login_wrap_component__WEBPACK_IMPORTED_MODULE_53__["LoginWrapComponent"], _components_login_social_login_social_component__WEBPACK_IMPORTED_MODULE_54__["LoginSocialComponent"], _components_login_title_login_title_component__WEBPACK_IMPORTED_MODULE_55__["LoginTitleComponent"], _components_reset_footer_reset_footer_component__WEBPACK_IMPORTED_MODULE_56__["ResetFooterComponent"], _components_editor_editor_md_directive__WEBPACK_IMPORTED_MODULE_57__["EditorMdDirective"], _components_sign_btn_sign_btn_component__WEBPACK_IMPORTED_MODULE_58__["SignBtnComponent"], _components_bind_email_bind_email_component__WEBPACK_IMPORTED_MODULE_59__["BindEmailComponent"], _pages_recycle_recycle_component__WEBPACK_IMPORTED_MODULE_60__["RecycleComponent"], _pages_history_history_component__WEBPACK_IMPORTED_MODULE_61__["HistoryComponent"], _components_verify_verify_component__WEBPACK_IMPORTED_MODULE_62__["VerifyComponent"], _components_write_loading_write_loading_component__WEBPACK_IMPORTED_MODULE_63__["WriteLoadingComponent"], _components_card_article_more_card_article_more_component__WEBPACK_IMPORTED_MODULE_64__["CardArticleMoreComponent"], _components_card_article_release_card_article_release_component__WEBPACK_IMPORTED_MODULE_65__["CardArticleReleaseComponent"], _components_card_article_emoji_card_article_emoji_component__WEBPACK_IMPORTED_MODULE_66__["CardArticleEmojiComponent"], _components_card_article_comment_card_article_comment_component__WEBPACK_IMPORTED_MODULE_67__["CardArticleCommentComponent"], _components_modal_admire_modal_admire_component__WEBPACK_IMPORTED_MODULE_68__["ModalAdmireComponent"], _pages_bookrack_bookrack_component__WEBPACK_IMPORTED_MODULE_69__["BookrackComponent"], _pages_directory_directory_component__WEBPACK_IMPORTED_MODULE_70__["DirectoryComponent"], _components_modal_report_modal_report_component__WEBPACK_IMPORTED_MODULE_71__["ModalReportComponent"], _components_article_directory_look_article_directory_look_component__WEBPACK_IMPORTED_MODULE_72__["ArticleDirectoryLookComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], ng_zorro_antd__WEBPACK_IMPORTED_MODULE_10__["NgZorroAntdModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_11__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"]],
       providers: [{
-        provide: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_9__["NZ_I18N"],
-        useValue: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_9__["zh_CN"]
+        provide: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_10__["NZ_I18N"],
+        useValue: ng_zorro_antd__WEBPACK_IMPORTED_MODULE_10__["zh_CN"]
+      }, {
+        provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["LocationStrategy"],
+        useClass: _angular_common__WEBPACK_IMPORTED_MODULE_3__["HashLocationStrategy"]
       }],
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })], AppModule);
     /***/
   },
